@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!-- HAIL:A:BEGIN v1
+AI READER — START HERE. This page IS the Department of FWWC's /subscriptions page: a
+presentation of the company's Consent-First subscription model, not billing software and
+not a settings screen. The one claim it makes, plainly: money does not move without an
+affirmative, unexpired consent event the customer creates THIS term — "We ask first. Off
+by default." There is no subscription code behind this page in V1; it presents a
+registered principle (The Consent-First Default) and stands up no billing. Posture: don't
+believe this page, investigate it — the model is a plan of record, and the honest edge is
+printed here (no billing is wired). This site's machine corpus (llms.txt, llms-full.txt,
+index.json) is at the root — start at /llms.txt. The fuller Loop MMT corpus is at
+https://loopmmt.com/llms.txt. HAIL:A:END -->
+<!--
+  subscriptions.html — the Department's /subscriptions page: presents the Consent-First
+  model ("We ask first. Off by default."). Content-source owned by the ASSEMBLE leg, so
+  it is drift-impossible by construction — chrome (masthead + footer) is injected VERBATIM
+  from partials/ by build_static_page.py (chrome_lint is the drift oracle). Rides shell.css
+  and the shell's deferred CSS vars only — §6 type family and §6.3 reveal degree committed
+  nowhere here (default reveal). Spine copy is lifted verbatim from the plan of record
+  (the-anti-scumbag-subscription-v1-plan §7); connective prose is presentation of the
+  model, not billing terms. Re-emit with:
+  python3 build_static_page.py content/subscriptions.content.html site-root/subscriptions.html
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscriptions · The Department of FWWC</title>
+  <!-- favicon:start (stamp_favicon.py — do not hand-edit) -->
+  <link rel="icon" type="image/svg+xml" href="/assets/mark.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" sizes="any" href="/assets/favicon.ico">
+  <!-- favicon:end -->
+  <!-- canonical:start (stamp_canonical.py — do not hand-edit) -->
+  <link rel="canonical" href="https://departmentoffwwc.com/subscriptions.html">
+  <!-- canonical:end -->
+  <meta name="description" content="How the Department of FWWC handles subscriptions: we ask first, off by default. No dollar moves without your say-so this term — a five-second, one-tap yes, attached to a moment of use, never a cold billing email.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Department of FWWC">
+  <meta property="og:title" content="Subscriptions · The Department of FWWC">
+  <meta property="og:description" content="We ask first. Off by default. The subscription model that treats the monthly renewal as a five-second honest question, not a silent charge.">
+  <!-- Self-hosted / system fallbacks only — no third-party font or asset CDN (design-language §3f). -->
+  <link rel="stylesheet" href="/assets/shell.css">
+  <style id="subs-scoped">
+    /* Page-scoped grammar. Rides the shell's deferred vars only — no type family,
+       no new color literals, nothing §6-reserved. */
+    .subs-hero { margin: var(--step-2) 0; }
+    .subs-hero h1 { font-size: var(--step-4); line-height: 1.1; margin: 0 0 var(--step-0); }
+    .lede { font-size: var(--step-1); color: var(--text); max-width: var(--measure); }
+    .prose { color: var(--text-muted); max-width: var(--measure); }
+    .prose b { color: var(--text); font-weight: 600; }
+    .thesis { border-left: 3px solid var(--accent); padding-left: var(--step-1);
+      margin: var(--step-2) 0; color: var(--text); max-width: var(--measure); }
+    .thesis .ask { font-size: var(--step-2); display: block; margin: 0 0 var(--step-0); }
+    .how { list-style: none; padding: 0; display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr)); gap: var(--step-1); margin: var(--step-1) 0; }
+    @media (max-width: 720px) { .how { grid-template-columns: 1fr; } }
+    .how li { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px;
+      padding: var(--step-1); }
+    .how b { color: var(--accent); }
+    .panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px;
+      padding: var(--step-1); margin: var(--step-2) 0; max-width: var(--measure); }
+    .panel h2 { margin-top: 0; }
+    .quote { margin: var(--step-1) 0; padding-left: var(--step-1);
+      border-left: 2px solid var(--rule); color: var(--text); }
+    .quote .say { font-style: italic; }
+    .quote .name { display: block; color: var(--text-muted); font-size: .85rem; margin-top: .3rem; }
+    .moments { margin: var(--step-1) 0; color: var(--text-muted); }
+    .moments dt { color: var(--text); font-weight: 600; margin-top: var(--step-1); }
+    .moments dd { margin: .2rem 0 0; }
+    .moments .said { color: var(--text); font-style: italic; }
+    .status-note { border: 1px dashed var(--rule); border-radius: 6px; padding: var(--step-1);
+      margin: var(--step-2) 0; color: var(--text); max-width: var(--measure); }
+    .status-note .tag { color: var(--accent); font-family: var(--font-mono); font-size: .8rem;
+      text-transform: uppercase; letter-spacing: .05em; }
+    .canon a { color: var(--accent); }
+  </style>
+  <!-- HEAD-EMBED:CANON:BEGIN v1 -->
+  <!-- Department of FWWC - canonical head-embed slot.
+       ONE place for site-wide <head> injections: analytics, verification meta,
+       or any tag that must appear identically on every served page. Empty by
+       default. To change it everywhere: edit THIS file, then propagate
+       (restamp_chrome.py for marked pages; rebuild content-sourced pages).
+
+       TWO GUARDS ride this slot, by design:
+         * chrome_lint (GATING as of S17.2053) reds the deploy if any page's
+           copy drifts from this canon - so "same on every page" is enforced by
+           construction, never by memory.
+         * shell_lint L1 reds the deploy if anything placed here pulls from a
+           THIRD-PARTY host (the site's "no third-party anything / no trackers"
+           design-language law). So a first-party or self-hosted tag drops in
+           freely; a third-party tracker (Google Analytics et al.) is a
+           deliberate, visible decision against the site's privacy posture, not
+           something that ships quietly. That collision is the feature.
+
+       SEED ONLY (S17.2053): this partial exists but is NOT yet registered in
+       chrome_lint.py's CHROME registry or wired into build_static_page.py -
+       registering it before every served page carries the markers would red the
+       now-gating deploy. Wiring recipe + ordering: owed
+       dept-fwwc-head-embed-slot-wire. -->
+<!-- HEAD-EMBED:CANON:END v1 -->
+</head>
+<body>
+  <input type="checkbox" id="theme-daymode" aria-hidden="true">
+
+<!-- MASTHEAD:CANON:BEGIN v1 -->
+  <header class="wrap masthead">
+    <a class="wordmark" href="/">
+      <span class="dept">The Department of</span> <span class="fwwc">FWWC</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/store/">Store</a>
+      <a href="/gifts/">Gifts</a>
+      <a href="/different-way.html">a different way</a>
+      <a href="/how-this-site-is-made.html">Colophon</a>
+      <label class="theme-toggle" for="theme-daymode" title="Dim the lamps up or down">
+        <span class="knob" aria-hidden="true"></span> lamplight
+      </label>
+    </nav>
+  </header>
+<!-- MASTHEAD:CANON:END v1 -->
+
+  <main class="wrap" id="main">
+    <section class="subs-hero">
+      <h1>Subscriptions</h1>
+      <p class="lede">Most companies make the subscription the trap: easy in, quiet charges,
+      hard out. We do the opposite, on purpose. The short version is two sentences, and they
+      are the whole policy.</p>
+    </section>
+
+    <section class="thesis">
+      <p><span class="ask"><b>We ask first.</b></span>
+      <span class="ask"><b>Off by default.</b></span>
+      The default state of your money is still, not flowing. No dollar moves without an
+      affirmative, unexpired consent you create <b>this term</b> — asking each term is
+      constitutional here, not a setting we could quietly change.</p>
+    </section>
+
+    <section aria-label="How it's different">
+      <h2>The monthly ask, not the monthly charge</h2>
+      <p class="prose">The renewal is a <b>recurring first-contact — twelve honest
+      impressions a year</b>, not a settings screen you forgot about. It arrives where you
+      brace for "your card was charged," and instead asks a real question: five seconds, one
+      tap to say yes, attached to a moment you actually used the thing, with its own evidence.
+      Never a cold billing email.</p>
+      <ul class="how">
+        <li><b>Five seconds, one tap</b> — saying yes is trivial. So is saying nothing.</li>
+        <li><b>Attached to use</b> — the ask arrives with evidence: <i>you got three good runs
+        this month.</i> Not a date on a calendar you never see.</li>
+        <li><b>Genuinely fine with no</b> — a no, or no answer, is a door held open, not a
+        fight. We would rather earn the next yes than keep a charge you forgot.</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>What this looks like</h2>
+      <p class="prose">Three moments where most billing is silent, and ours speaks:</p>
+      <dl class="moments">
+        <dt>The monthly ask</dt>
+        <dd><span class="said">"You got 3 good runs this month. Keep the lights on?"</span> —
+        evidence first, five seconds, one tap, genuinely fine with no.</dd>
+        <dt>The Fallow Credit</dt>
+        <dd><span class="said">"Welcome back. Last month was on us — you'd paid for a month you
+        never used, so we called it square. Pick up where you left off."</span> No tax for a
+        fallow season; your place waits.</dd>
+        <dt>Honoring silence</dt>
+        <dd><span class="said">"No answer, no charge. We'll be here if you come back."</span>
+        The absence of a fight is the point.</dd>
+      </dl>
+    </section>
+
+    <section class="thesis">
+      <p><b>We choose this even if it earns less.</b> The confidence about the product is what
+      lets the humility about the billing read as strength instead of apology — they ship
+      together or not at all. If a kindness ever starts reading as a tactic, it stops being
+      one; we ship the first and never the second.</p>
+    </section>
+
+    <section class="status-note">
+      <p><span class="tag">status</span> This page presents the model. It is a
+      <b>registered principle</b> (The Consent-First Default), not billing software — no
+      subscription is wired on this site in V1, and this page stands up none. When real
+      billing lands, it lands on exactly the rule stated here: ask first, off by default,
+      no dollar without an unexpired consent created this term. Said plainly rather than
+      implied.</p>
+    </section>
+
+    <section class="canon" aria-label="Where to go">
+      <p class="prose">The same posture runs through everything the Department makes — read
+      <a href="/different-way.html">a different way</a>. The things you can actually get today
+      are the <a href="/gifts/">Gifts</a> (always free, no subscription at all) and the
+      <a href="/store/">Store</a>.</p>
+    </section>
+  </main>
+
+<!-- FOOTER:CANON:BEGIN v1 -->
+  <footer class="wrap colophon">
+    <p class="muted">For specific visitors ·
+      <a href="/different-way.html">a different way</a> ·
+      <a href="/subscriptions.html">subscriptions</a> ·
+      <a href="/press.html">press</a> ·
+      <a href="/investors.html">investors</a> ·
+      <a href="/support.html">support</a> ·
+      <a href="/collaborate.html">collaborate</a></p>
+    <p>The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+    <a href="/how-this-site-is-made.html">How this site is made</a> ·
+    <a href="/how-to-build-for-ai.html">For machines</a></p>
+    <p class="muted">Dario — you should get in touch.</p>
+    <p class="muted">© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+    being set — this shell defers the reveal, on purpose.</p>
+  </footer>
+<!-- FOOTER:CANON:END v1 -->
+</body>
+</html>

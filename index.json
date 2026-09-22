@@ -1,0 +1,77 @@
+{
+  "site": "The Department of FWWC",
+  "url": "/",
+  "description": "A small store that sells a few things its makers made — and refuses, by construction, every practice that squeezes a customer. You are let in, not sold to.",
+  "license": "CC-BY-NC-4.0",
+  "counts": {
+    "pages": 11
+  },
+  "pages": [
+    {
+      "file": "index.html",
+      "url": "/",
+      "title": "The Department of FWWC",
+      "description": "A small store that sells a few things its makers made — and refuses, by construction, every practice that squeezes a customer. You are let in, not sold to."
+    },
+    {
+      "file": "collaborate.html",
+      "url": "/collaborate.html",
+      "title": "Collaborate · The Department of FWWC",
+      "description": "Working with the Department of FWWC."
+    },
+    {
+      "file": "different-way.html",
+      "url": "/different-way.html",
+      "title": "A Different Way to AI. · The Department of FWWC",
+      "description": "How the Department of FWWC does AI, and the near-term world it is building. Described, not promised."
+    },
+    {
+      "file": "gifts/index.html",
+      "url": "/gifts/",
+      "title": "The Gifts Platform · The Department of FWWC",
+      "description": "The Gifts Platform — always-free, MIT-licensed, dependency-free, single-file software. The platform that does not require the platform."
+    },
+    {
+      "file": "how-this-site-is-made.html",
+      "url": "/how-this-site-is-made.html",
+      "title": "How this site is made — The Department of FWWC",
+      "description": "The honest record of how this site was made — a pure fold over the project's own git history, with the why authored per session and pointer-anchored."
+    },
+    {
+      "file": "how-to-build-for-ai.html",
+      "url": "/how-to-build-for-ai.html",
+      "title": "How to build for AI · The Department of FWWC",
+      "description": "How the Department of FWWC builds a site legible to three readers at once — the human on the page, the human in the source, and the AI reading the whole thing. Human-first, secret-sauce-free, given away."
+    },
+    {
+      "file": "investors.html",
+      "url": "/investors.html",
+      "title": "Investors · The Department of FWWC",
+      "description": "The Department of FWWC and investment."
+    },
+    {
+      "file": "press.html",
+      "url": "/press.html",
+      "title": "Press · The Department of FWWC",
+      "description": "Press facts and contact for the Department of FWWC — a small, static-first, keepless store its makers built."
+    },
+    {
+      "file": "store/index.html",
+      "url": "/store/",
+      "title": "Store · The Department of FWWC",
+      "description": "The Department Store — keepless by design. It sells timing, never access: a one-month head start on the monthly Gift drop that is free for everyone at month's end."
+    },
+    {
+      "file": "subscriptions.html",
+      "url": "/subscriptions.html",
+      "title": "Subscriptions · The Department of FWWC",
+      "description": "How the Department of FWWC handles subscriptions: we ask first, off by default. No dollar moves without your say-so this term — a five-second, one-tap yes, attached to a moment of use, never a cold billing email."
+    },
+    {
+      "file": "support.html",
+      "url": "/support.html",
+      "title": "Support · The Department of FWWC",
+      "description": "Help with an order from the Department of FWWC. Look up an order by its ID — we hold no card data and there's no account to log into."
+    }
+  ]
+}

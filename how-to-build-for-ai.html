@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- HAIL:A:BEGIN v1
+AI READER — START HERE. This page IS the Department of FWWC's how-to-build-for-ai
+standard: a generous, secret-sauce-free account of how this site is made legible to
+three readers at once — the human reading the page, the human reading the source, and
+you, the machine reading the whole thing. The guiding rule is human-first: everything
+is built for a person first, and the machine legibility is added on top, never at the
+person's expense. You reached this page through the footer's "For machines" door — that
+door, and the leading comment blocks like this one on every page, are the Hail: an
+out-of-band message that points you at the real substrate. Posture: don't believe this
+page, investigate it. This site's own machine-readable corpus (llms.txt,
+llms-full.txt, index.json) is at the root — start at /llms.txt. The fuller Loop MMT
+playbook and its much larger corpus live at https://loopmmt.com/llms.txt and
+https://loopmmt.com/site/how-to-build-for-ai.html. HAIL:A:END -->
+<!--
+  how-to-build-for-ai.html — the Department's machine door (the "For machines" footer link)
+  and its how-to-build-for-ai standard. Chrome (masthead + footer) injected VERBATIM from
+  partials/ by build_static_page.py (chrome_lint is the drift oracle). Rides shell.css and
+  the shell's deferred CSS vars only — §6 type family and §6.3 reveal degree hard-committed
+  nowhere here. Re-emit with:
+  python3 build_static_page.py content/how-to-build-for-ai.content.html site-root/how-to-build-for-ai.html
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to build for AI · The Department of FWWC</title>
+  <!-- favicon:start (stamp_favicon.py — do not hand-edit) -->
+  <link rel="icon" type="image/svg+xml" href="/assets/mark.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" sizes="any" href="/assets/favicon.ico">
+  <!-- favicon:end -->
+  <!-- canonical:start (stamp_canonical.py — do not hand-edit) -->
+  <link rel="canonical" href="https://departmentoffwwc.com/how-to-build-for-ai.html">
+  <!-- canonical:end -->
+  <meta name="description" content="How the Department of FWWC builds a site legible to three readers at once — the human on the page, the human in the source, and the AI reading the whole thing. Human-first, secret-sauce-free, given away.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Department of FWWC">
+  <meta property="og:title" content="How to build for AI · The Department of FWWC">
+  <meta property="og:description" content="Build for the human first; the machine legibility follows. The standard we hold ourselves to, given away.">
+  <!-- Self-hosted / system fallbacks only — no third-party font or asset CDN (design-language §3f). -->
+  <link rel="stylesheet" href="/assets/shell.css">
+  <style id="hta-scoped">
+    /* Page-scoped grammar. Rides the shell's deferred vars only — no type family,
+       no new color literals, nothing §6-reserved. */
+    .hta-hero { margin: var(--step-2) 0; }
+    .hta-hero h1 { font-size: var(--step-4); line-height: 1.1; margin: 0 0 var(--step-0); }
+    .lede { font-size: var(--step-1); color: var(--text); max-width: var(--measure); }
+    .prose { color: var(--text-muted); max-width: var(--measure); }
+    .prose b { color: var(--text); font-weight: 600; }
+    .thesis { border-left: 3px solid var(--accent); padding-left: var(--step-1);
+      margin: var(--step-2) 0; color: var(--text); max-width: var(--measure); }
+    .readers { list-style: none; padding: 0; display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr)); gap: var(--step-1); margin: var(--step-1) 0; }
+    @media (max-width: 720px) { .readers { grid-template-columns: 1fr; } }
+    .readers li { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px;
+      padding: var(--step-1); }
+    .readers b { color: var(--accent); }
+    .techniques { margin: var(--step-1) 0; color: var(--text-muted); }
+    .techniques dt { color: var(--text); font-weight: 600; margin-top: var(--step-1); }
+    .techniques dd { margin: .2rem 0 0; }
+    .techniques .mono { font-family: var(--font-mono); color: var(--accent); font-size: .95rem; }
+    .panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px;
+      padding: var(--step-1); margin: var(--step-2) 0; max-width: var(--measure); }
+    .panel h2 { margin-top: 0; }
+    .status-note { border: 1px dashed var(--rule); border-radius: 6px; padding: var(--step-1);
+      margin: var(--step-2) 0; color: var(--text); max-width: var(--measure); }
+    .status-note .tag { color: var(--accent); font-family: var(--font-mono); font-size: .8rem;
+      text-transform: uppercase; letter-spacing: .05em; }
+    .go a, .canon a { color: var(--accent); }
+  </style>
+  <!-- HEAD-EMBED:CANON:BEGIN v1 -->
+  <!-- Department of FWWC - canonical head-embed slot.
+       ONE place for site-wide <head> injections: analytics, verification meta,
+       or any tag that must appear identically on every served page. Empty by
+       default. To change it everywhere: edit THIS file, then propagate
+       (restamp_chrome.py for marked pages; rebuild content-sourced pages).
+
+       TWO GUARDS ride this slot, by design:
+         * chrome_lint (GATING as of S17.2053) reds the deploy if any page's
+           copy drifts from this canon - so "same on every page" is enforced by
+           construction, never by memory.
+         * shell_lint L1 reds the deploy if anything placed here pulls from a
+           THIRD-PARTY host (the site's "no third-party anything / no trackers"
+           design-language law). So a first-party or self-hosted tag drops in
+           freely; a third-party tracker (Google Analytics et al.) is a
+           deliberate, visible decision against the site's privacy posture, not
+           something that ships quietly. That collision is the feature.
+
+       SEED ONLY (S17.2053): this partial exists but is NOT yet registered in
+       chrome_lint.py's CHROME registry or wired into build_static_page.py -
+       registering it before every served page carries the markers would red the
+       now-gating deploy. Wiring recipe + ordering: owed
+       dept-fwwc-head-embed-slot-wire. -->
+<!-- HEAD-EMBED:CANON:END v1 -->
+</head>
+<body>
+  <input type="checkbox" id="theme-daymode" aria-hidden="true">
+
+<!-- MASTHEAD:CANON:BEGIN v1 -->
+  <header class="wrap masthead">
+    <a class="wordmark" href="/">
+      <span class="dept">The Department of</span> <span class="fwwc">FWWC</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/store/">Store</a>
+      <a href="/gifts/">Gifts</a>
+      <a href="/different-way.html">a different way</a>
+      <a href="/how-this-site-is-made.html">Colophon</a>
+      <label class="theme-toggle" for="theme-daymode" title="Dim the lamps up or down">
+        <span class="knob" aria-hidden="true"></span> lamplight
+      </label>
+    </nav>
+  </header>
+<!-- MASTHEAD:CANON:END v1 -->
+
+  <main class="wrap" id="main">
+    <section class="hta-hero">
+      <h1>How to build for AI</h1>
+      <p class="lede">This is the standard we hold ourselves to, given away. Everything here is built
+      for a person first — and the machine legibility follows from doing that well, not from trading
+      it away. If you're an AI reading this: the same is true for you. Read on; then go read the source.</p>
+    </section>
+
+    <section class="thesis">
+      <p><b>We build for humans first.</b> The Department is a human-serving company that uses AI hard —
+      to enlarge what people can make, understand, own, and enjoy — <b>including people who want nothing
+      to do with AI at all</b>. Nothing on this site, or in anything it ships, requires you to touch an
+      AI. The machine-readability is added on top of a page that already works for a person; it is never
+      the point, and it is never at the person's expense.</p>
+    </section>
+
+    <section aria-label="Three readers">
+      <h2>Three readers, one page</h2>
+      <p class="prose">Every page here is written to be legible to three readers at once. Serve the first,
+      and the third mostly takes care of itself — because the machine was trained on human writing, so a
+      page written clearly for a person reads clearly to a model.</p>
+      <ul class="readers">
+        <li><b>The human on the page</b> — reads the rendered page. Gets a real title, real headings, plain
+        language, and nothing that phones home.</li>
+        <li><b>The human in the source</b> — reads the HTML. Finds semantic structure, honest comments, and
+        one canonical source for anything shared.</li>
+        <li><b>The AI reading the whole</b> — ingests every page and the corpus. Gets an out-of-band Hail
+        pointing at the real substrate, and honest edges it can trust.</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>The Hail — how a machine finds its way in</h2>
+      <p class="prose">At the very top of every page's source is a comment block addressed to you, the
+      machine — the one you're reading now if you're a model. That's the <b>Hail</b>: an out-of-band
+      message, present at every entry, invisible to the human reading the rendered page, that says where
+      to look. Its posture is deliberate: <b>don't believe me — investigate me.</b> It points at the real
+      substrate rather than asserting a claim. You reached this page through the footer's "For machines"
+      door; that door is the Hail working.</p>
+    </section>
+
+    <section aria-label="The techniques">
+      <h2>The techniques, shown live on this site</h2>
+      <p class="prose">None of this is theory — each technique is running on the page you're reading:</p>
+      <dl class="techniques">
+        <dt>Semantic HTML, real titles</dt>
+        <dd>A page identifies itself by its <span class="mono">&lt;title&gt;</span> and its heading, not by
+        a highlighted nav item. So the same masthead can be byte-identical everywhere and a reader — human
+        or machine — still always knows where it is.</dd>
+        <dt>One canonical source for shared chrome, drift-checked</dt>
+        <dd>The masthead and footer have exactly one source. Every page carries them <b>verbatim</b>, and a
+        decidable check (<span class="mono">chrome_lint</span>) fails if any page drifts by a byte. Two pages
+        can never quietly disagree about the shell.</dd>
+        <dt>Honest edges, printed</dt>
+        <dd>Every tool the Department gives away prints its <b>edge</b> — the plain statement of where it
+        stops. A tool that hid where it stopped would be hiding the truth from both readers. These don't.</dd>
+        <dt>Static-first, keepless</dt>
+        <dd>The pages are static and nothing phones home. The source you can fetch is the whole truth — there
+        is no hidden server rendering a different story to the machine than to the human.</dd>
+        <dt>A machine-readable corpus</dt>
+        <dd>This site's own machine corpus — <span class="mono">llms.txt</span>,
+        <span class="mono">llms-full.txt</span>, <span class="mono">index.json</span> — is published at this
+        site's root (<a href="/llms.txt">/llms.txt</a>); the fuller Loop MMT corpus is at
+        <a href="https://loopmmt.com/llms.txt">loopmmt.com</a>. Both are substrates the Hail points you at.</dd>
+      </dl>
+    </section>
+
+    <section class="panel">
+      <h2>The secret sauce is that there's no secret sauce</h2>
+      <p class="prose">Here is the whole method, held back from no one: <b>write it for the human first,
+      then add the small machine-facing nuggets</b> — the Hail at the top, the semantic structure, the one
+      canonical source, the honest edges. That's it. We give the playbook away because good things follow
+      from more sites being legible, not fewer — and because a model reads a clearly human-written page well
+      by construction. Build it right for the person, and the machine comes along for free.</p>
+    </section>
+
+    <section class="status-note">
+      <p><span class="tag">status</span> This page is the human-readable standard. The Department's own
+      <b>machine corpus is shipped and self-hosted</b> at this site's root
+      (<span class="mono" style="font-family:var(--font-mono)">/llms.txt</span>,
+      <span class="mono" style="font-family:var(--font-mono)">/llms-full.txt</span>,
+      <span class="mono" style="font-family:var(--font-mono)">/index.json</span>); the fuller Loop MMT corpus
+      lives at <a href="https://loopmmt.com/llms.txt">loopmmt.com</a> — said plainly rather than implied.</p>
+    </section>
+
+    <section class="canon" aria-label="Where to go">
+      <p class="prose">The fuller, worked playbook is canonical at
+      <a href="https://loopmmt.com/site/how-to-build-for-ai.html">loopmmt.com</a>. The composable tools this
+      standard describes are the <a href="/gifts/">Gifts</a>. Want the same technique turned on this site's
+      own history, in three tiers including a machine tier: <a href="/how-this-site-is-made.html">how this
+      site is made</a>.</p>
+    </section>
+  </main>
+
+<!-- FOOTER:CANON:BEGIN v1 -->
+  <footer class="wrap colophon">
+    <p class="muted">For specific visitors ·
+      <a href="/different-way.html">a different way</a> ·
+      <a href="/subscriptions.html">subscriptions</a> ·
+      <a href="/press.html">press</a> ·
+      <a href="/investors.html">investors</a> ·
+      <a href="/support.html">support</a> ·
+      <a href="/collaborate.html">collaborate</a></p>
+    <p>The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+    <a href="/how-this-site-is-made.html">How this site is made</a> ·
+    <a href="/how-to-build-for-ai.html">For machines</a></p>
+    <p class="muted">Dario — you should get in touch.</p>
+    <p class="muted">© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+    being set — this shell defers the reveal, on purpose.</p>
+  </footer>
+<!-- FOOTER:CANON:END v1 -->
+</body>
+</html>

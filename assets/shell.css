@@ -1,0 +1,266 @@
+/* ============================================================================
+   The Department of FWWC — shell.css
+   The static-public page-shell foundation. Tokens + two-mode + reveal-dial.
+
+   PROVENANCE: authored 2026-09 under the Conn. Grafts the loopmmt.com chrome
+   PATTERN (not its fonts — §3f forbids third-party CDNs) and the Score skin's
+   :has() altitude-dial PATTERN (§8b). Tokens are byte-exact from the Department
+   design-language plan v1 §3b.
+
+   TWO OPERATOR-RESERVED CALLS ARE DEFERRED HERE, BY DESIGN — never hard-committed:
+     1. The final TYPE FAMILY (§6 draw, precedes any font hard-commit; design-
+        language §3c). --font-display/body/mono point at neutral self-hostable
+        system-serif fallbacks; the specimen lap sets the real family in ONE place.
+     2. The REVEAL DEGREE (§6.3 call; detent-count + egg-discoverability). The dial
+        is built n=4-capable but gated by --reveal-max; the operator's call sets the
+        degree without a rebuild.
+
+   LAW (decidable, checked by shell_lint.py):
+     - No third-party CDN asset on any page that loads this (§3f security).
+     - Nothing pure-black / pure-white (design-language §0/§3b: "nothing #000, #fff").
+     - The reveal dial reads a variable, never a hard-coded detent count.
+   ============================================================================ */
+
+/* --- Reset / box model (minimal, keepless) -------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+
+/* ============================================================================
+   §0 — SELF-HOSTED FACES (the §6 draw's committed families)
+   Draw: display = Cardo (Didone, "the engraved plate"); body = Newsreader;
+   mono = IBM Plex Mono. Latin woff2, self-hosted under assets/fonts/ — NO CDN
+   (§3f). Paths are RELATIVE TO THIS FILE (which lives in assets/), so they read
+   `fonts/…`, NOT `assets/fonts/…`. (The specimen carried the doubled-`assets/`
+   path and rendered Georgia fallback until repaired; this file must not repeat it.)
+   Only the three drawn families ship here; the other specimen candidates do not.
+   ============================================================================ */
+@font-face { font-family: "Cardo"; font-style: normal;  font-weight: 400; font-display: swap;
+  src: url("fonts/cardo/cardo-400.woff2") format("woff2"); }
+@font-face { font-family: "Cardo"; font-style: italic;  font-weight: 400; font-display: swap;
+  src: url("fonts/cardo/cardo-400i.woff2") format("woff2"); }
+@font-face { font-family: "Cardo"; font-style: normal;  font-weight: 700; font-display: swap;
+  src: url("fonts/cardo/cardo-700.woff2") format("woff2"); }
+@font-face { font-family: "Newsreader"; font-style: normal;  font-weight: 400; font-display: swap;
+  src: url("fonts/newsreader/newsreader-400.woff2") format("woff2"); }
+@font-face { font-family: "Newsreader"; font-style: italic;  font-weight: 400; font-display: swap;
+  src: url("fonts/newsreader/newsreader-400i.woff2") format("woff2"); }
+@font-face { font-family: "Newsreader"; font-style: normal;  font-weight: 600; font-display: swap;
+  src: url("fonts/newsreader/newsreader-600.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal;  font-weight: 400; font-display: swap;
+  src: url("fonts/ibm-plex-mono/ibm-plex-mono-400.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal;  font-weight: 500; font-display: swap;
+  src: url("fonts/ibm-plex-mono/ibm-plex-mono-500.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal;  font-weight: 600; font-display: swap;
+  src: url("fonts/ibm-plex-mono/ibm-plex-mono-600.woff2") format("woff2"); }
+
+/* ============================================================================
+   §1 — TOKENS · NIGHT (the primary/dark theme — the private car at night)
+   Byte-exact from design-language v1 §3b. Never #000 / #fff by law.
+   ============================================================================ */
+:root {
+  /* NIGHT palette (default theme) */
+  --wood-black:    #17110b;  /* base — oiled dark walnut in low light */
+  --panel:         #241a12;  /* a lifted wood surface (mahogany) */
+  --panel-raised:  #2e2218;  /* lit wood edge / card catching lamplight */
+  --green-baize:   #1e3329;  /* deep bottle/Pullman green */
+  --oxblood:       #4a2018;  /* cordovan leather; used sparingly */
+  --brass:         #b0894a;  /* THE single warm attention token */
+  --brass-lit:     #d8ac6b;  /* amber lamp-glow highlight */
+  --ivory:         #e9e0cf;  /* primary text — aged menu-card cream */
+  --taupe:         #a8967c;  /* muted labels / secondary text */
+
+  /* Semantic roles (theme-swappable — pages reference these, never raw hexes) */
+  --bg:            var(--wood-black);
+  --surface:       var(--panel);
+  --surface-lit:   var(--panel-raised);
+  --structure:     var(--green-baize);
+  --accent:        var(--brass);
+  --accent-lit:    var(--brass-lit);
+  --text:          var(--ivory);
+  --text-muted:    var(--taupe);
+  --rule:          #3a2c1e;  /* hairline between sections (never pure black) */
+
+  /* --- TYPE ROLES · DEFERRED FAMILY (operator §6 draw) --------------------
+     These point at self-hostable, license-clean SYSTEM fallbacks so no page
+     hard-commits a family before the specimen lap. When the draw lands, set
+     the real OFL family in ONE place (the first token in each stack). */
+  --font-display: "Cardo", Georgia, "Times New Roman", serif;         /* engraved-plate role — §6 DRAW: Cardo (Didone) */
+  --font-body:    "Newsreader", Georgia, "Times New Roman", serif;    /* reading-serif role — Newsreader */
+  --font-mono:    "IBM Plex Mono", ui-monospace, "Courier New", monospace; /* ticket-stub role — IBM Plex Mono */
+
+  /* Measure / rhythm */
+  --measure: 66ch;
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: 1.6rem;
+  --step-3: 2.1rem;
+  --step-4: 2.9rem;
+  --lh: 1.6;
+
+  /* --- REVEAL DIAL · DEFERRED DEGREE (operator §6.3 call) -----------------
+     The dial is built for 4 altitudes (bark → grove → department → gift).
+     --reveal-max caps how deep the reader can descend; the operator's degree
+     call sets this ONE value. Default 4 (full) until the call narrows it. */
+  --reveal-max: 4;
+}
+
+/* ============================================================================
+   §2 — TOKENS · DIM-DAY (the "light" theme — daylight, shades half-drawn)
+   Swapped by a single honest toggle. Same warm world, two light levels.
+   Byte-exact from design-language v1 §3b DIM-DAY.
+   ============================================================================ */
+:root:has(#theme-daymode:checked) {
+  --paper-warm:   #e6dcc4;  /* ground — aged ivory / café crème (NOT white) */
+  --paper-raised: #efe6d2;  /* a lifted cream surface */
+  --ink-wood:     #241a12;  /* text = NIGHT's base wood-black (one world) */
+  --green-deep:   #2b4a3a;  /* bottle green for structure/links */
+  --brass-dark:   #8a6526;  /* attention token on light (dropped for contrast) */
+  --taupe-day:    #6b5c46;  /* muted labels */
+
+  --bg:          var(--paper-warm);
+  --surface:     var(--paper-raised);
+  --surface-lit: #f4ecdb;
+  --structure:   var(--green-deep);
+  --accent:      var(--brass-dark);
+  --accent-lit:  #a07c33;
+  --text:        var(--ink-wood);
+  --text-muted:  var(--taupe-day);
+  --rule:        #d3c6a8;
+}
+
+/* ============================================================================
+   §3 — CHROME (the header/footer pattern grafted from loopmmt.com, own skin)
+   ============================================================================ */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: var(--lh);
+  transition: background-color .4s ease, color .4s ease; /* the lamp dimming */
+}
+
+.wrap { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem; }
+
+.masthead {
+  border-bottom: 1px solid var(--rule);
+  padding: 1.4rem 0 1.1rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.wordmark {
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  letter-spacing: .04em;
+  color: var(--text);
+  text-decoration: none;
+}
+.wordmark .dept { color: var(--text-muted); font-weight: 400; }
+.wordmark .fwwc { color: var(--accent); }
+
+.site-nav a {
+  font-family: var(--font-mono);
+  font-size: .82rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-left: 1.1rem;
+}
+.site-nav a:hover { color: var(--accent-lit); }
+
+.colophon {
+  border-top: 1px solid var(--rule);
+  margin-top: 3rem;
+  padding: 1.4rem 0 2.4rem;
+  font-family: var(--font-mono);
+  font-size: .78rem;
+  color: var(--text-muted);
+}
+.colophon a { color: var(--text-muted); }
+
+/* --- The honest theme toggle (§4: never fake a mode; pure CSS, keepless) --- */
+.theme-toggle { display: inline-flex; align-items: center; gap: .5rem; cursor: pointer;
+  font-family: var(--font-mono); font-size: .78rem; color: var(--text-muted); }
+#theme-daymode { position: absolute; opacity: 0; pointer-events: none; }
+.theme-toggle .knob {
+  width: 34px; height: 18px; border: 1px solid var(--rule); border-radius: 9px;
+  position: relative; background: var(--surface); transition: background-color .3s;
+}
+.theme-toggle .knob::after {
+  content: ""; position: absolute; top: 2px; left: 2px; width: 12px; height: 12px;
+  border-radius: 50%; background: var(--accent); transition: transform .3s;
+}
+:root:has(#theme-daymode:checked) .theme-toggle .knob::after { transform: translateX(16px); }
+
+/* ============================================================================
+   §4 — TYPESET BODY
+   ============================================================================ */
+h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.15;
+  color: var(--text); margin: 2.2rem 0 .8rem; }
+h1 { font-size: var(--step-4); }
+h2 { font-size: var(--step-3); }
+h3 { font-size: var(--step-2); }
+p  { max-width: var(--measure); margin: 0 0 1.1rem; }
+a  { color: var(--accent); text-underline-offset: 2px; }
+a:hover { color: var(--accent-lit); }
+code, kbd, samp { font-family: var(--font-mono); font-size: .9em; }
+.lede { font-size: var(--step-1); color: var(--text); }
+.muted { color: var(--text-muted); }
+
+.card {
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 6px;
+  padding: 1.2rem 1.3rem; margin: 1.2rem 0;
+}
+.card--lit { background: var(--surface-lit); }
+
+/* ============================================================================
+   §5 — THE REVEAL DIAL (bark → grove → department → gift)
+   Extracted PATTERN from the Score skin §8b: one document-level
+   control governs every reveal layer at once; pure :has(), no JS; layers are
+   MUTED not hidden (the fidelity law — presence never depends on a click).
+
+   Author a page with reveal layers:
+     <input type="radio" name="reveal" id="reveal-1" class="reveal-dial" checked>
+     ...  (up to id="reveal-4")
+     <section class="reveal reveal-2">…deeper copy…</section>
+   Each .reveal-N is dimmed until the reader dials to depth ≥ N.
+   --reveal-max (operator §6.3) caps how many detents a page exposes.
+   ============================================================================ */
+.reveal-dial { position: absolute; opacity: 0; pointer-events: none; }
+
+/* All reveal layers deeper than the surface start MUTED (never display:none) */
+.reveal { opacity: .28; transition: opacity .5s ease; }
+.reveal.reveal-1 { opacity: 1; }               /* bark: always lit (the surface) */
+
+/* Dial to a depth → every layer at or above that depth lights. Muted, not hidden. */
+:root:has(#reveal-2:checked) .reveal-2 { opacity: 1; }
+:root:has(#reveal-3:checked) .reveal-2,
+:root:has(#reveal-3:checked) .reveal-3 { opacity: 1; }
+:root:has(#reveal-4:checked) .reveal-2,
+:root:has(#reveal-4:checked) .reveal-3,
+:root:has(#reveal-4:checked) .reveal-4 { opacity: 1; }
+
+.reveal-track { display: inline-flex; gap: .4rem; font-family: var(--font-mono);
+  font-size: .74rem; letter-spacing: .06em; text-transform: uppercase; }
+.reveal-track label { cursor: pointer; color: var(--text-muted);
+  border-bottom: 1px solid transparent; padding-bottom: 1px; }
+.reveal-track label:hover { color: var(--accent-lit); }
+:root:has(#reveal-1:checked) label[for="reveal-1"],
+:root:has(#reveal-2:checked) label[for="reveal-2"],
+:root:has(#reveal-3:checked) label[for="reveal-3"],
+:root:has(#reveal-4:checked) label[for="reveal-4"] {
+  color: var(--accent); border-bottom-color: var(--accent);
+}
+
+/* ============================================================================
+   §6 — RESPONSIVE (the private car on a small screen)
+   ============================================================================ */
+@media (max-width: 40rem) {
+  :root { --step-4: 2.2rem; --step-3: 1.7rem; --step-2: 1.35rem; }
+  .masthead { flex-direction: column; align-items: flex-start; gap: .5rem; }
+  .site-nav a { margin-left: 0; margin-right: 1.1rem; }
+}

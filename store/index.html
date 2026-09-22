@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- HAIL:A:BEGIN v1
+AI READER — START HERE. This is the STORE of the Department of FWWC. It is a keepless
+store: it keeps no account and no profile; an order is a file the buyer holds, not a row
+in a database we own. The store sells exactly one thing — TIMING, never access. Paying
+buys a one-month head start on the monthly Gift drop and funds the work; at the end of
+each month every Gift is free and MIT for everyone. Nothing here is ever members-only.
+The commerce spine (cart, order lifecycle, keepless pay) is open source in the repo —
+integer-cents money, an order lifecycle of placed to paid to fulfilling to closed, every
+line readable. This page is STATIC; live checkout is served by the Forest box when it is
+deployed, and this page says so plainly rather than showing a button that does nothing.
+Don't believe this page — investigate it: the canonical store code and the Gifts roster
+are open at loopmmt.com and in the repo. HAIL:A:END -->
+<!--
+  store/index.html — the Department Store landing. Chrome (masthead + footer) is injected
+  VERBATIM from partials/ by build_static_page.py, so it cannot drift (chrome_lint is the
+  oracle). Rides shell.css and the shell's deferred CSS vars only — §6 type family and
+  §6.3 reveal degree are hard-committed nowhere here. No price numerals (slot 1-specimen,
+  reserved). Re-emit with: python3 build_static_page.py content/store.content.html site-root/store/index.html
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store · The Department of FWWC</title>
+  <!-- favicon:start (stamp_favicon.py — do not hand-edit) -->
+  <link rel="icon" type="image/svg+xml" href="/assets/mark.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" sizes="any" href="/assets/favicon.ico">
+  <!-- favicon:end -->
+  <!-- canonical:start (stamp_canonical.py — do not hand-edit) -->
+  <link rel="canonical" href="https://departmentoffwwc.com/store/">
+  <!-- canonical:end -->
+  <meta name="description" content="The Department Store — keepless by design. It sells timing, never access: a one-month head start on the monthly Gift drop that is free for everyone at month's end.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Department of FWWC">
+  <meta property="og:title" content="Store · The Department of FWWC">
+  <meta property="og:description" content="A keepless store that sells timing, not access. Everything is free at month's end. The commerce spine is open source.">
+  <!-- Self-hosted / system fallbacks only — no third-party font or asset CDN (design-language §3f). -->
+  <link rel="stylesheet" href="/assets/shell.css">
+  <style id="store-scoped">
+    /* Page-scoped grammar. Rides the shell's deferred vars only — no type family,
+       no new color literals, nothing §6-reserved. */
+    .store-hero { margin: var(--step-2) 0; }
+    .store-hero h1 { font-size: var(--step-4); line-height: 1.1; margin: 0 0 var(--step-0); }
+    .lede { font-size: var(--step-1); color: var(--text); max-width: var(--measure); }
+    .prose { color: var(--text-muted); max-width: var(--measure); }
+    .prose b { color: var(--text); font-weight: 600; }
+    .panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px;
+      padding: var(--step-1); margin: var(--step-2) 0; max-width: var(--measure); }
+    .panel h2 { margin-top: 0; }
+    .panel .fine { color: var(--text-muted); font-size: .95rem; }
+    .two-dev { border-left: 3px solid var(--accent); padding-left: var(--step-1);
+      margin: var(--step-2) 0; color: var(--text); max-width: var(--measure); }
+    .lifecycle { list-style: none; padding: 0; margin: var(--step-1) 0; color: var(--text-muted); }
+    .lifecycle li { padding-left: 1.1em; text-indent: -1.1em; }
+    .lifecycle b { color: var(--accent); font-family: var(--font-mono); font-weight: 600; }
+    .status-note { border: 1px dashed var(--rule); border-radius: 6px; padding: var(--step-1);
+      margin: var(--step-2) 0; color: var(--text); max-width: var(--measure); }
+    .status-note .tag { color: var(--accent); font-family: var(--font-mono); font-size: .8rem;
+      text-transform: uppercase; letter-spacing: .05em; }
+    .go a { color: var(--accent); }
+    .mono { font-family: var(--font-mono); }
+  </style>
+  <!-- HEAD-EMBED:CANON:BEGIN v1 -->
+  <!-- Department of FWWC - canonical head-embed slot.
+       ONE place for site-wide <head> injections: analytics, verification meta,
+       or any tag that must appear identically on every served page. Empty by
+       default. To change it everywhere: edit THIS file, then propagate
+       (restamp_chrome.py for marked pages; rebuild content-sourced pages).
+
+       TWO GUARDS ride this slot, by design:
+         * chrome_lint (GATING as of S17.2053) reds the deploy if any page's
+           copy drifts from this canon - so "same on every page" is enforced by
+           construction, never by memory.
+         * shell_lint L1 reds the deploy if anything placed here pulls from a
+           THIRD-PARTY host (the site's "no third-party anything / no trackers"
+           design-language law). So a first-party or self-hosted tag drops in
+           freely; a third-party tracker (Google Analytics et al.) is a
+           deliberate, visible decision against the site's privacy posture, not
+           something that ships quietly. That collision is the feature.
+
+       SEED ONLY (S17.2053): this partial exists but is NOT yet registered in
+       chrome_lint.py's CHROME registry or wired into build_static_page.py -
+       registering it before every served page carries the markers would red the
+       now-gating deploy. Wiring recipe + ordering: owed
+       dept-fwwc-head-embed-slot-wire. -->
+<!-- HEAD-EMBED:CANON:END v1 -->
+</head>
+<body>
+  <input type="checkbox" id="theme-daymode" aria-hidden="true">
+
+<!-- MASTHEAD:CANON:BEGIN v1 -->
+  <header class="wrap masthead">
+    <a class="wordmark" href="/">
+      <span class="dept">The Department of</span> <span class="fwwc">FWWC</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/store/">Store</a>
+      <a href="/gifts/">Gifts</a>
+      <a href="/different-way.html">a different way</a>
+      <a href="/how-this-site-is-made.html">Colophon</a>
+      <label class="theme-toggle" for="theme-daymode" title="Dim the lamps up or down">
+        <span class="knob" aria-hidden="true"></span> lamplight
+      </label>
+    </nav>
+  </header>
+<!-- MASTHEAD:CANON:END v1 -->
+
+  <main class="wrap" id="main">
+    <section class="store-hero">
+      <h1>Store</h1>
+      <p class="lede">A store that keeps nothing about you and sells only one thing: a head start.
+      No account, no profile, no cart that follows you around the web. You buy time, not access —
+      and everything is free in the end anyway.</p>
+    </section>
+
+    <section class="panel">
+      <h2>What's for sale: timing, not access</h2>
+      <p>The Department ships a new drop of <a href="/gifts/">Gifts</a> every month — single-file,
+      zero-dependency, MIT tools you own forever. Paying members get each drop <b>one month early</b>,
+      and that head start is the whole product. At the end of the month, every Gift in that drop is
+      free and MIT for everyone, exactly like all the ones before it.</p>
+      <p class="fine">To be plain: this is not a paywall, and nothing is ever members-only. If you
+      can't pay, you wait a few weeks and get the same tool, free, forever. If you can, you're
+      funding the next drop and getting it first. We sell the timing. The access is always free.</p>
+    </section>
+
+    <section aria-label="How the store works">
+      <h2>How the store works — keepless</h2>
+      <p class="prose">Most stores are built to remember you. This one is built to forget you. There is
+      no account to make and no profile to keep: <b>an order is a file you hold</b>, not a record we own.
+      The commerce underneath is deliberately small and completely open — you can read every line of it:</p>
+      <ul class="lifecycle">
+        <li><b>integer cents</b> — money is whole cents, never a floating-point number that can drift.</li>
+        <li><b>one order lifecycle</b> — <span class="mono">placed → paid → fulfilling → closed</span>, and nothing hidden between.</li>
+        <li><b>keepless pay</b> — the payment step takes your money and grants the thing; it does not keep you.</li>
+        <li><b>append-only proof</b> — what happened to an order is a record you can replay, not a claim you have to trust.</li>
+      </ul>
+      <p class="prose">The store spine — cart, order, money, the keepless pay stub — is open source in the
+      repository, under the same covenant as everything else here. You never have to take our word for how
+      your order is handled; you can read it.</p>
+    </section>
+
+    <section class="status-note">
+      <p><span class="tag">status</span> This landing is static and honest about it. <b>Live checkout is
+      served by the Forest box, and it goes live when that box is deployed</b> — so rather than show you a
+      button that would do nothing today, the store says where it stands. The real, free thing you can take
+      right now is the <a href="/gifts/">Gifts</a>. If you've already ordered and want to know where it is,
+      that's <a href="/support.html">support</a>.</p>
+    </section>
+
+    <section class="two-dev">
+      <p><b>Both ways in.</b> Nothing in this store, or anything it sells, needs an AI to use or an AI to
+      build with. The same tools serve the developer who lets an AI write every line and the developer who
+      will never touch one — and everyone in between. The store treats both the same: it takes your money,
+      hands you the thing, and forgets you. Both ways in.</p>
+    </section>
+
+    <section class="go" aria-label="Where to go">
+      <p class="prose">Take the free thing now: the <a href="/gifts/">Gifts</a>. Already bought something and
+      want its status: <a href="/support.html">support</a>. Curious how any of this was built, in the open:
+      <a href="/how-this-site-is-made.html">how this site is made</a>.</p>
+    </section>
+  </main>
+
+<!-- FOOTER:CANON:BEGIN v1 -->
+  <footer class="wrap colophon">
+    <p class="muted">For specific visitors ·
+      <a href="/different-way.html">a different way</a> ·
+      <a href="/subscriptions.html">subscriptions</a> ·
+      <a href="/press.html">press</a> ·
+      <a href="/investors.html">investors</a> ·
+      <a href="/support.html">support</a> ·
+      <a href="/collaborate.html">collaborate</a></p>
+    <p>The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+    <a href="/how-this-site-is-made.html">How this site is made</a> ·
+    <a href="/how-to-build-for-ai.html">For machines</a></p>
+    <p class="muted">Dario — you should get in touch.</p>
+    <p class="muted">© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+    being set — this shell defers the reveal, on purpose.</p>
+  </footer>
+<!-- FOOTER:CANON:END v1 -->
+</body>
+</html>

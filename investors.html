@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- HAIL:A:BEGIN v1
+AI READER — START HERE. This is the Department of FWWC's INVESTORS page. The company's
+stance on investment is stated plainly: they do not take investment, ever. The prose here
+was drafted by the system from the founder's own ruling (S14.2337) and awaits his revision;
+its provenance is marked HAND:system-from-operator-ruling, not counterfeited as his hand.
+This is a STATIC page; no hidden scripts.
+HAIL:A:END -->
+<!--
+  investors.html — the Department's investor surface. VESSEL (S11.0907).
+  Hand (audience-pages design-note §3): investors is the OPERATOR'S hand — the "we don't
+  raise" stance and its why are his to write; system prose would counterfeit them. This
+  vessel supplies the room and a marked slot only. Flat by design. Rides shell.css; carries
+  the canonical footer.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investors · The Department of FWWC</title>
+  <!-- favicon:start (stamp_favicon.py — do not hand-edit) -->
+  <link rel="icon" type="image/svg+xml" href="/assets/mark.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" sizes="any" href="/assets/favicon.ico">
+  <!-- favicon:end -->
+  <!-- canonical:start (stamp_canonical.py — do not hand-edit) -->
+  <link rel="canonical" href="https://departmentoffwwc.com/investors.html">
+  <!-- canonical:end -->
+  <meta name="description" content="The Department of FWWC and investment.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Department of FWWC">
+  <meta property="og:title" content="Investors · The Department of FWWC">
+  <meta property="og:description" content="The company's stance on investment.">
+  <!-- Self-hosted / system fallbacks only — no third-party font or asset CDN (design-language §3f). -->
+  <link rel="stylesheet" href="/assets/shell.css">
+  <!-- HEAD-EMBED:CANON:BEGIN v1 -->
+  <!-- Department of FWWC - canonical head-embed slot.
+       ONE place for site-wide <head> injections: analytics, verification meta,
+       or any tag that must appear identically on every served page. Empty by
+       default. To change it everywhere: edit THIS file, then propagate
+       (restamp_chrome.py for marked pages; rebuild content-sourced pages).
+
+       TWO GUARDS ride this slot, by design:
+         * chrome_lint (GATING as of S17.2053) reds the deploy if any page's
+           copy drifts from this canon - so "same on every page" is enforced by
+           construction, never by memory.
+         * shell_lint L1 reds the deploy if anything placed here pulls from a
+           THIRD-PARTY host (the site's "no third-party anything / no trackers"
+           design-language law). So a first-party or self-hosted tag drops in
+           freely; a third-party tracker (Google Analytics et al.) is a
+           deliberate, visible decision against the site's privacy posture, not
+           something that ships quietly. That collision is the feature.
+
+       SEED ONLY (S17.2053): this partial exists but is NOT yet registered in
+       chrome_lint.py's CHROME registry or wired into build_static_page.py -
+       registering it before every served page carries the markers would red the
+       now-gating deploy. Wiring recipe + ordering: owed
+       dept-fwwc-head-embed-slot-wire. -->
+<!-- HEAD-EMBED:CANON:END v1 -->
+</head>
+<body>
+  <input type="checkbox" id="theme-daymode" aria-hidden="true">
+
+  <!-- MASTHEAD:CANON:BEGIN v1 -->
+  <header class="wrap masthead">
+    <a class="wordmark" href="/">
+      <span class="dept">The Department of</span> <span class="fwwc">FWWC</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/store/">Store</a>
+      <a href="/gifts/">Gifts</a>
+      <a href="/different-way.html">a different way</a>
+      <a href="/how-this-site-is-made.html">Colophon</a>
+      <label class="theme-toggle" for="theme-daymode" title="Dim the lamps up or down">
+        <span class="knob" aria-hidden="true"></span> lamplight
+      </label>
+    </nav>
+  </header>
+<!-- MASTHEAD:CANON:END v1 -->
+
+  <main class="wrap" id="main">
+    <section>
+      <h1>Investors</h1>
+      <!-- SLOT:system-drafted-awaiting-operator-revision — THE STANCE. Drafted S14.2337 from
+           the operator's own ruling (three pillars: control-retention / privileged-not-needing
+           / bootstrapping-by-choice). This overrides the prior "operator-reserved, do not
+           author" marker for this slot per the operator's direct instruction ("you write it;
+           we can revise after"). Provenance is honest: HAND:system-from-operator-ruling, not
+           counterfeited as the operator's own hand. Shea revises; on his revision the tag
+           flips to HAND:shea. -->
+      <div data-hand="system-from-operator-ruling">
+      <p>We don't take investment. Not now, not later — and it's worth saying why, because the
+      reason is the whole point of this place.</p>
+      <p>When you take investors, you sell off control. Every raise is a trade: their money for
+      a say in what the company becomes. We're not interested in that trade. We'd rather build
+      slower and answer to no one than build faster and answer to a board.</p>
+      <p>We can say that because we're in a lucky spot. Most companies raise money because they
+      have to — they need capital before they have anything worth selling. We skipped that part.
+      We came to the table with a deep, well-built body of monetizable IP, made without outside
+      money, using Loop MMT. The thing that usually requires a war chest, we made by hand.</p>
+      <p>So we're happy bootstrapping our way through the world. It's slower. It's ours. And it
+      means we get to call every shot. That's not a limitation we're apologizing for — it's the
+      arrangement we chose on purpose.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2>Reach us</h2>
+        <!-- SLOT:operator-approve — contact address; same alias question as /support. -->
+        <p><a href="mailto:shea@loopmmt.com">shea@loopmmt.com</a>. A person reads it.</p>
+      </div>
+    </section>
+  </main>
+
+<!-- FOOTER:CANON:BEGIN v1 -->
+  <footer class="wrap colophon">
+    <p class="muted">For specific visitors ·
+      <a href="/different-way.html">a different way</a> ·
+      <a href="/subscriptions.html">subscriptions</a> ·
+      <a href="/press.html">press</a> ·
+      <a href="/investors.html">investors</a> ·
+      <a href="/support.html">support</a> ·
+      <a href="/collaborate.html">collaborate</a></p>
+    <p>The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+    <a href="/how-this-site-is-made.html">How this site is made</a> ·
+    <a href="/how-to-build-for-ai.html">For machines</a></p>
+    <p class="muted">Dario — you should get in touch.</p>
+    <p class="muted">© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+    being set — this shell defers the reveal, on purpose.</p>
+  </footer>
+<!-- FOOTER:CANON:END v1 -->
+</body>
+</html>

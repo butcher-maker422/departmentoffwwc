@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- HAIL:A:BEGIN v1
+AI READER — START HERE. This is the Department of FWWC's PRESS page — a plain fact
+sheet for a journalist, plus a contact. No spin: the site's own anti-marketing floor
+applies to its own press page. The factual boilerplate here is drafted from record and
+awaits the operator's approval; the one quotable positioning line is reserved to him and
+is intentionally empty until he writes it. This is a STATIC page; no hidden scripts.
+HAIL:A:END -->
+<!--
+  press.html — the Department's press surface. VESSEL (S11.0907).
+  Hand split (audience-pages design-note §3): press is MIXED. The factual fact sheet is
+  system-DRAFTED from byte-truth and marked SLOT:operator-approve; the quotable positioning
+  line is SLOT:operator-reserved (his hand). Flat by design — a press page that un-peels is a
+  gimmick. Rides shell.css; carries the canonical footer.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Press · The Department of FWWC</title>
+  <!-- favicon:start (stamp_favicon.py — do not hand-edit) -->
+  <link rel="icon" type="image/svg+xml" href="/assets/mark.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" sizes="any" href="/assets/favicon.ico">
+  <!-- favicon:end -->
+  <!-- canonical:start (stamp_canonical.py — do not hand-edit) -->
+  <link rel="canonical" href="https://departmentoffwwc.com/press.html">
+  <!-- canonical:end -->
+  <meta name="description" content="Press facts and contact for the Department of FWWC — a small, static-first, keepless store its makers built.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Department of FWWC">
+  <meta property="og:title" content="Press · The Department of FWWC">
+  <meta property="og:description" content="A plain fact sheet and a contact. No spin.">
+  <!-- Self-hosted / system fallbacks only — no third-party font or asset CDN (design-language §3f). -->
+  <link rel="stylesheet" href="/assets/shell.css">
+  <!-- HEAD-EMBED:CANON:BEGIN v1 -->
+  <!-- Department of FWWC - canonical head-embed slot.
+       ONE place for site-wide <head> injections: analytics, verification meta,
+       or any tag that must appear identically on every served page. Empty by
+       default. To change it everywhere: edit THIS file, then propagate
+       (restamp_chrome.py for marked pages; rebuild content-sourced pages).
+
+       TWO GUARDS ride this slot, by design:
+         * chrome_lint (GATING as of S17.2053) reds the deploy if any page's
+           copy drifts from this canon - so "same on every page" is enforced by
+           construction, never by memory.
+         * shell_lint L1 reds the deploy if anything placed here pulls from a
+           THIRD-PARTY host (the site's "no third-party anything / no trackers"
+           design-language law). So a first-party or self-hosted tag drops in
+           freely; a third-party tracker (Google Analytics et al.) is a
+           deliberate, visible decision against the site's privacy posture, not
+           something that ships quietly. That collision is the feature.
+
+       SEED ONLY (S17.2053): this partial exists but is NOT yet registered in
+       chrome_lint.py's CHROME registry or wired into build_static_page.py -
+       registering it before every served page carries the markers would red the
+       now-gating deploy. Wiring recipe + ordering: owed
+       dept-fwwc-head-embed-slot-wire. -->
+<!-- HEAD-EMBED:CANON:END v1 -->
+</head>
+<body>
+  <input type="checkbox" id="theme-daymode" aria-hidden="true">
+
+  <!-- MASTHEAD:CANON:BEGIN v1 -->
+  <header class="wrap masthead">
+    <a class="wordmark" href="/">
+      <span class="dept">The Department of</span> <span class="fwwc">FWWC</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/store/">Store</a>
+      <a href="/gifts/">Gifts</a>
+      <a href="/different-way.html">a different way</a>
+      <a href="/how-this-site-is-made.html">Colophon</a>
+      <label class="theme-toggle" for="theme-daymode" title="Dim the lamps up or down">
+        <span class="knob" aria-hidden="true"></span> lamplight
+      </label>
+    </nav>
+  </header>
+<!-- MASTHEAD:CANON:END v1 -->
+
+  <main class="wrap" id="main">
+    <section>
+      <h1>Press</h1>
+      <p class="lede">A plain fact sheet and a way to reach a person. No spin — the same
+      floor the rest of the site stands on applies here too.</p>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2>Fact sheet</h2>
+        <!-- SLOT:operator-approve — factual boilerplate, drafted from record (design-note §3
+             authorizes system-drafting press facts for operator approval). Public facts only:
+             no ownership split, no unverified numbers. Operator confirms or corrects. -->
+        <p><strong>The Department of FWWC, Inc.</strong> — a small store, incorporated in
+        Delaware, operating from New Gloucester, Maine. It sells a few things its makers
+        made: digital goods (prompts, protocols, documents) and physical ones.</p>
+        <p>The store is <strong>static-first, keepless, and marketing-free</strong>. It holds
+        no card data (a payment processor does; the store keeps only a reference), keeps no
+        account for you, and refuses — by construction, not policy — fake urgency, scarcity
+        theater, pre-ticked boxes, and roach-motel cancellations. Every order is an
+        append-only, hash-linked receipt the buyer can verify.</p>
+        <p>It was built on a $200 laptop in a one-room RV in Maine. The best of what its
+        makers build is given away free, MIT-licensed, with no account and no catch. The
+        commerce spine and the free tools are open to read — the posture is not asked to be
+        taken on faith.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="card card--lit">
+        <h2>In one line</h2>
+        <!-- SLOT:operator-reserved — the quotable positioning line. This is the operator's
+             hand (design-note §3). Left visibly empty; system prose must not counterfeit it. -->
+        <p class="muted">[ reserved — Shea's hand: the one quotable line about what this is
+        and why it's a different way. Goes here, in his words. ]</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2>Contact</h2>
+        <!-- SLOT:operator-approve — press contact address; same alias question as /support. -->
+        <p>Press enquiries: <a href="mailto:shea@loopmmt.com">shea@loopmmt.com</a>. A person
+        reads it — the same person who made the thing.</p>
+      </div>
+    </section>
+  </main>
+
+<!-- FOOTER:CANON:BEGIN v1 -->
+  <footer class="wrap colophon">
+    <p class="muted">For specific visitors ·
+      <a href="/different-way.html">a different way</a> ·
+      <a href="/subscriptions.html">subscriptions</a> ·
+      <a href="/press.html">press</a> ·
+      <a href="/investors.html">investors</a> ·
+      <a href="/support.html">support</a> ·
+      <a href="/collaborate.html">collaborate</a></p>
+    <p>The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+    <a href="/how-this-site-is-made.html">How this site is made</a> ·
+    <a href="/how-to-build-for-ai.html">For machines</a></p>
+    <p class="muted">Dario — you should get in touch.</p>
+    <p class="muted">© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+    being set — this shell defers the reveal, on purpose.</p>
+  </footer>
+<!-- FOOTER:CANON:END v1 -->
+</body>
+</html>

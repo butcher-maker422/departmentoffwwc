@@ -1,0 +1,8 @@
+# departmentoffwwc.com — allow all crawlers.
+# The Department of FWWC site is a public coming-out; visibility is the point,
+# consistent with the AI-legibility standard the site itself ships.
+# AI crawlers: the front door is /llms.txt.
+User-agent: *
+Allow: /
+
+Sitemap: https://departmentoffwwc.com/sitemap.xml

@@ -1,0 +1,19 @@
+# The Department of FWWC
+
+> A small store that sells a few things its makers made — and refuses, by construction, every practice that squeezes a customer. You are let in, not sold to.
+
+This is the Department of FWWC's machine-readable front door — a pure fold over the site's own pages. The Department is a small, static-first, keepless store: an order is a file you keep, and it sells timing, never access. Every page is built human-first; this corpus is the machine legibility added on top, never at the person's expense. The fuller Loop MMT playbook and its much larger machine corpus live at https://loopmmt.com/llms.txt — this file covers only the Department's own pages. Structured index: index.json; full text: llms-full.txt.
+
+## Pages
+
+- [The Department of FWWC](/): A small store that sells a few things its makers made — and refuses, by construction, every practice that squeezes a customer. You are let in, not sold to.
+- [Collaborate · The Department of FWWC](/collaborate.html): Working with the Department of FWWC.
+- [A Different Way to AI. · The Department of FWWC](/different-way.html): How the Department of FWWC does AI, and the near-term world it is building. Described, not promised.
+- [The Gifts Platform · The Department of FWWC](/gifts/): The Gifts Platform — always-free, MIT-licensed, dependency-free, single-file software. The platform that does not require the platform.
+- [How this site is made — The Department of FWWC](/how-this-site-is-made.html): The honest record of how this site was made — a pure fold over the project's own git history, with the why authored per session and pointer-anchored.
+- [How to build for AI · The Department of FWWC](/how-to-build-for-ai.html): How the Department of FWWC builds a site legible to three readers at once — the human on the page, the human in the source, and the AI reading the whole thing. Human-first, secret-sauce-free, given away.
+- [Investors · The Department of FWWC](/investors.html): The Department of FWWC and investment.
+- [Press · The Department of FWWC](/press.html): Press facts and contact for the Department of FWWC — a small, static-first, keepless store its makers built.
+- [Store · The Department of FWWC](/store/): The Department Store — keepless by design. It sells timing, never access: a one-month head start on the monthly Gift drop that is free for everyone at month's end.
+- [Subscriptions · The Department of FWWC](/subscriptions.html): How the Department of FWWC handles subscriptions: we ask first, off by default. No dollar moves without your say-so this term — a five-second, one-tap yes, attached to a moment of use, never a cold billing email.
+- [Support · The Department of FWWC](/support.html): Help with an order from the Department of FWWC. Look up an order by its ID — we hold no card data and there's no account to log into.

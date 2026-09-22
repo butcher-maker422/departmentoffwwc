@@ -1,0 +1,4 @@
+# departmentoffwwc.com — security disclosure contact.
+Contact: mailto:shea@loopmmt.com
+Preferred-Languages: en
+Canonical: https://departmentoffwwc.com/.well-known/security.txt

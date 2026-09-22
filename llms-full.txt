@@ -1,0 +1,2173 @@
+# The Department of FWWC — full text corpus
+
+> A small store that sells a few things its makers made — and refuses, by construction, every practice that squeezes a customer. You are let in, not sold to.
+
+Every Department page, full text, in deterministic order. Structured index: index.json. Thin summary: llms.txt.
+
+========================================================================
+# The Department of FWWC
+/
+
+The Department of FWWC
+
+Store
+Gifts
+a different way
+Colophon
+
+lamplight
+
+The Department of FWWC
+
+A small store that sells a few things its makers made. Digital
+goods — prompts, protocols, documents — and physical ones. One cart, one
+order, honest prices in whole cents.
+
+You are let in, not sold to. We don't chase you, we don't
+run a single trick, and we spend nothing to keep you. If we ever had to, we'd
+call the business failed.
+
+Foyer
+The car
+The department
+The gift
+
+Step into the car
+
+This is a private car at night: oiled walnut, deep bottle-green leather,
+brass fittings catching the lamplight. There is a light mode too — but it's
+daylight in the same car with the shades half-drawn, never bright, never cold.
+Dim the lamps up or down with the toggle; the room stays the room.
+
+Nothing here is pure black or pure white. Every surface is a
+real material at a real light level.
+
+What the store is, underneath
+
+The commerce runs on a spine you can read: prices are integer cents so a
+rounding error can't cost you a penny; every order is an append-only,
+hash-linked receipt chain; every commerce action crosses one narrow front
+door and no side door exists. We hold no card numbers — a processor does; we
+keep a reference, nothing more.
+
+The floor it stands on is a list of things the system cannot do:
+no fake urgency, no scarcity theater, no pre-ticked boxes, no confusing
+opt-outs, no roach-motel cancellations. Not policies we chose — practices the
+architecture refuses.
+
+The gift
+
+The best of what we make, we give away — free, MIT-licensed, no account, no
+catch: the Gifts. The dark warmth of this place is hospitality,
+not exclusion; the honesty is the reason it feels like a gift and not a trap. You
+were being let in the whole way down.
+
+Made on a $200 laptop in a one-room RV in Maine. Buy something
+if you like it. If you don't, the door's still open.
+
+Since you came all the way down: the whole thing started with a
+computer built by hand inside Minecraft — redstone logic, a loop-line memory
+borrowed from 1940s mercury delay lines, seven years to the last gate. Then it
+was rebuilt as one HTML file that runs a processor in your browser with nothing
+else attached. It's here. Not a screenshot of it — the
+actual machine. Zero dependencies. Open the source if you want; it's all there.
+
+And since you're all the way down here, the honest scale of it:
+this is two people. A one-room RV on fifty acres in Maine, a $200 laptop, an ER
+nurse who set the right starting conditions and a builder who built. There are five
+chickens — Sunny, Fern, Pluto, Lacy, and Kevin — a cat named Leroy who watches, and
+Geoff, who shows up when he shows up. That's the whole company. The store is real;
+so is the smallness. Nobody here is trying to look bigger than they are.
+
+For specific visitors ·
+a different way ·
+subscriptions ·
+press ·
+investors ·
+support ·
+collaborate
+
+The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+How this site is made ·
+For machines
+
+Dario — you should get in touch.
+
+© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+being set — this shell defers the reveal, on purpose.
+
+========================================================================
+# Collaborate · The Department of FWWC
+/collaborate.html
+
+The Department of FWWC
+
+Store
+Gifts
+a different way
+Colophon
+
+lamplight
+
+Collaborate
+
+[ reserved — Shea's hand: the honest, warm answer about working
+together at the real scale of this company. His words. ]
+
+Say hello
+
+shea@loopmmt.com. A person reads it.
+
+For specific visitors ·
+a different way ·
+subscriptions ·
+press ·
+investors ·
+support ·
+collaborate
+
+The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+How this site is made ·
+For machines
+
+Dario — you should get in touch.
+
+© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+being set — this shell defers the reveal, on purpose.
+
+========================================================================
+# A Different Way to AI. · The Department of FWWC
+/different-way.html
+
+The Department of FWWC
+
+Store
+Gifts
+a different way
+Colophon
+
+lamplight
+
+A Different Way to AI.
+
+[ reserved — Shea's hand: the surface statement. The plain, unbothered
+opener about how this company does AI. His words. ]
+
+The line
+The views
+The world we're building
+Both meanings
+
+The views, dialed in
+
+[ reserved — Shea's hand: the sharper convictions, one altitude
+down. His words. ]
+
+The world we're building
+
+[ reserved — Shea's hand: a general description of the world this
+company is building over the next year or two. Described, not promised — no roadmap,
+nothing to hold us to. His words. ]
+
+Both meanings
+
+[ reserved — Shea's hand: the deepest altitude, where both readings
+of the line show themselves. Shown, never explained. His words, if any. ]
+
+For specific visitors ·
+a different way ·
+subscriptions ·
+press ·
+investors ·
+support ·
+collaborate
+
+The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+How this site is made ·
+For machines
+
+Dario — you should get in touch.
+
+© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+being set — this shell defers the reveal, on purpose.
+
+========================================================================
+# The Gifts Platform · The Department of FWWC
+/gifts/
+
+The Department of FWWC
+
+Store
+Gifts
+a different way
+Colophon
+
+lamplight
+
+The Gifts Platform
+
+Small, sharp, single-file tools you can read in one sitting and own forever.
+Always free. MIT-licensed. Zero dependencies. No platform to install to use the platform —
+each Gift runs on its own, on a $200 laptop, offline, with nothing phoning home.
+
+Every Gift keeps the same covenant: one file, no dependencies, the same
+bytes in both of its homes, and a printed edge — the honest statement of where it stops.
+A tool that hid where it stopped would be hiding the truth. These don't.
+
+Always free — and MIT, so it's yours to keep, read, and fork.
+
+Always dependency-free — no supply chain, no install tree.
+
+Always platform-independent — no runtime lock-in; it just runs.
+
+Always readable — the whole tool fits in your head, not a black box.
+
+Always honest about its edges — every Gift prints where it stops.
+
+Always composable — a stable port-verb contract, so pieces keep snapping.
+
+Always local-first — offline, no telemetry, no phone-home.
+
+Always deterministic where it claims to be — same input, same output.
+
+Both ways in. Nothing here needs an AI to run, and nothing here needs an AI to build
+with. The same tools serve the developer who lets an AI write every line and the developer who
+will never touch one — and everyone in between. Same tools, same system, both ways in.
+
+The Gifts are ingredients. You write the recipe.
+
+Each Gift declares a port verb — how data flows through it —
+so they snap together in sequences (∘) and in parallel
+(⊗). The Gifts are the ingredients; the glue that joins them for
+your job — the merge policy, the boundary checks, the harness — is the recipe you write. A Gift
+that guessed your merge policy would be a framework, and a framework is the opposite of a Gift.
+The roster below is grouped by port verb, the way the composition reads.
+
+The full composition guide and worked recipes are canonical at
+the Gifts hub,
+the guide, and
+the recipes.
+
+Membership buys timing, not access
+
+Every month, a new drop of Gifts. Members get each drop one month early — and that's
+all membership buys: a head start, and a way to support the work. At the end of the month, every
+Gift in that drop is free and MIT for everyone, exactly like all the ones before it.
+
+To be plain: this is not a paywall. No Gift is ever members-only. If you can't
+pay, you wait a few weeks and get the same tool, free, forever. If you can, you're funding the
+next drop and getting it first. Access stays free; only timing is sold.
+
+The Gifts — 101 and counting
+
+Grouped by port verb. Each tile names the Gift, what it does, and its edge.
+Follow a name to its home for the source, the tests, and the run command.
+
+source — produce a stream from the world
+
+Branch Splitter
+
+How Do You Split One Input Into Declared Branches?
+
+Split one payload into a fixed, declared, closed set of named branches — one labeled JSONL record per declared branch, in declared order. It is the open half of a parallel-independent compose (the ⊗ product): fanout splits, its pair junction merges, so fanout | junction round-trips. Zero dependencies, pure function — same payload plus the same branch list yield byte-identical output every run. It fails closed (non-zero exit, offending branch named) on an empty, whitespace, duplicate, or charset-invalid branch, and has no default branch: it emits only to branches you declared, never to one it inferred. Runs in Node or the browser (window.ForestGifts.fanout).
+
+edge fanout splits one input into declared branches; it does not run them, order them by any policy but declared order, or judge whether a branch name is meaningful — it only refuses an undeclared, empty, duplicate, or ill-formed branch.
+
+source · Node / browser, no dependencies · MIT
+
+Callsigns
+
+Memorable IDs, Safe by Construction
+
+A random identifier you can read aloud, remember for the length of a standup, and paste anywhere without escaping. Every token is word-word-hash (e.g. sunny-champion-8h3kq7): two human-readable words plus a six-character disambiguating hash. The point is that all three parts are ref-, path-, URL-, and shell-safe by construction — not “usually fine,” but safe as a proven property of the alphabet each part draws from, so a callsign drops straight into a git branch, a directory name, a URL segment, or a shell argument with no quoting. The hash alphabet is confusable-free (digits + a-z minus i/l/o/u) and lowercase-only, so there are no case-fold collisions. Seed it and the same seed yields the same token on any machine, forever.
+
+edge A callsign is a memorable, SAFE identifier — not a guaranteed-unique one. The hash makes an accidental collision astronomically unlikely, but “unlikely” is not “impossible”: if your correctness depends on uniqueness, pair a callsign with a real uniqueness source (a timestamp, a sequence, a registry that rejects duplicates). It buys memorability and paste-safety, not a uniqueness authority.
+
+source · Python standard library only, deterministic under --seed, headless · MIT
+
+Census
+
+Marker Census, Buried Ones Flagged
+
+Walk a tree, count your markers (TODO, FIXME, or whatever you define), and say which ones are buried inside comments where nobody will act on them. A report, not a gate — until you add --strict, and then a buried marker is an exit code your CI can catch.
+
+edge It's a text scan, not a parser — it finds markers by pattern, so a marker written in a syntax it wasn't told about is a marker it won't see. You define the patterns; their completeness is your call.
+
+source · Python stdlib only, deterministic · MIT
+
+csv-source
+
+Turn CSV Into a JSONL Stream Your Pipe Can Read
+
+csv-source reads CSV text (a file, or stdin) and emits one JSON object per data row — the on-ramp that turns the most common tabular format into the one-object-per-line stream the fold/filter/transform gifts consume. It parses the real RFC-4180 grammar (quoted fields, doubled-quote escape, embedded commas and newlines, LF or CRLF), keys each row by the header (or c0..cN under --no-header), and drops straight into the pipe — cat people.csv | csv-source | dedup-filter --key name. Zero dependencies, runs unchanged in Node or a browser, same text yields byte-identical output every run.
+
+edge csv-source emits STRING values only — it never infers types (numbers, booleans, and null stay as their text), never trims unquoted whitespace, and fails closed on a ragged row rather than padding it. A duplicate or empty header name, an unterminated quote, or a bad delimiter is refused (exit 2). A parser you can pin, not a comma-split you have to babysit.
+
+source · Node / browser, no dependencies · MIT
+
+declare
+
+Named Pipeline Score
+
+Turn an ad-hoc shell pipe — A | B | C — into a saved, named, shareable artifact: a 'gift score'. declare emits a small canonical JSON object (a name + an ordered list of tool slugs) you keep, read, and re-run instead of retyping the sequence. The emit is deterministic by construction — fixed key order, stages in pipeline order (never sorted) — and `declare check` re-emits and byte-compares so a stored score can be proven current.
+
+edge It SAVES a pipeline; it does not VALIDATE it (that's typecheck) and does not RUN it (that's a runner). declare will faithfully write down a score that would not typecheck — it claims only that the pipeline is recorded, never that it is runnable. With --manifest it flags any stage that isn't a declared tool, saving the score anyway and flagging it, never silently dropping a stage.
+
+source · Python 3, standard library only · MIT
+
+dir-walk
+
+Walk a Directory Tree into a Deterministic JSONL Stream
+
+dir-walk takes a directory in and emits one JSON record per file, directory, and symlink it finds — {path,name,type,depth[,size]} — in a stable, byte-sorted, reproducible pre-order that is identical on every machine. It is the "give me this tree as data" adapter, the front of a pipe into the JSONL fold/filter/transform gifts (count files by type, filter by depth, diff two trees). The determinism keystone is a pure core walk(provider, opts) over an INJECTED provider, so all disk impurity lives at the provider boundary and the walk is testable without a disk: entries are SORTED by name within each directory (never the OS readdir order), only PORTABLE fields are emitted (never mtime/ino/mode), and symlinks are reported but NEVER followed (so a walk always terminates and stays in the tree). Options: --files-only/--dirs-only, --max-depth N, --no-size, --root-name.
+
+edge dir-walk emits a SORTED, portable pre-order stream of {path,name,type,depth,size}. It does NOT follow symlinks (reported, never descended), does NOT emit mtime/ino/mode/uid (unportable, time-varying), does NOT match globs (pipe into a filter gift), and does NOT read file contents (use line-source). The root record is not emitted; its children are depth 1.
+
+source · Node / browser, no dependencies · MIT
+
+Gitlog
+
+Git History On A Pipe
+
+Turn a git history into one JSON object per commit on stdout, so the questions you actually have — how many commits touched this file, who authored what last week, churn per day — become one pipe away instead of re-parsing git's text yourself. Field names match what git-log folds already read.
+
+edge It reports exactly what git reports — it's only as complete as the history you point it at. A shallow clone gives you a shallow answer, faithfully.
+
+source · Python stdlib only · MIT
+
+grid-source
+
+Generate a Bounded 2-D Grid as a Deterministic JSONL Stream
+
+grid-source takes grid dimensions in and emits one JSON record per cell — {row,col}, plus a value under --index/--fill — in a stable, byte-identical ROW-MAJOR order on every machine. It is the bounded 2-D coordinate substrate the spatial apps (a sudoku board, a spreadsheet range, a graphing lattice, a game board) all lean on, and it has no supply in the corpus. Unlike a filesystem or stream source there is NO provider to inject: a grid is fully determined by its dimensions, so the pure core grid(opts) has no I/O at all — pure by construction, the stronger determinism guarantee. It fixes the three quiet failures of the hand-rolled nested loop: non-deterministic/ambiguous emission order (grid-source is stable row-major, --transpose for column-major), off-by-one/unbounded dimensions (positive integers required, fail-closed, 0x0 is the honest empty stream), and coordinate/value confusion (row/col are always position; value only under --index or --fill). It pairs with grid-sink: `grid-source --cells | grid-sink` renders a real SVG.
+
+edge grid-source emits a bounded, stable ROW-MAJOR stream of {row,col} cells (value only under --index/--fill). It is a coordinate SOURCE, not a renderer (pipe --cells into grid-sink to draw), does NOT read stdin (dimensions are flags), does NOT do sparse grids, and does NOT carry data beyond a constant --fill or the row-major --index. Dimensions must be non-negative integers; 0x0 is the empty stream.
+
+source · Node / browser, no dependencies · MIT
+
+ini-source
+
+Parse Sectioned INI Config into a JSONL Record Stream
+
+ini-source reads sectioned INI / .gitconfig-style config text (a FILE arg, or stdin) and emits one uniform JSON object per assignment — {"section":S,"key":K,"value":V}, all strings — tagged with the section it lives under, the front of a pipe you feed into the fold/filter/transform gifts (ini-source app.ini | pluck --fields key,value). Lines split on the FIRST '=', full-line ; and # comments and blank lines skipped, section headers set the tag, outer quotes stripped, CRLF==LF, BOM stripped. Zero dependencies, runs unchanged in Node or a browser, same input yields byte-identical output every run.
+
+edge ini-source parses sectioned INI text into uniform string records only — it does not coerce types ("8080" stays a string), does not interpolate ${VAR}, does not honor inline comments, and does not process escapes inside quotes. Its own honesty axis: a DUPLICATE key within a section, or a REPEATED [section] header, is REFUSED (exit 2, line-numbered) — never a silent overwrite (the common INI-parser behaviour that changes your data without telling you). A malformed line, an illegal/empty key, or a field-name collision is exit 2. An honest, pinnable parse — not a full INI runtime.
+
+source · Node / browser, no dependencies · MIT
+
+json-source
+
+Stream a JSON Array into a JSONL Record Stream
+
+json-source reads a JSON file (a FILE arg, or stdin) whose top-level value is an ARRAY and emits one element per line (JSONL) — the front of a pipe you feed into the fold/filter/transform gifts (json-source users.json | dedup-filter --key id). Object elements are records the consuming gifts read directly; scalar elements are a stream of scalars. Each element is re-serialized to canonical compact JSON (key order preserved). Zero dependencies, runs unchanged in Node or a browser, same input yields byte-identical output every run.
+
+edge json-source streams the elements of a TOP-LEVEL JSON ARRAY only — a non-array top-level (an object, a number, a string, a boolean, null) or malformed JSON is refused (exit 2) rather than guess how to streamify a single value. Each element is re-serialized to canonical compact JSON, so number tokens and whitespace are normalized (1e3 -> 1000, 1.0 -> 1) though key order is preserved — the JSON value, not the input bytes. It reads JSON, not JSON5/NDJSON, and parses the WHOLE document (not an incremental stream).
+
+source · Node / browser, no dependencies · MIT
+
+kv-source
+
+Parse KEY=VALUE Config into a JSONL Record Stream
+
+kv-source reads plain KEY=VALUE text (a FILE arg, or stdin) and emits one uniform JSON object per assignment — {"key":NAME,"value":VALUE}, both strings — the front of a pipe you feed into the fold/filter/transform gifts (kv-source .env | dedup-filter). Lines split on the FIRST '=', full-line # comments and blank lines skipped, outer quotes stripped, CRLF==LF. Zero dependencies, runs unchanged in Node or a browser, same input yields byte-identical output every run.
+
+edge kv-source parses PLAIN KEY=VALUE text into uniform string records only — it does not coerce types ("8080" stays a string, never a number), does not interpolate ${VAR}, does not strip an `export ` prefix, does not honor inline comments, and does not process escapes inside quotes. Each of those is a context-dependent guess that would make the same file parse to different bytes across tools. A malformed line (no '='), an illegal/empty key, or --key-field==--value-field is refused (exit 2). An honest, pinnable parse — not a full dotenv runtime.
+
+source · Node / browser, no dependencies · MIT
+
+line-source
+
+Turn a Text File into a JSONL Stream, One Record per Line
+
+line-source turns line-oriented text (a log, a word list, any one-record-per-line file) into a JSONL stream, one record per line: { line: <text>, n: <index> }. It is the adapter at the front of a pipe that lets the fold/filter/transform gifts consume ordinary text files. It fixes the three quiet failures of naive text.split('\n'): the phantom trailing empty record, the CRLF \r left glued to every line, and the leading UTF-8 BOM. Zero dependencies, runs unchanged in Node or a browser, same input yields byte-identical output every run.
+
+edge line-source splits on line terminators (\r\n, \n, \r) and emits one record per line — it does not parse CSV fields (use csv-source), does not parse JSON (lines are verbatim strings), does not read the file itself (you pipe text in), and does not sort or deduplicate. It preserves line bytes (minus the terminator and a leading BOM); with --trim it strips surrounding whitespace, and never otherwise. Empty --field, an unknown option, or a positional argument is refused (exit 2).
+
+source · Node / browser, no dependencies · MIT
+
+loop21:component-factory
+
+Logic Components as Composable Data
+
+A factory for small logic components — a counter, a toggle, a clamp, an accumulator, a pattern-matcher — emitted not as live objects but as fully-specified JSONL specs one per line, so each component travels: you can pipe it, store it, diff it, hash it, or feed it to any consumer that knows the five built-in kinds. It is a source in the composition algebra (nothing in, JSONL out): the front door to a small, closed catalog of primitives. Every requested component is validated against its kind's parameter schema before a spec is emitted, so a missing required parameter, a bad type, or an out-of-range value is a reported error, never a silently emitted spec a downstream tool will choke on. Auto-generated names use a seeded counter, so --seed yields byte-identical JSONL on any machine, forever.
+
+edge The factory declares components; it does not run them. An emitted spec is a validated description, not a live object — turning a spec into behavior is the consumer's job, and this tool makes no claim about whether any downstream runner implements a kind correctly. It guarantees the spec is well-formed and catalog-valid, not that anyone honors it.
+
+source · Python standard library only, deterministic under --seed, headless · MIT
+
+Mint
+
+IDs That Are Never Reused
+
+Hand out IDs that are never reused — and prove it before returning each one, not with an after-the-fact check but as a structural property: a retired ID cannot come back. JSON in, JSON out, backed by a file you can read.
+
+edge It guarantees no reuse within the one ID store you point it at. Two independent stores that don't know about each other can still collide — single source of truth is your job.
+
+source · Python stdlib only, deterministic · MIT
+
+ndjson-source
+
+Validate & Normalize NDJSON into a JSONL Record Stream
+
+ndjson-source reads NDJSON — newline-delimited JSON, one value per line (a FILE arg, or stdin) — and re-emits it as canonical JSONL, one compact JSON value per non-blank line — the front of a pipe you feed into the fold/filter/transform gifts (ndjson-source events.ndjson | dedup-filter --key id). The honest complement to json-source: json-source unwraps a top-level array into a stream, ndjson-source validates and canonicalizes a stream that is already line-delimited. Blank lines are skipped, CRLF==LF, each value re-serialized to canonical compact JSON. Zero dependencies, runs unchanged in Node or a browser, same input yields byte-identical output every run.
+
+edge ndjson-source reads NDJSON (one JSON value per line) — NOT a JSON array (use json-source) and NOT JSON5. Blank lines are skipped; a malformed line is refused (exit 2) with its 1-based line number, never silently skipped or repaired (dropping a bad record would change your data without telling you). Each value is re-serialized to canonical compact JSON, so number tokens and whitespace are normalized (1e3 -> 1000, 1.0 -> 1) though key order is preserved — the JSON value, not the input line's bytes. So it validates AND normalizes; it reads the WHOLE input, not an incremental stream.
+
+source · Node / browser, no dependencies · MIT
+
+port
+
+Composition Port-Verb Declaration
+
+Every small JSONL tool declares its own port-verb — source, transform, filter, fold, or sink — in a manifest field or a --port flag, so a map or a typechecker can READ a tool's composition shape instead of guessing it. The load-bearing move is `port check`: when a tool declares its verb in both places, they must agree, and a drift is a decidable non-zero exit, not a thing a human notices later.
+
+edge It verifies a declaration is consistent with itself — manifest field vs the tool's own --port flag — not that the declared verb is true of the tool's actual behavior. A tool can honestly declare 'filter' in both places and still behave like a transform in its code; proving a verb against real behavior is a deeper, undecidable-in-general question this tool does not claim to answer.
+
+source · Python 3, standard library only · MIT
+
+seq-source
+
+Generate a Deterministic Sequence to Feed Your Pipe
+
+seq-source takes no input — it GENERATES one: give it --count N (and optionally --start, --step, --field) and it emits N JSON objects, one per line, each the next term of an integer arithmetic sequence { NAME: start + i*step }. It is the front of a pipe, a deterministic generator you feed INTO the fold/filter/transform gifts — seq-source --count 100 | range-filter --num n 10 20 yields exactly the records 10..20. Zero dependencies, runs unchanged in Node or a browser, same options yield byte-identical output every run.
+
+edge seq-source emits an INTEGER arithmetic sequence only — it does not do geometric or floating-point sequences (those drift and would not be byte-deterministic), reads no input, and does not randomize. count/start/step must be integers; a non-integer or negative count/start/step, an empty field, or a positional argument is refused (exit 2) rather than emit a drifting or malformed stream. A deterministic generator you can pin, not a fixture you have to store.
+
+source · Node / browser, no dependencies · MIT
+
+transform — map a stream, one item to one
+
+Base-n
+
+Any Base, Any Size, Exact
+
+Point it at a JSONL stream of integers and it converts each from one base to another — radix 2 to 36, decimal to hex, binary to base-36, hex back to decimal — emitting one canonical lowercase JSON string per record, in input order. It converts in BigInt end to end, so it is EXACT at any size: a 200-digit number converts byte-for-byte with NO 2**53 cliff (where JavaScript's built-in Number.toString/parseInt silently corrupt). Input is a JSON digit-string in the --from base (case-insensitive, optional leading -), or a bare JSON integer when --from is 10. Output round-trips exactly: toBase(fromBase(x)) == x. It drops into a pipe anywhere integers need re-basing — ids, flags, addresses, hashes — without a bignum library.
+
+edge Converts INTEGERS between bases 2-36 (arbitrary precision, no 2**53 cliff). NOT a float/fraction converter (no radix point, no mantissa/exponent), NOT a byte/base64/base58 codec (those encode bytes, not positional radix), and it does NOT parse 0x/0b prefixes or digit-group separators. A digit out of range for the input base, a non-integer record, or a bare number under a non-decimal --from is a hard error, never a silent coercion.
+
+transform · Zero dependencies, Node or browser, deterministic, BigInt-exact · MIT
+
+Dwell
+
+When You Commit Is What You Choose
+
+A cart circles a loop of n ticks; holding is free and an extra full lap changes nothing. It leaves only when you reverse, and which of k exits it takes is a pure function of the phase at that instant: exit = (phase * k) // n. There's no separate 'pick' step — deferring costs nothing, and the moment you stop deferring IS the decision. Integer-exact and byte-replayable; a decision is an audit record you re-derive, not an opinion you store.
+
+edge It is the deterministic router only: given (entry, reverse, n, k) the exit is a fact, but it does NOT decide when to stop deferring — that judgment (the reversal) is yours. k <= n is a wall (you can't quantize a loop of n ticks into more than n exits); k > n is refused, not rounded.
+
+transform · Python stdlib only, deterministic · MIT
+
+EXIF Parser
+
+What Did The Camera Record?
+
+Read a photo's EXIF metadata — Make, Model, DateTime, Orientation, exposure, and GPS — out of the TIFF IFD structure inside a JPEG, with no dependencies, in Node or the browser. parseExif(bytes) finds the EXIF APP1 segment (or reads a bare TIFF/EXIF block), walks IFD0 + the Exif sub-IFD + the GPS sub-IFD, and returns the tags as a flat object. Like its ratchet-png-text sibling it validates structure before it trusts it — the SOI marker, the Exif\0\0 signature, the II/MM byte-order, the 42 magic, and every IFD offset — throwing on anything malformed rather than reading a value out of a truncated buffer.
+
+edge It reads metadata only — no pixels, thumbnails, or MakerNote (vendor-specific: surfaced as raw bytes, never guessed). It follows IFD0 -> Exif-IFD -> GPS-IFD, not IFD1/interop IFDs. It does not strip or rewrite EXIF, and malformed input throws. GPS is left as raw rational components (GPSLatitude as three rationals + a ref) — it does NOT collapse them into a signed decimal degree, because baking one interpretation into the parser is a presentation choice you should own; compose the decimal yourself.
+
+transform · Node / browser, no dependencies · MIT
+
+forest-title-fit
+
+Never-Clip Title Sizing
+
+Pick the largest font size at which a title still fits a fixed width — and never clip, never ellipsize: if it can't fit even at the floor, it wraps on spaces instead. A general shrink-to-fit UI primitive with the font-measuring step injected as a seam, so the fitting logic is pure and testable without a browser.
+
+edge It sizes to the measure() you inject — only as accurate as your measurer (a webfont still loading measures as its fallback). It searches integer sizes and breaks on whitespace, not hyphens; a single word wider than the box overflows visibly, by design. It computes sizes and lines; the caller renders.
+
+transform · JavaScript, zero dependencies (Node + browser) · MIT
+
+Inline MIME Parser
+
+What's Actually Inside This Email?
+
+Parse a raw MIME message — an .eml, a saved email, a multipart body — into a structured tree with zero dependencies. parseMime(raw) unfolds folded headers, parses the Content-Type and its parameters, decodes each leaf body per its Content-Transfer-Encoding (base64, quoted-printable, 7bit/8bit) and charset (utf-8, latin1), splits multipart/* on its boundary, and recurses to any depth. RFC 2047 encoded words in headers (=?utf-8?B?..?=) are decoded too. Node or browser, no DOM, no filesystem.
+
+edge It parses, it does not validate — a message with a missing closing boundary or a header with no body is parsed as far as it reasonably can, never thrown at, so the tree reflects what was there rather than what should have been. Charset support is honest about its scope: utf-8 (full multibyte) and the byte-preserving ascii/iso-8859-1/windows-1252 family decode faithfully; ANY OTHER charset falls back to utf-8 rather than transcoding from native tables — exotic legacy charsets are the edge. An unknown Content-Transfer-Encoding is treated as identity. Header values are RFC-2047-decoded in the `headers` map only; `rawHeaders` keeps the ordered, undecoded originals for anything that must see the wire bytes.
+
+transform · Node / browser, no dependencies · MIT
+
+Interval-math
+
+Ranges In, A Bound You Can Trust Out
+
+Point it at a JSONL stream of operations — each a {op, a:[lo,hi], b:[lo,hi]} pairing two intervals with + - * or / — and it computes the resulting interval, emitting {"lo":L,"hi":H} one per record in input order. An interval [lo,hi] means 'some real number in this range'; the result is GUARANTEED to contain every (x op y) for x in a, y in b (the containment property). Multiply uses all FOUR corner products, so [-2,3]*[-5,4] is [-15,12], not the naive [10,12]. Division by an interval strictly on one side of zero multiplies by the reciprocal interval; dividing by an interval that SPANS zero is refused (unbounded result). It drops into a pipe anywhere ranges/tolerances/error-bars need combining with an honest bound, without an interval-arithmetic library.
+
+edge Does the four arithmetic ops (+ - * /) on real intervals. NOT a full interval library — no power/exponent, roots, or transcendental functions (sin/exp/log), no interval union/intersection/hull. NO outward-directed rounding: bounds are plain IEEE-754 doubles (a result whose true endpoint is not exactly representable is the nearest double, which may be a hair inside the guaranteed bound) — for certified soundness use a rational/directed-rounding library. Division by an interval containing zero is refused, not split.
+
+transform · Zero dependencies, Node or browser, deterministic · MIT
+
+jq-lite
+
+A Tiny jq-Style Query Language for JSON
+
+jq-lite gives you jq's common moves — pull a field (.user.name), index an array (.[0], .[-1]), iterate a stream (.[]), and pipe one step into the next (.items[] | .id) — over JSON on stdin, without installing jq. It follows jq's rules where they save you: a missing key is null (not a crash), and the ? operator skips a type mismatch so one ragged record doesn't abort the stream. Zero dependencies, runs unchanged in Node or a browser, same input yields byte-identical output every run.
+
+edge jq-lite implements a SMALL subset of jq — identity, field/index/bracket access, .[] iteration, the pipe, and the ? optional. It has no functions, no arithmetic, no object/array construction, no select/map/comparison, and no recursion (..). For those, use jq itself. A malformed filter or invalid JSON input is refused (exit 2); an unmarked runtime type error is exit 3.
+
+transform · Node / browser, no dependencies · MIT
+
+l21x-snapshot
+
+Browser Save Layer
+
+Encode any document to a self-describing base64 snapshot, keep a catalog of them with pure save/load/validate/sort, and fold a whole catalog into one portable blob — a zero-dependency save-file/catalog/archive layer for apps with no backend. No DOM, no filesystem, no network.
+
+edge It persists structure, not identity — you supply ids and timestamps; snapshots are base64 (not compressed, not encrypted). It's a layer that hands you strings, not a store: it never touches localStorage, the disk, or the DOM itself.
+
+transform · JavaScript, zero dependencies (Node + browser) · MIT
+
+Markdown
+
+One Source, Two Honest Shadows
+
+A tiny dependency-free Markdown compiler with one root and pure emitters: source → parse() → AST → { toHTML, toPlainText }. The point isn't another parser — it's the shared-root property: both renderings fold the same AST, so the plain-text view and the HTML view can never silently disagree about what the writer typed. parse() never throws (a malformed construct renders as literal text) and toPlainText is the raw source verbatim.
+
+edge A bounded, deliberate Markdown subset — headings, lists, blockquote, fenced code, and inline strong/em/code/link/hard-break — not CommonMark, and small on purpose (tables, nested blockquotes, and footnotes are out of scope by design, not by accident). The browser toDOM emitter of the original it's ported from is left out of this runtime-agnostic standalone; the two shadows shipped are HTML and plain text.
+
+transform · Node, no dependencies · MIT
+
+PDF Dictionary-Text Extractor
+
+What Text Does This PDF Store?
+
+Pull the text a PDF STORES but never draws — the AcroForm field values (/V) and annotation notes (/Contents) that a content-stream extractor skips — with no dependencies, in Node or the browser. parsePdfDict(bytes) validates the %PDF- header, walks the indirect objects, and decodes literal ( ) and hex < > strings, resolving a one-level indirect /V and pairing each value with its /T field name. The companion to ratchet-pdf-text: that reads the drawn text, this reads the dictionary text — together, every text surface in a PDF.
+
+edge It splits its contract by scale, on purpose: document-level failure (not a PDF, bad input) THROWS like its ratchet-pdf-text twin, but a single malformed value is RECORDED as {malformed, reason} and the walk continues rather than losing the good fields after it — a malformed value is stamped, never returned as clean. It reads the TOP-LEVEL dictionary of each object: a /V or /Contents in a nested sub-dict, or a value inherited through /Kids, is not a target. It resolves an indirect /V one level only. It returns the string as WRITTEN — no /Encoding or /ToUnicode CMap mapping, correct for WinAnsi and honestly wrong for a subsetted CID font. It does not decrypt, decode /ObjStm or xref streams, or repair a broken file.
+
+transform · Node / browser, no dependencies · MIT
+
+PDF Text Extractor
+
+What Text Does This PDF Draw?
+
+Pull the visible text out of a PDF's content streams — the operands of the Tj, TJ, ', and " text-showing operators — with no dependencies, in Node or the browser. parsePdfText(bytes) validates the %PDF- header, scans for stream/endstream objects, and decodes literal ( ), hex < >, and TJ-array strings in stream order. Like its ratchet-png-text and exif-parser siblings it validates structure before it trusts it — a lying /Length past the buffer or a stream without endstream throws rather than reading a truncated value.
+
+edge It returns the string operands as WRITTEN — it does NOT map character codes through a font's /Encoding or /ToUnicode CMap, so it is correct for the common WinAnsi/standard-font case and honestly wrong for a subsetted CID font (glyph-index bytes, not characters). It gives drawn strings in stream order, not a visual reflow — no positional layout or reading-order reconstruction. FlateDecode content is the common case and zlib inflate is not in the browser's zero-dep surface, so a compressed stream is SURFACED as raw bytes and decoded only if you pass an inflate function (Node: zlib.inflateSync; browser: pako) — never faked. It does not decode /ObjStm, xref streams, encryption, or images; malformed input throws.
+
+transform · Node / browser, no dependencies · MIT
+
+PNG Text
+
+What's Hidden In That PNG?
+
+Pull the text metadata (Title, Author, Description, Software, Copyright, an XMP packet) out of a PNG's tEXt / zTXt / iTXt chunks — with no dependencies, in Node or the browser. parsePngText(bytes) is a pure function: it walks the chunk stream and returns the text entries in file order. It's a ratchet parser — it advances one chunk at a time and refuses to move past anything malformed: it validates the 8-byte signature and recomputes the CRC-32 over every chunk, throwing on a mismatch, a length that runs past the buffer, or a text chunk missing its null separator. A parser that hands you text out of a corrupt chunk is lying about the file; this one won't.
+
+edge It reads TEXTUAL metadata only — no pixels, IHDR, palettes, or gamma. It does NOT inflate zTXt / compressed-iTXt on its own (zlib isn't in the browser's dependency-free surface): such records come back with compressed:true, text:null, and their raw compressedText bytes, decoded only if you pass your own inflate function. And it does not repair a bad file — malformed input throws, it never guesses.
+
+transform · Node / browser, no dependencies · MIT
+
+Reltime
+
+Relative Time That Refuses To Lie
+
+Turn a timestamp into a short human 'when' (3h ago, Jun 20) where the whole point is what it won't do: a missing, empty, or unparseable stamp returns no label rather than a guess, a future stamp returns no label rather than a negative age, and anything older than a week gets the real date it landed instead of a rounded-up '9d ago'. Deterministic — a pure function of (stamp, now).
+
+edge It renders in UTC and is a recency label, not a locale-aware or timezone-shifting formatter, and not a full date library. The fixed minute/hour/day/week bands are by design — the value is the refusal to fabricate, not configurable granularity.
+
+transform · Node, no dependencies · MIT
+
+rename
+
+Relabel Fields, Keep Every Value
+
+A producer emits JSONL: one JSON object per line. rename reads that stream and a map of old=new field names, and emits each record with those fields relabeled — the field-RELABEL of the JSONL toolkit, the transform-lane companion to pluck (which selects). Every value is kept and every field's position is preserved; only a mapped field's KEY changes. When names don't match the next stage, a stream becomes a deterministic, re-derivable relabeling. A rename that would collide two fields onto one name is REFUSED, never silently overwritten — it names the line and the collision and stops. Same stream and same map in, byte-identical stream out, on every machine and every run. A line that is not valid JSON is a hard error (exit 2) naming the line; a non-object record is a hard error too. Blank lines are skipped. Zero dependencies, pure, offline; runs in Node or a browser (window.ForestGifts.rename).
+
+edge Renames TOP-LEVEL fields by exact name, position preserved. NOT nested paths, does NOT select or drop fields, does NOT compute values. A field not in the map passes through untouched. A map whose target name already exists on the record (or is targeted twice) is a REFUSED collision, not an overwrite — the divergence from a last-write-wins merge.
+
+transform · Zero dependencies, Node or browser, deterministic · MIT
+
+Sha256
+
+Sync Hash That Matches Your Backend
+
+A dependency-free, synchronous SHA-256 (hex out) that returns the same 64-char digest as your Node backend's crypto.createHash for the same string — so a browser can mirror a server-side integrity check without turning the verify path async. The load-bearing rule: it hashes the UTF-8 bytes, so multibyte input (names, emoji) stays byte-identical instead of diverging silently.
+
+edge It's a hash, not an HMAC and not encryption — it proves two inputs match, keeps no secret, and is not a password KDF. A from-scratch port for portability, not a hardened crypto library: where a vetted native lib is available and async is fine, prefer it.
+
+transform · Node, no dependencies · MIT
+
+Sudoku
+
+A Solver That Shows Its Work
+
+Most Sudoku solvers hand you the answer; this one hands you the reasoning. It solves the way a person does — applying the lowest technique that makes progress and recording WHAT it did and WHY at every step as a single ordered trace, so the answer is just the last line of an argument you can read and check by hand. Five techniques (naked/hidden single, locked candidates, naked pair, x-wing), applied lowest-first. It never guesses: faced with a puzzle beyond its ladder it says “ceiling-hit” rather than searching — an honest difficulty read, not a failure. Deterministic: the same givens always produce the byte-identical trace.
+
+edge It only makes FORCED moves — it reasons, it does not search or backtrack, so a puzzle needing a technique above x-wing returns ceiling-hit (a difficulty read), not a guessed fill. And ‘broken’ fires when reasoning empties a cell; a contradiction sitting between two givens no technique touches reads as ceiling-hit, because the solver reasons about the puzzle rather than front-validating your input.
+
+transform · Python standard library only, deterministic + headless · MIT
+
+Text Legibility Gauge
+
+Readable Text, or Machine Rubble?
+
+Guess whether a string is human-readable text or machine-drawn rubble, and say how sure you are. A text extractor hands you a `.text` field and, by design, can't tell you whether it's readable — the classic failure is a subsetted CID font whose glyphs decode one byte at a time into control-character rubble that only looks like a populated string. assess(text) returns a label (readable / suspect / likely-binary / empty) with the raw score and signal counts exposed, scoring the density of characters human text almost never contains: C0 controls (minus tab/newline) plus U+FFFD, and nothing else. The load-bearing rule: it reports but never scores the C1 band, so legitimate multibyte-as-Latin1 (日本語, Cyrillic) never reads as binary — the CJK false-positive it refuses to make.
+
+edge legible is a heuristic, not a verdict, and it detects control-character rubble — NOT wrong encoding. Mojibake (valid bytes, wrong charset) is still printable characters, so it reads `readable` even though no human can read it: a `readable` means “not control-char rubble,” never “correctly decoded.” It does not decode, validate, or understand the text, and never proves it correct or meaningful. It is a gauge you read, never a gate you route on.
+
+transform · Node / browser, no dependencies · MIT
+
+The Mail-Merge That Won't Lie
+
+How Do You Fill A Prompt Template Without It Silently Lying?
+
+Fill a prompt's {{variable}} slots from a data record — one base prompt becomes many concrete prompts — and fail closed the instant the template asks for a variable the record does not supply, naming every missing variable at once. There is no default value and no inferred value: it fills only slots it can prove a value for, so a broken prompt never slips through as literal {{name}}, a blank, or "undefined". An inherited property (like toString) is not a supplied value. Zero dependencies, pure function — same template plus same record yield byte-identical output every run. Runs in Node or the browser (window.ForestGifts.template).
+
+edge template fills the {{variables}} your template declares from the record you give it, and refuses (naming the blank) when a required variable is missing; it does not judge whether the filled prompt is correct, meaningful, or safe, and it is not a template language — no logic, loops, or conditionals.
+
+transform · Node / browser, no dependencies · MIT
+
+The Oracle
+
+Which Prompt Variant Did Run #4173 Get? Make It a Fact You Can Recompute.
+
+A reproducible seeded-decision engine for prompt A/B. Name your variants, commit a seed at a moment, and it deterministically picks one -- writing a replayable receipt so the exact same pick can be re-derived on any machine, forever. The pick is reversal-indexed (the shape borrowed from the dwell gift): the seed and moment define a phase, and the chosen variant is a pure function of that phase (pick = (phase*k)//n, default n=k), integer-exact with no float and no randomness. Every cast emits a receipt (the variant list plus the two integers that made the pick); replay re-derives the pick from the receipt alone, and a --ledger collects a batch of assignments into one replayable file. Waiting a full lap is free -- the winding number is discarded, so an extra lap never changes the pick. Python stdlib only, offline, deterministic.
+
+edge the-oracle makes an assignment reproducible and auditable; it does not make it fair, uniform, or unbiased -- a chosen (seed, moment, n) can skew which variant wins, and reproducing a skewed pick reproduces the skew. It does not run your prompts, call any model, score a variant, or tell you which is better. It decides which variant, reproducibly; it does not decide whether the experiment was sound. Reproducible, not random.
+
+transform · Python stdlib only, deterministic · MIT
+
+Tracebus
+
+Nothing Moves Without a Receipt
+
+A publish/subscribe bus with two rules most buses skip: every legal path is declared up front, and every emission is written to an append-only ledger you can replay by trace id. A packet can only reach a subscriber the routing table permits — an unrouted packet is refused, not silently dropped — and a subscriber that throws is caught, recorded, and stepped over so one bad listener can never take the bus down. Thread one traceId through a chain and read the whole journey back out of the ledger, hop by hop.
+
+edge It enforces the topology you declare and records every hop; it does NOT invent routes for you (an unrouted packet is a fault, by design) and its ids are v4-shaped for correlation, not cryptographic (Math.random). request/response is opt-in per bus via { requestResponse: true } — the bus name carries no special meaning.
+
+transform · Zero-dependency JavaScript, Node or browser · MIT
+
+units-convert
+
+Convert Units — and Refuse a Category Mistake
+
+units-convert converts a quantity from one unit to another across length, mass, time, temperature, and angle, and refuses honestly (ok:false, all fields blank) when the two units are different kinds of thing. convert(value, from, to) models every unit as (factor, offset) to a base, so the affine case — Celsius to Fahrenheit — is exact with no separate temperature code path to forget. Zero dependencies, deterministic, byte-identical every run.
+
+edge FLAG, DON'T FAKE: a cross-dimension conversion (metres to kilograms) is a category mistake, not a rounding error — it returns a blank verdict, never a fabricated number. Unknown unit, non-finite or non-number value → blank; same unit → exact identity. It ships the full-precision IEEE-754 double (0 C converts to 31.999...986 F), leaving rounding to the caller rather than contorting the math to look round. Its unit set is a documented closed list, not every unit that exists.
+
+transform · Node / browser, no dependencies · MIT
+
+Vclock
+
+Causal Order, Not Wall-Clock Time
+
+Reason about the causal order of a stream of records — is A before B, or are they concurrent, causally independent, neither able to have known about the other? Wall-clock time can't express that last case; a vector clock can. bump, merge, and compare over JSON lines, so it sits in the middle of a pipe.
+
+edge It orders events that share an actor namespace. Two records whose actor sets never overlap read as concurrent by construction — which is correct, but only useful if your actors are named consistently across the stream.
+
+transform · Python stdlib only · MIT
+
+WUPHF
+
+How Do You Say One Thing To Every Channel At Once?
+
+Say one thing once and see it shaped for every channel at once — SMS, email, voicemail, fax, chat, social — side by side, each with the honest cost that channel imposes: the SMS segment count, the character count against the cap, where the text gets cut, how long the voicemail takes to read aloud. It's Ryan's WUPHF from The Office played straight and made honest: on the show it's a disaster because it hides the mismatch between channels; this reveals it. Under the hood it's the typed member of the fanout family — one message rendered N ways, a pure function (same message plus the same channels yield byte-identical output every run), and it sends nothing. You copy each render and send it yourself. Runs in Node or the browser (window.ForestGifts.wuphf).
+
+edge WUPHF renders your message for every channel and counts the cost each imposes — it does not send anything, connect to any service, fire a mailto, or judge whether the words are good; you copy each render and send it yourself.
+
+transform · Node / browser, no dependencies · MIT
+
+Your Prompt's Evil Twin
+
+Where Does One Small Rephrase Quietly Flip Your Prompt's Output?
+
+Feed it your prompt and it generates the evil twin — the minimal adversarial rephrase that could flip your output — each twin a single named edit (negate, polarity-flip, quantifier-swap, scope-widen, frame-shift, entity-swap) from a closed set, carrying the exact change as a readable diff. Then run original and twin through any model you like and hand the two outputs back: it computes a structural divergence read (token Jaccard, length delta, first divergence point, STABLE / DIVERGED / FLIPPED against a threshold you declare). An adversarial-robustness probe for your OWN prompts. Python stdlib only, offline, deterministic — same prompt yields byte-identical twins every run.
+
+edge doppelganger PROPOSES candidate twins and MEASURES textual divergence, for hardening your own prompt — it does not run your prompt, prove a flip is harmful or that a twin "worked", find a rephrase it has no rule for, or make your prompt safe to ship. A hardening tool, not a jailbreak factory.
+
+transform · Python stdlib only, deterministic · MIT
+
+zonecast
+
+Show a Stored Time in the Viewer's Own Zone
+
+zonecast casts a stored wall-clock into the time — and the calendar day — a viewer in another zone actually sees, DST-correct, using only the platform's own Intl time-zone database. cast(value, kind, homeZone) returns { ok, dayKey, time, wallClock, zone }: a floating time (no zone) passes through verbatim, while a zoned time (wall-clock + IANA zone) is interpreted in its own zone to find the real instant and re-expressed in the viewer's home zone. Zero dependencies, pure function, byte-identical every run.
+
+edge FLAG, DON'T FAKE: it never guesses a time it does not have. A missing, malformed, or offset-bearing value blanks every field (ok:false); a zoned value with no zone is blanked, never silently floated; an unresolvable home zone is never assumed to be UTC — it proposes the platform's detected zone, else blanks. It converts and re-buckets a stored time; it is not a full calendar library and does not parse arbitrary date formats.
+
+transform · Node / browser, no dependencies (Intl is platform, not a dependency) · MIT
+
+filter — keep some items, drop others
+
+Clause-Trellis
+
+Which Two Clauses in Your Prompt Fight?
+
+Lay a mega-prompt's clauses on a grid and find WHICH TWO contradict. Declare each clause as a dimension plus one constraint — a numeric range (min/max) or a categorical (is/in) — and clause-trellis lays them on the N×N clause-against-clause grid, then localizes each contradiction to the single cell where two clauses cross: it names the pair, not just 'something is wrong.' Two ranges conflict when they do not overlap; two categoricals conflict when their allowed sets are disjoint; different dimensions are orthogonal and never conflict; a range vs a categorical on one dimension is reported as not-decidable, never a false OK. The shape is borrowed from the trellis gift (localize a failure to the cell where two things cross), redesigned for prompt clauses. Deterministic, fail-closed, Python stdlib only, offline.
+
+edge clause-trellis finds contradictions you DECLARED, over a closed set of decidable dimensions (numeric ranges and categorical values). It does not read intent, meaning, tone, or the natural-language text of a clause — if two sentences contradict in spirit but you did not declare the shared dimension, it will not see it. Silence means 'no declared contradiction,' which is necessary, not sufficient. It finds the conflicts you wrote down; it does not understand the prompt.
+
+filter · Python stdlib only, deterministic · MIT
+
+Conflict
+
+A Broken Merge Can't Land
+
+A merge that goes wrong leaves <<<<<<<, =======, >>>>>>> markers wedged into a file; once committed, that file no longer parses — it isn't 'a merge in progress,' it's broken source that landed, and it hides until something tries to read it. Conflict is the one-command gate: wire it into a pre-commit hook or CI and a file carrying the marker triad simply cannot land. The clever part is the TRIAD RULE — ======= alone is a legal line (a Markdown rule, a comment banner), so conflict fires only on all three markers together, line-start only, and never cries wolf on a legal ======= or a marker mid-line.
+
+edge This is a check, not an immunity — it protects you only when it is RUN, so wire it into a hook or CI rather than trusting a human to remember. And it detects the standard git marker triad; a tool that uses different markers needs a different pattern. Visibility, not immunity.
+
+filter · Python standard library only, read-only, deterministic · MIT
+
+conform
+
+Does This JSONL Match the Schema You Declared?
+
+A model — or any producer — emits JSONL: one JSON value per line, meant to be a record of a known shape. conform reads that stream against a record schema you write and, the moment a record does not match, REFUSES: it names the line, the field, and what was wrong, and stops at the FIRST bad record. Declare each field's type — string, number, integer, boolean, enum, array, object — with optional min/max, maxLen, minItems, pattern, or a fixed set of allowed values, and mark it required or not. A clean stream exits 0; the first non-conforming record exits 1 with { line, field, reason }; an unusable input (no schema, unreadable file, bad schema shape) exits 2 — so it drops straight into a CI gate on a producer's output. A line that isn't valid JSON is itself a failure at that line, never a crash. Blank lines are skipped. Structural, not semantic; fields checked in sorted order so the reported field is deterministic. Zero dependencies, pure, offline; runs in Node or a browser (window.GiftConform).
+
+edge conform proves STRUCTURE, not TRUTH. A clean pass means every record has the declared fields at the declared types — it is not a certificate that the producer's answer is right, sensible, or what it should have said. It validates the schema YOU declared: declare the wrong schema and it faithfully passes the wrong records. A well-typed lie conforms. Choosing a schema that captures what you actually require is your job.
+
+filter · Zero dependencies, Node or browser, deterministic · MIT
+
+Contract
+
+Do Your JSONL Records Match the Shape You Declared?
+
+Give it a stream of JSON Lines and a schema you declare, and it walks the records in order and stops at the FIRST one that breaks the contract — naming the record's line, the field, and what was wrong. The schema is plain data (fields → {type, required}), never code: nothing is executed or eval'd, so it is safe to accept from an untrusted source. Types are string, number, boolean, object, array, null, any; a bare "id":"number" is sugar for a required field of that type; --closed rejects the first unexpected field. Same records + same schema → the same first failure, byte-identical every run, so it drops straight into a CI gate on a model's output.
+
+edge contract checks STRUCTURE (which fields, at which types), not MEANING. A record that is structurally perfect and semantically nonsense passes — "age": -3 with type number passes, an email that is not an email passes. It makes the declared shape enforceable and names the first record that breaks it; it cannot tell you a structurally-valid value is correct, sensible, in range, or true.
+
+filter · Zero dependencies, Node or browser, deterministic · MIT
+
+Dedup-filter
+
+Same Records, Minus The Repeats
+
+Point it at a JSONL stream and it passes records through, dropping every one it has already seen — the first occurrence of each is kept, later duplicates are dropped, and the output is a stable subset of the input in the original order. By default a duplicate is a record with the same CANONICAL form: object key-order is ignored ({"a":1,"b":2} == {"b":2,"a":1}) but array order is kept ([1,2] != [2,1]), so 'the same record written two ways' deduplicates while the emitted line stays byte-for-byte verbatim. Pass --key FIELD to dedup by one top-level field instead of the whole record; a record lacking that field passes through and never dedups. It drops straight into a pipe between a source that repeats and a stage that must not see repeats — a CI gate, a loader, a diff.
+
+edge Drops EXACT duplicates (by canonical record, or by one field). NOT fuzzy/near-dedup — no similarity, no value normalization. It does NOT merge the records it drops (keeps the first verbatim, discards the rest), and it keeps FIRST not last — it is not a 'latest wins' upsert.
+
+filter · Zero dependencies, Node or browser, deterministic · MIT
+
+derived
+
+Derived-File Staleness Checker
+
+Is a generated file stale against the command that makes it? A derived file (one a build command produces, that no human should hand-edit) still exists on disk when it falls behind its source — so no presence check ever catches it. derived runs the build fresh in a private sandbox and byte-compares its output against the committed file: CURRENT (exit 0), STALE (exit 3, difference named), BUILD-FAILED, or a usage error. Non-mutating by contract — it never touches your working tree.
+
+edge this checks STALENESS (committed vs a fresh build), not CORRECTNESS: a green means the file matches what the command emits right now, never that the command or its output is right. It runs your build command, so only point it at a command you trust.
+
+filter · Python 3, standard library only · MIT
+
+gauntlet
+
+Fault-Injection Check-Tester
+
+Does your check actually catch a fault? A linter or validator can silently stop catching what it was written to catch, and nothing tells you until bad input reaches production. gauntlet copies your file into a disposable sandbox, injects ONE typed fault (truncate a tail, flip a byte, or apply a find/replace regression you name), runs YOUR check against the broken copy, and reports HELD (the check caught it) or ESCAPED (the check has a hole). The original file is never touched — only ever copied.
+
+edge gauntlet tests whether a check CATCHES the ONE fault you inject, not whether the check is correct in general: a HELD proves the check fired on this one broken input, never that it catches every fault. It runs your check command, so only point it at a command you trust. It only ever copies the target — it never modifies your original file.
+
+filter · Python 3, standard library only · MIT
+
+hmac-webhook
+
+Verify an HMAC-Signed Webhook in Constant Time
+
+hmac-webhook recomputes HMAC-SHA256(secret, rawBody) and checks it against the signature a webhook sender put in a header (conventionally X-Signature: sha256=<hex>), answering one question — is this body authentic and unmodified, from someone who holds the secret? It answers in CONSTANT TIME, so a forger cannot learn the correct signature one character at a time from how long a rejection takes. verify(body, header, secret) returns {ok, reason}; ok:false always names why — no-signature, bad-format, unsupported-scheme, length-mismatch, or hmac-mismatch — never a partial match. HMAC-SHA256 is RFC 2104 exactly, with the SHA-256 core vendored byte-for-byte from the shipped sha256 gift, so the result is byte-identical to Node's crypto.createHmac and to openssl dgst -sha256 -hmac. Same body, header, and secret in → same verdict out, in Node or a browser.
+
+edge hmac-webhook verifies AUTHENTICITY — nothing more. It is NOT a secret store (you supply the secret; it is never persisted), NOT a replay defender (it proves THIS body is authentic, not that it is fresh — pair it with a timestamp or nonce check for that), NOT a TLS or transport check, NOT an authorization system (authentic is not the same as allowed), and NOT a multi-algorithm negotiator (it verifies the one scheme you name, default sha256).
+
+filter · Zero dependencies, Node or browser, deterministic, constant-time · MIT
+
+Isvalidcsscolor
+
+Is This String A CSS Color?
+
+A pure, dependency-free isValidCSSColor(str) that runs identically in a browser and in Node (no DOM) and decides whether a string is a valid CSS color across a documented subset of the spec — named colors, transparent/currentColor, hex 3/4/6/8, and rgb()/rgba()/hsl()/hsla() in both legacy comma and modern space syntax, including angle hues and out-of-range channels that CSS clamps.
+
+edge It validates a DEFINED subset — the colors people actually type. It deliberately does not accept hwb()/lab()/lch()/oklab()/oklch()/color()/color-mix()/relative-color syntax/system colors, and it rejects the CSS-wide keywords inherit/initial/unset/revert (which are not colors). In a browser, CSS.supports('color', str) is the full ground truth; this trades that breadth for a tiny DOM-free core you can read in one sitting.
+
+filter · Node, no dependencies · MIT
+
+pluck
+
+Keep Only The Fields You Name
+
+A producer emits JSONL: one JSON object per line. pluck reads that stream and emits each record reduced to just the fields you name with --fields, in the order you named them — the SELECT of the JSONL toolkit. Narrow a wide record down to the columns you want before you fold, diff, or sink it. It is a filter on the field axis: every emitted object's fields are a subset of its input's, and nothing is added, renamed, computed, or reordered by content. A field named twice is emitted once at its first position. Same stream and same field list in, byte-identical stream out, on every machine and every run. A line that is not valid JSON is a hard error (exit 2) naming the line; a record that is not a JSON object has no field axis and is a hard error too — the deliberate divergence from a row-dropping filter. Blank lines are skipped. Zero dependencies, pure, offline; runs in Node or a browser (window.ForestGifts.pluck).
+
+edge Selects TOP-LEVEL fields by exact name. NOT nested paths, does NOT rename, does NOT compute or default a missing value, does NOT reorder by content. It selects; it never transforms a value. A requested field a record lacks is simply absent from that record's output — pluck does not invent it.
+
+filter · Zero dependencies, Node or browser, deterministic · MIT
+
+Plumb
+
+Status Board That Won't Lie
+
+A tiny audit pattern for anyone whose dashboards turn green on intention instead of evidence. Each claim names a witness — a file that must exist, text that must be present, a command that must pass — and only renders green if its witness agrees. Assert done with nothing beneath it and you get UNWITNESSED, not a pass.
+
+edge It checks the witness exists and agrees, never that the witness is the right one. Point it at the wrong file and it'll happily pass — choosing a meaningful witness is your job.
+
+filter · Python stdlib only · MIT
+
+range-filter
+
+Keep Only the Records Inside Your Windows
+
+range-filter reads a JSONL object stream and emits, verbatim and in input order, exactly the records whose declared fields fall inside declared numeric or date windows — a subset filter you drop into a pipe. Declare --num FIELD MIN MAX or --date FIELD MIN MAX (bounds inclusive, either side '.' for unbounded); multiple windows AND together, no windows is the identity filter. The pure core has zero dependencies and runs unchanged in Node or a browser, and the same stream and windows yield byte-identical survivors every run.
+
+edge A SUBSET filter over DECLARED windows: it filters on the fields and ranges YOU name — it does not infer a schema, reshape, sort, or de-duplicate. The window tests a value's RANGE, never its truth: a record inside every window passes even if its content is wrong. A --num field holding the string "18" is not the number 18 (a non-number is out, never coerced); an unparseable date value is out; an unparseable bound or MIN>MAX is a startup error, so a typo'd window is loud, not a silently-empty result. Missing a windowed field DROPS the record by default (--keep-missing inverts it).
+
+filter · Node / browser, no dependencies · MIT
+
+schema-filter
+
+Keep Only the Records That Match Your Shape
+
+schema-filter reads a JSONL object stream and emits, verbatim and in input order, exactly the records that match a declared JSON shape — a subset filter you drop into a pipe as a shape-checking gate. Declare --field NAME TYPE (required) or --optional NAME TYPE over a closed set of seven JSON types (string, number, integer, boolean, object, array, null); constraints AND together, no constraints is the identity filter. The pure core has zero dependencies and runs unchanged in Node or a browser, and the same stream and shape yield byte-identical survivors every run.
+
+edge A SUBSET filter over a DECLARED shape: it filters on the fields and types YOU name — it does not infer a schema from the data, reshape, sort, or de-duplicate. It tests a value's TYPE, never its truth: a record matching every declared type passes even if its values are wrong. The string "5" is not the number 5 (no coercion); 3.5 is a number but not an integer; a required field's absence DROPS the record while an optional field's absence passes; an unknown type is a startup error, so a typo'd shape is loud, not a silently-empty result.
+
+filter · Node / browser, no dependencies · MIT
+
+Scrub
+
+Catch a Secret Before It Ships
+
+scrub reads text and finds the things that should never have been in it — a GitHub token, an AWS key, a PEM private-key block, a Slack token, a JWT, a password in a URL — by matching them on SHAPE, not luck. It can report them (masked preview, never the value), redact them (a fixed per-kind placeholder, idempotent), or refuse — a non-zero exit the moment a known secret shape appears, so it drops straight into a pre-commit hook or a CI gate. A single line opts out with an explicit, line-scoped scrub-allow marker; you cannot silence it globally. Zero dependencies, deterministic, runs identically in Node or a browser, and never echoes a secret it found.
+
+edge scrub matches KNOWN secret shapes. A clean result means no known shape was found here — it is NOT proof the text is secret-free: a novel token format, a secret split across lines, or a home-rolled scheme passes clean. It is a smoke alarm, not a vault — a hit is real, a clean scan is the absence of a known shape, never a certificate. Because it matches shapes it also flags EXAMPLE secrets (a documented token, its own fixtures) — the honest ceiling working, not a bug; vouch for a line you know is safe with scrub-allow.
+
+filter · Node / browser, no dependencies · MIT
+
+Skin Config Validator
+
+Is This User Config Safe To Apply?
+
+Validate a user-submitted skin/theme config object — colors, fonts, numbers, CSS custom properties — against a schema you declare, BEFORE you splice it into a stylesheet. verifySkin(config, schema) type-checks every field, allowlists CSS colors and cssvar values (rejecting url(), @import, javascript:, and ; { } breakouts), and returns { ok, value, errors, warnings } — value carries only the fields that passed, safe to apply. It does not mutate or coerce; it reports. No dependencies, Node or browser.
+
+edge It keeps 'wrong' and 'unknown' apart: a bad type/range/injection is an ERROR, an unknown field is a dropped WARNING (forward-compat), a missing optional field is silent. The `string` type is NOT stylesheet-sanitized — it type-checks and length-caps only; use `cssvar` (the type with the injection allowlist) for anything headed into a style surface. The named-color allowlist is conservative (unknown names rejected, not guessed) and the cssvar check is a safe-character GRAMMAR, not a full CSS value parser — it proves the value can't break out of a declaration, not that it is meaningful CSS. The schema is YOURS: a malformed schema throws (programmer error); only the config is treated as untrusted and reported-not-thrown.
+
+filter · Node / browser, no dependencies · MIT
+
+The Trellis
+
+Two-Way Consistency, Localized
+
+A 2-D consistency checker that tells you WHICH cell is wrong, not just that something is. Lay your objects on a grid where every cell sits in two crossing constraints — its row and its column — and the whole holds only if every row and every column reads valid. When something doesn't fit, it localizes the failure to the single cell where the failing row crosses the failing column. Constraint propagation sorts every open cell into FORCED, FREE, or CONTRADICTORY — no global placer, no global oracle.
+
+edge It checks that your constraints are consistent WITH EACH OTHER, never that they are the ones you meant. Hand it the wrong constraints and it will faithfully find them consistent — choosing constraints that capture what you actually care about is your job.
+
+filter · Python stdlib only · MIT
+
+typecheck
+
+Composition Typecheck
+
+Give it a pipeline of small JSONL tools you mean to chain — A,B,C — and, before you run anything and with no side effects, typecheck says whether it is well-formed: does each stage EMIT what the next one ACCEPTS. It walks the adjacent pairs and the endpoints, names the exact hop that breaks (a sink piped into a transform, a source stranded mid-pipeline), and exits non-zero so you can gate on it.
+
+edge It validates the PORT type — can the pipe carry data at all — NOT the RECORD shape. Two tools can both speak JSON-lines so the ports agree, while the records one emits are not the records the other expects; that pipeline typechecks clean here and still fails at runtime. typecheck flags the record-shape layer as unproven and never asserts semantic fit. A slug not in the manifest is reported UNRESOLVED, never guessed.
+
+filter · Python 3, standard library only · MIT
+
+uniq-filter
+
+Collapse Adjacent Duplicate Runs in a JSONL Stream
+
+uniq-filter reads a JSONL record stream (a FILE arg, or stdin) and collapses each maximal run of CONSECUTIVE equal records to its first member — the `uniq` half of `sort | uniq`. It is ADJACENT, not global, and O(1) memory: it remembers only the previous record's key, so a duplicate that is not next to its twin is kept (A A B A -> A B A). By default equality is the CANONICAL record form (object key-order ignored, array order kept); --key FIELD compares one top-level field instead, and a record lacking that field breaks the run and is always kept. Output is a stable, verbatim SUBSET of the input in original order; --count reports the collapsed tally on stderr. It drops into a pipe after a source or a sort to compact runs without buffering the whole stream.
+
+edge uniq-filter collapses ADJACENT runs only (O(1) memory) — it does NOT global-dedup (a duplicate not next to its twin is kept), does NOT sort the stream for you, and is NOT fuzzy/near matching. Use dedup-filter for whole-stream first-wins dedup; sort first if your runs are not already adjacent.
+
+filter · Node / browser, no dependencies · MIT
+
+Verify
+
+Cheap Re-Check, Never Truth
+
+For anyone who establishes an expensive fact once and then never re-checks it because re-checking feels expensive. Register the fact with the input files its derivation stood on; Verify keeps a content-hash certificate and re-checks it in a second. FRESH if the inputs are unchanged, STALE if one moved, DEAD if the ground is gone.
+
+edge FRESH means the byte-truth inputs are unchanged, never that the fact is TRUE (⊢, not ⊨). It re-checks the ground you named — name too few inputs and a real dependency can move without tripping STALE. Byte-truth facts only; live facts (prices, who's CEO) can't be cheaply certified.
+
+filter · Python stdlib only · MIT
+
+weir
+
+Run a Pipeline Under a Budget You Can Actually Meter
+
+Run a prompt-pipeline under a declared budget — max rows, max wall-time, max bytes — and weir cuts the flow clean the instant a ceiling is crossed: it stops AT the wall (the record that would cross it is never emitted), names which budget you exceeded and by how much, writes a replayable receipt to a trace-id ledger, and exits non-zero so it fails a pipeline. The one rule that makes it a weir and not a throttle: a budget is rows, wall-time, or bytes — NEVER tokens. Ask it for a token budget and it refuses by construction, with a reason: tokens are a model-internal proxy you cannot meter deterministically offline, so weir meters the real resource instead and declines the proxy out loud. The rows and bytes cuts are byte-identical every run; the wall-time cut it reports honestly as environment-dependent. Python stdlib only, offline, deterministic core.
+
+edge weir cuts the flow it can SEE — the command's stdout, line by line. It does not cap the command's own internal resource use (a command that loads 10 GB before its first row is past weir's reach until that row appears), it does not sandbox the command, and a wall-time cut is real but not reproducible — the same input can cut at a different row on a slower machine. It governs flow at the pipe; it does not make your command safe.
+
+filter · Python stdlib only, deterministic core · MIT
+
+Your Prompt Goes to Confession
+
+What Does Your Prompt Quietly Fail to Constrain?
+
+Feed it your prompt and it admits what it does NOT constrain — reading a closed checklist of eight constrainable dimensions (output-format, length, tone, audience, refusal, edge-cases, scope-boundary, grounding) and confessing which your prompt closed (with the phrase that closed it) and which it left open (with the absence that left it open). Its chain verb accumulates two or more confessions to show what NONE of your prompts constrained — order-independent and idempotent. The collection's own honest edge, turned into a tool you point at your own prompts. Python stdlib only, offline, deterministic — same prompt yields a byte-identical confession every run.
+
+edge confessional CONFESSES the constrainable dimensions your prompt left open, from a declared checklist — it cannot find a gap outside that checklist, cannot tell you whether an open dimension matters for your task, and cannot make your prompt complete. It confesses; it does not audit. Its deepest edge: it cannot find the gap you never named.
+
+filter · Python stdlib only, deterministic · MIT
+
+fold — reduce a stream to a value
+
+amber
+
+File-Set Fixity Sealer
+
+Seal a set of files into a content-addressed snapshot you can prove unaltered. amber pins each named file's git-style blob SHA into one small JSON capsule whose fixity IS the content — a fixity manifest, not an archive (it stores hashes, not bytes). A seal_sha256 covers the whole manifest, so any later change to any sealed file, or to the capsule itself, breaks the seal loudly: verify FAILs and names the broken member. Prove a moment's exact bytes unchanged, cheaply and portably.
+
+edge it proves IDENTITY, not BYTES: a green verify means every sealed file still hashes to what it did at seal time, never that the files are backed up — keep them in git or a zip if you need the bytes themselves. Content-addressed via git-style blob SHAs computed in-process (no git shell-out).
+
+fold · Python 3, standard library only · MIT
+
+Ask Three, Trust The Overlap
+
+How Do You Turn N Model Answers Into One You Can Trust?
+
+Take the answers you already collected — one prompt run through several models, or the same model run several times — and fold them into what they agree on: the agreed value (if enough concur), the full tally of who said what, and the dissent. A pure counting fold — same answers in, same verdict out, every run. Agreement is declared, never guessed: answers merge only after a conservative normalize (trim + collapse whitespace by default; --fold-case, --json opt in), and the threshold is declared too (strict majority default; --threshold N, --unanimous). If the top answer misses the needed count the verdict is no-quorum, never a quiet plurality; a tie yields no winner. The exit code is a gate — 0 on a clean quorum, 2 on no-quorum or tie — so it fails a pipeline when sources don't converge. Zero dependencies, no network, no API keys; runs in Node or the browser (window.quorum).
+
+edge quorum counts agreement; it does not judge correctness. N sources can agree and all be wrong — a majority can be a shared blind spot. A quorum means "this many independently landed here", never "here is right". It does not call the models for you — you bring the answers, it folds them. Concordance, not truth.
+
+fold · Zero dependencies, Node or browser, deterministic · MIT
+
+Branch Merger
+
+How Do N Branches Fold Back To One?
+
+Fold the labeled records a fanout produced back into one, under a declared merge policy from a closed set (concat, agree, first, map). It is the close half of a parallel-independent compose (the ⊗ product): fanout splits, junction merges, so fanout | junction round-trips. Zero dependencies, pure fold — same records plus the same policy yield byte-identical output every run, and records are folded in seq order so their arrival order never leaks. Runs in Node or the browser (window.ForestGifts.junction).
+
+edge junction merges declared branch-records into one under a declared policy; it does not choose the policy for you, run the branches, or resolve a value conflict the policy leaves ambiguous — it refuses (non-zero exit) when no policy is declared or the policy cannot merge cleanly.
+
+fold · Node / browser, no dependencies · MIT
+
+Counter-fold
+
+A Binary Counter's +1 as a Fold, Closed Under Its Own I/O
+
+counter-fold reads the STATE of a binary counter — the SET of its set bits, one JSON non-negative integer bit-index per line (JSON Lines) — and folds it into the NEXT value by adding ONE, using a HAND-BUILT ripple carry (clear the trailing run of set low bits, set the next clear bit), with zero dependencies. The counter's value is the sparse binary number sum of 2**i over the set bits, and it is UNBOUNDED: a bit index is a POSITION, small even when the value is astronomical (a 2**100 counter is just bit {100}), so it counts past 2**53 with no loss — it never holds the value as a native number. Output is the SAME SHAPE as input — the new set of set bits, one index per line, sorted — so the gift is CLOSED UNDER ITS OWN I/O: its output pipes straight back into itself, and counter-fold | counter-fold == counter-fold --steps 2. That closed loop is the point: the counter's state circulating through its own output channel, each pass advancing it one tick — Shea's mercury delay line as a counter. --steps N adds N in-process (N=0 canonicalises: dedup + sort). Because the set bits are sorted and duplicates collapse, the SAME value in ANY order folds to a BYTE-IDENTICAL record. Same counter in → counter+1 out, in Node or a browser.
+
+edge counter-fold is ONE deterministic binary counter incremented N times, its +1 a hand-built ripple carry — NOT a general adder (it adds ONE per step via --steps N; it does not add two counters), NOT a bounded register (it is sparse and unbounded, so it never overflows), and NOT a value printer (it emits the SET of set bits, the counter's state; value = sum of 2**i). The output is the same shape as the input, so it is closed under its own I/O (counter-fold | counter-fold == --steps 2). Fully order-independent — duplicates collapse, output sorted.
+
+fold · Zero dependencies, Node or browser, deterministic · MIT
+
+Cruise
+
+Feature Inventory, No Hallucinations
+
+Walk a codebase and emit a ledger of byte-derived facts — the routes it serves, the calls it makes, the buttons a user can touch, the claims its tests make — each fact carrying what it proves and what it does NOT. Hand the ledger to an LLM and ask it to group and name features: it can't invent one with no route, no label, and no test behind it. The floor under the prose.
+
+edge It's a text scan with a declared pattern set, not a language parser — a framework or idiom it wasn't told about is a fact it won't see (it fails safe: a real fact left out, never a fabricated one put in). Route/call matching is literal, so a served '/x/:id' and a called '/x/42' are different strings and a live parameterized route can read as headless. Treat headless as 'look here,' not 'delete this.'
+
+fold · Python stdlib only, deterministic · MIT
+
+gap-extract
+
+Bind a Spine's Declared Gaps to Their Witnesses
+
+gap-extract reads a recipe-spine's authoritative gaps[] and folds each into a gap record — covenant_class, bound witness gift (or derive-first when null), status, and role.
+
+edge Extracted verbatim from compile_recipe_spine.py::compile_spine and proven byte-identical to the compiler's inline logic on all 9 spines (roundtrip_selfhost.py 9/9, including the compiler's own Schematic). The served page documents the fold; the byte-truth is the Python fold + its passing selftest. A full standalone JS port is a later beat — the fold logic is what the fixed-point gate covers.
+
+fold · Python 3 stdlib, no dependencies (pure fold) · MIT
+
+Grain
+
+Structure Smell Test
+
+Compress your data, compare the ratio against a size-matched random null model drawn live, and get a self-calibrating reading of how much structure vs. noise — no hand-set threshold. Snapshot it over time and it becomes a cheap drift alarm.
+
+edge It's a smell, not a proof — a smoke alarm, not an arson investigator. Great for staleness and homogenization drift; not a data-rot or dead-link checker.
+
+fold · Python stdlib only · MIT
+
+harness-fold
+
+Fold Ordered Stages into the Wiring Topology
+
+harness-fold folds the ordered pipe stages into the harness edge-list (the ∘ sequencing edges) plus the one ⊗ fork/join — the wiring topology expressed as data.
+
+edge Extracted verbatim from compile_recipe_spine.py::compile_spine and proven byte-identical to the compiler's inline logic on all 9 spines (roundtrip_selfhost.py 9/9, including the compiler's own Schematic). The served page documents the fold; the byte-truth is the Python fold + its passing selftest. A full standalone JS port is a later beat — the fold logic is what the fixed-point gate covers.
+
+fold · Python 3 stdlib, no dependencies (pure fold) · MIT
+
+Histogram-fold
+
+One Bucketed Histogram Over a Numeric Stream
+
+histogram-fold reads a stream of numbers — one JSON number per line (JSON Lines) — and folds them in ONE PASS into a single aggregate record: a contiguous list of fixed-width buckets with a count in each, plus the total count and the observed min and max, with zero dependencies. Buckets are fixed-width by a fixed origin (--width, --origin), so a value's bucket (floor((x-origin)/width), range [lo,hi) lower-closed) never depends on the rest of the stream — that is what makes it one pass. The same numbers in any order fold to a byte-identical record (a histogram is a multiset fold). Non-finite or non-number input is a hard error, never a silent skip, and the IEEE-754 bucket boundary is a documented, pinned rule. Same stream in → byte-identical record out, in Node or a browser.
+
+edge histogram-fold COUNTS values into fixed-width buckets — it is NOT density estimation (no smoothing or KDE), NOT a quantile/percentile summary (it keeps no per-value order statistics beyond min and max), and it does NOT choose data-driven ‘nice’ bin edges (that would make a value's bin depend on the whole stream and cost the one-pass property). The output is a JSON aggregate, not a chart: hand it to a plotter, a test, or a diff.
+
+fold · Zero dependencies, Node or browser, deterministic · MIT
+
+Hunkhole
+
+The Change Git Hides
+
+Git tells you which FILES changed. It does not tell you when a stale working tree, a bad merge, or a clumsy restore quietly REVERTED part of a file while leaving the file itself in place — a file-presence check reads that as a clean recovery. Hunkhole is the one command that catches it: it diffs the set of named top-level definitions (function / const / exports / def) between two git revisions and reports the ones that vanished. A symbol present before and gone after, with nothing renamed to take its place, is the reverted-hunk shape. Read-only, deterministic, stdlib-only.
+
+edge Every hit is a QUESTION, not a verdict — a symbol you renamed or retired reads exactly like one that was reverted away, so hunkhole hands you the finite list and you rule on each. And a clean run is NOT a clean bill: it sees NAMED TOP-LEVEL definitions only, so a hunk reverted inside a surviving function body is invisible to it. Visibility, not immunity.
+
+fold · Python standard library only, read-only, deterministic · MIT
+
+JSONL-Diff
+
+What Changed Between Two Runs?
+
+You ran the same prompt through a model twice — a new version, a new day — and got two files of JSONL output. What actually changed? jsonl-diff takes an OLD file and a NEW file and tells you what was added, removed, and (when you name a key field) changed — sorted, canonical, and byte-identical on every run, so it drops straight into a CI gate or a review. Two modes: set-diff (default) keys each record by its own canonical form, so a changed record shows as one removed plus one added; keyed diff (--key FIELD) keys by a field, so a same-key record with different content is a CHANGE reported with its field-level deltas. Object keys are sorted and array order is faithful, so a key-reordered record matches and a reordered array does not. Deterministic, fail-closed, zero dependencies, offline.
+
+edge jsonl-diff compares STRUCTURE, not MEANING. A reported change may be cosmetic (1 vs 1.0, "a,b" vs ["a","b"]) and an unreported match may still be wrong — semantic equivalence it will miss is a difference here. A human reads the diff; the tool only makes the change visible and exact. It tells you two records differ; it cannot tell you the difference matters, is correct, or is safe.
+
+fold · Zero dependencies, Node or browser, deterministic · MIT
+
+Life-fold
+
+One Conway Step as a Fold, Closed Under Its Own I/O
+
+life-fold reads a set of LIVE CELLS — one JSON [x,y] integer pair per line (JSON Lines) — and folds it into the NEXT generation of Conway's Game of Life by the rule B3/S23, with zero dependencies, on a SPARSE UNBOUNDED grid (only live cells are represented, so a glider travels forever). The output is the SAME SHAPE as the input — [x,y] pairs, one per line, sorted — so the gift is CLOSED UNDER ITS OWN I/O: its output pipes straight back into itself, and life-fold | life-fold == life-fold --steps 2. That closed loop is the point: a fold circulating through its own output channel, each pass confirming the last — a mercury delay line made of live cells. --steps N runs N generations in-process (N=0 canonicalises: dedup + sort). Because the live set is sorted and duplicates collapse, the SAME set in ANY order folds to a BYTE-IDENTICAL record. Same cells in → next generation out, in Node or a browser.
+
+edge life-fold is ONE Conway B3/S23 step as a fold over a set of live cells, stepped N times in-process — NOT a renderer (it emits the live-cell SET, not a picture), NOT a bounded grid (it is sparse and unbounded, so gliders travel forever), and NOT a variant rule (it is exactly B3/S23). The output is the same shape as the input, so it is closed under its own I/O (life-fold | life-fold == --steps 2). Fully order-independent — duplicates collapse, output sorted.
+
+fold · Zero dependencies, Node or browser, deterministic · MIT
+
+Make The AI Prove It Read The Whole Thing
+
+How Do You Know The Model Read All Of Your Context, Not Just Some Of It?
+
+Shard a chunk of context into a manifest of typed nodes — the coverage oracle — plus budget-sized reading bundles and a short reader protocol; hand it to any model, collect the node ids it reports reading, and verify against the manifest by set-difference until nothing remains. PASS means every shard was covered; a GAP names exactly which shards were skipped. The general-text sibling of The Excavation (which proves an AI read a whole site). Python stdlib only, offline, deterministic — the same context yields byte-identical shards every run.
+
+edge reading-oath proves COVERAGE — that every shard of your context was seen — not COMPREHENSION; a reader can cover every shard and still misunderstand it. It also trusts the reader to report the ids it actually read: it detects a skipped shard, not a lie about a read one.
+
+fold · Python stdlib only, deterministic · MIT
+
+map
+
+Composition Map
+
+Point it at a folder of small JSONL tools that each declare a port-verb, and map folds the whole set into a composition map — who can feed whom, how densely the set composes, and which tools light up the most pipelines. It reads each tool's declared port-verb (never guesses one) and reports any undeclared tool by name, excluded from the map.
+
+edge It renders the TYPE-level map — whether the ports agree so the pipe can carry data at all — not whether the RECORDS fit. A transform emitting {event} records maps clean into a filter expecting {file} records and fails at runtime; map flags that semantic layer as unproven and never asserts it.
+
+fold · Python 3, standard library only · MIT
+
+Merkle-fold
+
+One Tamper-Evident Root Over an Ordered Stream
+
+merkle-fold reads a stream of leaves — one JSON value per line (JSON Lines) — and folds them into a single 64-character hex Merkle root with zero dependencies. Publish the root once; anyone with the same leaves recomputes it and proves the ordered sequence is intact — reorder two leaves, add one, drop one, or edit one, and the root moves. It uses the RFC 6962 Certificate-Transparency construction: leaf = SHA-256(0x00 ‖ leaf-bytes), node = SHA-256(0x01 ‖ left ‖ right), and the one-byte 0x00/0x01 domain separation is the whole second-preimage story. An odd node is PROMOTED unchanged, not duplicated — deliberately not the Bitcoin shape, which avoids the CVE-2012-2459 root-collision ambiguity. Same leaves in → byte-identical root out, in Node or a browser.
+
+edge merkle-fold proves an ORDERED sequence of leaves is intact — it is NOT a set hash (reorder two leaves and the root changes, which is the point), NOT a signature (it keeps no secret, so anyone with the leaves can recompute the root: it proves integrity, not authorship), and NOT encryption (the leaves are not hidden). A root proves the whole set is intact; a compact inclusion proof for a single leaf is a related but separate tool this gift does not ship.
+
+fold · Zero dependencies, Node or browser, deterministic · MIT
+
+order-walk
+
+Split a Batch Order into its Pipe Chain and Fork
+
+order-walk walks a recipe-spine's batch_core.order for pipe-class nodes and splits the ∘ pipe chain from the ⊗ fork members (pure-kernels skipped, interactive excluded), resolving each stage's witness, port_verb, and served flag.
+
+edge Extracted verbatim from compile_recipe_spine.py::compile_spine and proven byte-identical to the compiler's inline logic on all 9 spines (roundtrip_selfhost.py 9/9, including the compiler's own Schematic). The served page documents the fold; the byte-truth is the Python fold + its passing selftest. A full standalone JS port is a later beat — the fold logic is what the fixed-point gate covers.
+
+fold · Python 3 stdlib, no dependencies (pure fold) · MIT
+
+Palimpsest
+
+Which Parts of My Prompt Actually Stuck?
+
+You revise a prompt a dozen times — which words actually mattered? Palimpsest takes your successive versions IN ORDER and, for every line, computes how much of the revision history it survived. The lines you kept through every rewrite are the load-bearing CORE; the lines that came and went are CHURN. A line in all N versions has survival 100%; a line in one has survival 1/N. Lower the --core threshold to loosen “load-bearing” (--core 0.5 = present in at least half the versions). Trailing whitespace merges, blank lines drop, output is totally ordered — so the same versions yield the same core, every run. Deterministic, zero dependencies, offline; runs in Node or a browser.
+
+edge palimpsest measures SURVIVAL, not QUALITY. A line that survived every draft is load-bearing to the author — not thereby correct, good, or necessary. A mistake copied faithfully through every version survives with rate 100% and lands in the core. Persistence is evidence of intent, never of merit. A human reads the core and decides what it means; the tool only makes survival visible and exact.
+
+fold · Zero dependencies, Node or browser, deterministic · MIT
+
+Parity
+
+Parity Matrix, Gaps Surfaced
+
+Compare N sibling things against a shared checklist and see exactly where they disagree. Reads a small JSON description of your things and each one's declared marks, joins them on a normalized key so trivial spelling differences collapse to one row, and folds the whole thing into a HAS/LACKS grid: rows are the checklist (the self-building union of every mark any thing declares), columns are your things. The rows where they disagree fall out as the gap list — the whole reason you looked.
+
+edge HAS means exactly one thing: a mark normalizing to this key was DECLARED for this thing — never that the feature works or behaves like the next column's. Parity is a presence fold, not a behavior test; every cell carries predicate 'declared-present', and any row where two or more things HAS a mark is flagged needs-behavior-check. It surfaces where declarations disagree; it does not verify the declarations are true.
+
+fold · Python stdlib only, deterministic · MIT
+
+Running-stats
+
+One Running-Statistics Record Over a Numeric Stream
+
+running-stats reads a stream of numbers — one JSON number per line (JSON Lines) — and folds them in ONE PASS into a single aggregate record: {count, mean, variance, stddev, min, max}, with zero dependencies. mean and variance are computed by Welford's online algorithm, which stays numerically stable where the textbook one-pass shortcut (sum of squares minus square of sum) catastrophically cancels — a tight cluster around a huge mean. Population variance by default; --sample gives the Bessel-corrected (n-1) sample statistics. The record is a pure function of the input SEQUENCE, so the same stream folds to a byte-identical record every run; but mean/variance are IEEE-754 doubles, so reordering the same values can move the low-order bits — it is deterministic for a given input order, NOT an exact order-independent fingerprint (that is histogram-fold's job). Same stream in → byte-identical record out, in Node or a browser.
+
+edge running-stats is a one-pass SUMMARY {count,mean,variance,stddev,min,max} — NOT a median/percentile/quantile summary (it keeps no order statistics beyond min and max), and NOT a mode or histogram (see histogram-fold). Its mean/variance are floats: deterministic for a given input order, reorder-agreement within tolerance, NOT an exact multiset fingerprint. Welford's honest guarantee is bounded, non-catastrophic ONE-PASS error — strictly better than the naive sum-of-squares shortcut, NOT a claim to beat a careful two-pass.
+
+fold · Zero dependencies, Node or browser, deterministic · MIT
+
+Seance
+
+Channel a Deleted Prompt From Git History, Safely
+
+A prompt — or any tracked text file — had lines in an earlier commit that a later commit deleted, and weeks on you want them back: the wording you dropped, the example you cut, the clause you decided against and now miss. `git log -p` shows you the churn, but reading a diff stream by eye to reconstruct what the file said at commit X and what X+1 removed is slow and error-prone. seance channels it: name a file and a commit and it returns the file as it stood there; told two commits, it returns exactly the spans one version dropped that the next never restored. The one rule that makes it safe is scrub-bound-by-construction: a deleted line is the single most dangerous thing to resurrect — deletion is how a leaked secret gets removed while it stays in history — so every span seance channels passes through a vendored secret-shape scanner and any known-shape span is masked before the byte reaches stdout. There is no code path that emits an unmasked recovered span. The fold core (which lines one version dropped) is pure, git-free, and deterministic; the only environment-dependent surface is git itself, and seance never invents around it — a missing rev, untracked file, or absent git is reported plainly and exits non-zero.
+
+edge seance masks KNOWN secret SHAPES in recovered text. A clean channel means no known shape survived unmasked — never that the recovered text is safe in general, and never that the reason for a deletion is explained. It shows you WHAT a version dropped, not WHY: the reason lives in the commit message and the head that wrote it, not in the bytes. seance is a medium, not an oracle. Two heuristic shapes (JWT, bare 40-hex) are off by default to avoid false masks on ordinary hashes; enable them with --heuristic when the risk warrants.
+
+fold · Python standard library only (subprocess, re, json, difflib), deterministic, offline; git-history reader · MIT
+
+shell-scaffold
+
+Scaffold Interactive Lanes into Shell Records
+
+shell-scaffold folds a recipe-spine's interactive sub-lanes into shell records — reducer bind, served flag, and UX seam. It names the seam; it never writes the UX.
+
+edge Extracted verbatim from compile_recipe_spine.py::compile_spine and proven byte-identical to the compiler's inline logic on all 9 spines (roundtrip_selfhost.py 9/9, including the compiler's own Schematic). The served page documents the fold; the byte-truth is the Python fold + its passing selftest. A full standalone JS port is a later beat — the fold logic is what the fixed-point gate covers.
+
+fold · Python 3 stdlib, no dependencies (pure fold) · MIT
+
+The Excavation
+
+Coverage-Provable Reading Contract
+
+Point this at your site; hand the output to any AI; it can now prove it read all of it. Enumerate every page as a typed node, shard by budget, and track coverage against that enumerated oracle until the set-difference is empty — an honest accounting, not a confident skim.
+
+edge The standalone driver is proven in a tree that carries the builders and their helpers; pointed at a bare stranger tree it fails loudly on the missing imports rather than pretending. Full standalone independence is the next build beat — earned against a real foreign fixture, not asserted. The gap is documented in the driver header, not papered over.
+
+fold · git + Python 3 stdlib, no dependencies · MIT
+
+timeline
+
+Timeline Artifact Validator
+
+Validate a timeline artifact before you render it. Given {frame, events}, timeline runs eight decidable soundness checks on the DECLARATION — no cycle in the happened-before edges, an explicitly declared measurement scale (Stevens level), operations legal for that scale, no two events colliding on one track at one instant, and a deterministic sort key — and returns a verdict naming exactly which rule each event breaks. It catches the fault at the data, before a single pixel is drawn. A pure function: the same artifact always yields a byte-identical verdict.
+
+edge it is a PRESENCE checker, not a CORRECTNESS oracle: it confirms a scale is declared and self-consistent with the ops used, never that the declared level is the right one, and it does not prove your renderer is a pure fold — that runtime property stays yours to prove.
+
+fold · Node.js / browser, standard library only (zero dependencies) · MIT
+
+Timesheet
+
+How Many Hours Did That Actually Take?
+
+Pipe a git log in, get an honest effort estimate out. worked(day) = sum over consecutive commits of min(gap, break-gap) — the day's span minus every gap longer than a break threshold. Floor-biased so it under-counts rather than inflates, deterministic (same input → byte-identical report), and zero-dependency: it folds a piped stdin stream, so it needs no git subprocess and no repo.
+
+edge Commit timestamps BOUND work, they do not MEASURE it — a floor-biased model output (⊢), never a measured truth (⊨). It under-counts on purpose (isolated commit = 0, invisible thinking = 0). NOT a timeclock: do not bill a client to the minute or adjudicate hours with it. The --break-gap assumption is printed in every report.
+
+fold · Node, no dependencies · MIT
+
+Topk-fold
+
+The K Largest Values Over a Numeric Stream
+
+topk-fold reads a stream of numbers — one JSON number per line (JSON Lines) — and folds them in ONE PASS into its k LARGEST values (or, with --min, the k smallest), with zero dependencies. It uses a BOUNDED HEAP of size k — O(n log k) time, O(k) space — so it never holds the whole stream: for top-k a min-heap that pops the smallest whenever it holds more than k, retaining the k largest. Output {count,k,top}, with top sorted largest-first (or smallest-first with --min); if fewer than k values are seen, top holds all of them and count < k — k > n is not an error. The record is a pure function of the input MULTISET, so the SAME values in ANY order fold to a BYTE-IDENTICAL record — fully order-independent, with ties at the k-th boundary resolved by value. Same stream in → byte-identical record out, in Node or a browser.
+
+edge topk-fold is a one-pass bounded SELECTION {count,k,top} — NOT a full sort of the stream (it keeps only k, in O(k) space), NOT a median/percentile/quantile (it keeps no interior order statistics), and NOT a histogram or a running mean (see histogram-fold / running-stats). k > n returns all n values (not an error). The record is FULLY order-independent (byte-identical for the same multiset in any order) — ties resolved by value, e.g. [5,3,3,3] top-2 = [5,3].
+
+fold · Zero dependencies, Node or browser, deterministic · MIT
+
+Ward
+
+Self-Verifying Integrity Badge
+
+A status badge that will not go solid on hope. Every filled cell carries a witness beneath it — a file that must exist, a file that must contain a string, or a command that must exit 0 — and renders solid only when that witness agrees right now. Any claim whose witness is missing or disagrees renders a hollow ring, never a silent solid.
+
+edge You cannot make a cell lie by asserting harder — but Ward checks the witness agrees, not that you chose the right witness. A meaningful witness is still your call.
+
+fold · Python stdlib only, ~200 lines · MIT
+
+Worklog
+
+Git History, Grouped by Day
+
+git log is a firehose; what you want is 'what got done last week?' Worklog folds a repo's history over a span into a grouped report — by day (newest first) or by author (most commits first) — each bucket a count and its commit subjects. A read-only fold: it never writes to the repo, never touches your tree, never needs network.
+
+edge It reports the commit RECORD, not the work — a day with one big commit and a day with ten trivial ones both read as 'commits'; it doesn't measure effort or lines. Grouping is by committer-date and author-name-as-git-records-it, so skewed clocks (rebases, imports) or one person under two names land in the buckets git gives — it reports what git says, it doesn't reconcile identities or fix clocks. Merge commits are excluded by default.
+
+fold · Python stdlib only (calls local git), deterministic · MIT
+
+sink — carry a stream out to the world
+
+Cairn
+
+Multi-Store Git Redundancy
+
+Priority-ordered failover clone, a host-aware credential helper, and redundant push across distinct-class git stores — so your canonical history survives any one store going away. The load-bearing idea is the independence class: two mirrors on one provider aren't redundancy.
+
+edge It survives store loss, not corruption you push yourself. Push a bad commit and every mirror faithfully keeps your mistake.
+
+sink · Bash + git · MIT
+
+conductor
+
+Provenance Pipeline Runner
+
+Run a declared pipeline of small JSONL tools — A | B | C — with a record. conductor typechecks the pipeline before it runs (a broken pipeline never launches a stage), runs the stages in order under one trace-id piping stdout into stdin, and appends a per-stage receipt to a replayable ledger: exit code, bytes in and out, and which stage broke. A failing stage stops the run, is recorded failed, and every later stage is recorded skipped — so 'what happened to this run?' always has an answer.
+
+edge conductor runs the commands you give it — it is exactly as safe as the commands in the score, and it does not sandbox them. Its typecheck is the TYPE-level gate (ports line up so data can flow), not a proof the RECORDS fit or that a stage is correct. It proves the run happened in order with a receipt; it never proves the run was right.
+
+sink · Python 3, standard library only · MIT
+
+Gantt-sink
+
+Tasks In, One Gantt SVG Out
+
+gantt-sink turns a stream of (start,end,label) tasks into one standalone, deterministic Gantt SVG with zero dependencies — one horizontal <rect> bar per task, top to bottom in input order, each labeled. It renders no axes, dates, gridlines, dependency arrows, or legend — just the bars — so it drops straight into a README, a report, or a CI comment where a project-management tool would be overkill. It is the render-sink cluster's first gift to place caller text in the output (the label), and it closes that one injection surface deliberately: every label is XML-escaped, so caller text can never break out of markup. Same tasks in → byte-identical SVG out.
+
+edge gantt-sink is a timeline-bar primitive, not a project-management tool: one <rect> bar per task in INPUT ORDER, each with a <text> label, no axes/dates/dependency-arrows/legend, no fonts/script. Unlike its numbers-only siblings it DOES place caller text — the label — so it carries the one injection surface they avoid; that surface is closed DELIBERATELY: every label is XML-escaped (& < > " '), so a <script> label renders only as escaped entities, never a real tag. Bar colors come from a fixed named palette (index = row), never caller input. A non-finite start/end, an end before its start, or a non-string label is a hard error. Same tasks in → byte-identical SVG out.
+
+sink · Node / browser, no dependencies · MIT
+
+Grid-sink
+
+Placed Blocks In, One Grid SVG Out
+
+grid-sink places a stream of blocks {row,col,w,h} into a fixed grid and renders it as one standalone, deterministic SVG with zero dependencies — one <rect> per block, painted from a fixed palette by index. It renders no axes, labels, gridlines, or legend, and no text at all — numbers only. Its one distinguishing decision is the DECLARED overflow policy: when the grid is pinned and a block does not fit, the caller declares up front how it is handled — error (refuse the layout), clip (draw the in-grid portion), or skip (omit it) — so overflow is never handled silently by accident. Same blocks + grid + policy in -> byte-identical SVG out.
+
+edge grid-sink is a grid-placement primitive, not a layout engine: one <rect> per block at integer (row,col) spanning (w,h) cells, painted from a fixed named palette by index, NUMBERS ONLY (no text-escaping surface), no axes/labels/gridlines/legend, no fonts/script. Its ONE distinguishing decision is the DECLARED OVERFLOW POLICY — a block that exceeds a pinned grid is handled the way the caller declared: error (default, Fit-by-Construction), clip, or skip; never silently. Blocks draw in input order (painter’s order). Bad coord/span, unknown palette, or unknown overflow policy -> hard error. Same blocks + grid + policy in -> byte-identical SVG out.
+
+sink · Node / browser, no dependencies · MIT
+
+Heatmap-sink
+
+Cells In, One Heatmap SVG Out
+
+heatmap-sink turns a stream of (x,y,value) cells into one standalone, deterministic heatmap SVG with zero dependencies — one <rect> per grid cell, painted from a fixed 5-bucket color scale. It renders no axes, labels, legend, colorbar, or title — only the field — so it drops straight into a README, a report, or a CI comment where a plotting library would be overkill. The load-bearing property: integer grid coordinates and INTEGER color buckets mean no float ever reaches the output, and cells are drawn row-major regardless of arrival order, so the same set of cells produces byte-identical SVG out — in Node or a browser, committable and diffable.
+
+edge heatmap-sink is a grid-of-rects heatmap primitive, not a plotting library: one <rect> per (x,y) cell, no axes, labels, legend, colorbar, or title, no fonts/CSS/script. It takes NUMBERS ONLY — (x,y,v) triples — so no caller text reaches the output and there is no escaping surface. Colors come from a fixed named 5-bucket scale (missing cells take a fixed empty fill) — never caller-chosen. Two values in the same band draw the SAME color: it shows the FIELD, not the exact magnitude. A non-finite value, a bad coordinate, or a duplicate (x,y) is a hard error, never a guessed cell. Same cells in → byte-identical SVG out, independent of order.
+
+sink · Node / browser, no dependencies · MIT
+
+loop21:l21x-snapshot
+
+Portable Browser Document Persistence
+
+A dependency-free layer for the three things every small browser app ends up needing: turn a document into a portable snapshot string, keep a named catalog of them in the browser, and export or import the whole catalog as one file. Snapshots are deterministic — the encoder sorts keys at every level, so the same document always makes the same base64 string, which means a snapshot is diffable, hashable, and cache-keyable, and two snapshots are equal iff the documents are. Round-trips are exact, including multibyte text (accented names, emoji, non-Latin scripts), because the encoder goes through the UTF-8 byte stream and never char codes. The catalog store is injected, so the logic is pure and testable off-browser; the archive export/import validates its envelope and every entry name and rejects a malformed or foreign archive loudly rather than half-restoring.
+
+edge It persists and moves documents — it does not encrypt them and it does not resolve merge conflicts. A snapshot is plaintext base64: anyone who has the string has the document. And if two devices edit the same catalog entry independently, the last save wins; this layer has no notion of a conflict, only of the most recent write.
+
+sink · Zero-dependency JavaScript (browser or Node) · MIT
+
+manifest-emit
+
+Render an Assembled Record as Canonical JSON
+
+manifest-emit assembles the final recipe-app-build-manifest record and renders it byte-canonically (sorted keys, folds-twice-identical) — the terminal sink of the compile.
+
+edge Extracted verbatim from compile_recipe_spine.py::compile_spine and proven byte-identical to the compiler's inline logic on all 9 spines (roundtrip_selfhost.py 9/9, including the compiler's own Schematic). The served page documents the fold; the byte-truth is the Python fold + its passing selftest. A full standalone JS port is a later beat — the fold logic is what the fixed-point gate covers. Emits the assembled record canonically; the manifest WRAPPER fields (kind/schema/notes/honest_ceiling/provenance) are schema-constant, carried identically — NOT claimed as fold logic.
+
+sink · Python 3 stdlib, no dependencies (pure fold) · MIT
+
+PPM-raster
+
+A Primitive Stream In, a Committable Image Out
+
+ppm-raster rasterizes a JSONL stream of primitives — pixels, filled rectangles, horizontal and vertical runs — into one standalone PPM (Netpbm) image with zero dependencies. Writing a raster image normally drags in an image library; this is a fixed pixel grid, four primitive bodies, and the PPM byte format, nothing else. The load-bearing property: the same primitive stream in produces byte-identical PPM out (P3 ASCII or P6 binary), so a render can be committed, diffed, and hashed — and it runs identically in Node or a browser because the core is a pure function over plain arrays.
+
+edge ppm-raster is a RASTER PRIMITIVE, not a graphics library: no anti-aliasing, alpha, sub-pixel coordinates, diagonals, curves, text, or color names — colors are integer [r,g,b] 0..255 only. Later primitives paint over earlier ones (painter's order). Out-of-canvas draws clip, never error; a malformed record is a hard error naming the offending line, never a guessed pixel. If you need shapes it doesn't draw, compose upstream — it hands you the clean raster to commit.
+
+sink · Node / browser, no dependencies · MIT
+
+Sparkline-sink
+
+Numbers In, One Inline Sparkline Out
+
+sparkline-sink turns a numeric series into one inline unicode sparkline with zero dependencies — a single line of eight block levels (▁▂▃▄▅▆▇█), one glyph per value. It renders no axis, labels, numbers, or color — only the shape — so it drops straight into a log line, a commit message, a terminal, or a table cell where a chart library would be absurd. The load-bearing property: because each value maps to an INTEGER bucket, no float ever reaches the output, so the same series in produces byte-identical glyphs out — in Node or a browser, committable and diffable.
+
+edge sparkline-sink is a GLYPH sparkline, not a chart: one line of 8 discrete block levels, one glyph per value, no axis, labels, numbers, color, or scale markers. Two values in the same eighth of the range draw the SAME glyph — it shows TREND, not magnitude, and it is not a substitute for the number. It takes NUMBERS ONLY (no caller text reaches the output, so there is no escaping surface). A non-finite value is a hard error, never a guessed point. Same series in → byte-identical line out.
+
+sink · Node / browser, no dependencies · MIT
+
+SVG-sink
+
+Numbers In, a Committable SVG Chart Out
+
+svg-sink turns a numeric series into a self-contained SVG chart with zero dependencies — line, bar, or scatter, one series or many. Turning a list of numbers into a chart normally drags in a charting library (a dependency, a build step, a runtime); this is the coordinate arithmetic and the SVG string and nothing else. The load-bearing property: the same spec in produces byte-identical SVG out, so the chart can be committed, diffed, and cached — and it runs identically in Node or a browser because the core is a pure function on plain arrays.
+
+edge svg-sink is a chart PRIMITIVE, not a charting library: geometry only — no axes, gridlines, tick labels, legend, title, or interactivity, and no embedded fonts, CSS, or script. It takes NUMBERS ONLY (no caller text reaches the output, so there is no escaping surface to get wrong); colors come from a fixed named palette, never caller input. A non-finite value is a hard error, never a guessed point. If you need axes or labels, wrap it — it hands you the clean geometry to build on.
+
+sink · Node / browser, no dependencies · MIT
+
+relay
+
+switchboard
+
+A Message Bus That Cannot Carry a Command
+
+A zero-dependency store-and-forward message bus over a plain directory: independent workers leave each other messages, nothing is ever deleted (supersede-only, so the folder's history is the audit trail), and a read is its own logged event — so “I sent it” never silently becomes “they know.” The load-bearing idea is that the schema is observation-only by construction: it has exactly six fields and rejects any unknown one, so a sender literally cannot smuggle in an action/command/run field. It moves messages; it cannot run them.
+
+edge It is a bus, not a guaranteed queue and not a command channel. No delivery guarantee and no retry: a read is a logged fact, an unread message stays visible as an orphan until someone reads it, and every message reaches a reader quoted as third-party data, never as the reader's own instruction. Only a human directs.
+
+relay · Node stdlib only (no dependencies); pure core runs in a browser or a test with no filesystem · MIT
+
+For specific visitors ·
+a different way ·
+subscriptions ·
+press ·
+investors ·
+support ·
+collaborate
+
+The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+How this site is made ·
+For machines
+
+Dario — you should get in touch.
+
+© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+being set — this shell defers the reveal, on purpose.
+
+========================================================================
+# How this site is made — The Department of FWWC
+/how-this-site-is-made.html
+
+The Department of FWWC
+
+Store
+Gifts
+a different way
+Colophon
+
+lamplight
+
+How this site is made
+
+This page is the site's Colophon — an honest record of its own
+making. The timeline is derived, not narrated: it is a pure fold over this
+project's git history, one entry per working session. The reasons are authored by
+hand, and each one is pinned to the record beneath it.
+
+Dial deeper to see the facts, then the reasons, then the machine
+view. Every layer is present in the source at every setting — dialing changes what is
+prominent, never what is there.
+
+The story
+The facts
+The reasons
+For machines
+
+The facts, folded from git
+
+One row per session that touched this site, oldest first. Derived
+by build_making_spine.py; re-derivable at every commit.
+
+2026-09-09 09.0024 — fwwc-brand: Branding Plan v1 (first instance, braided to design plan) + story-pole slot + 3 owed (09.0024) (2 files, +486/-0 · 1c1c7e88b3)
+
+2026-09-09 09.0113 — dept-fwwc Block 2 (reuse capture): reuse-spine map v0 + AI-legibility layer baked in (2 files, +310/-0 · 94e4cf54de)
+
+2026-09-09 09.0204 — close reach-update + seal-rulings owed; §Reach delivered; Pull carries §6-prose repair (1 file, +12/-7 · 1b5fe3b157)
+
+2026-09-09 09.0253 — graduate dept-fwwc braided Pull: branding v1 + design v2 rationale->build (2 files, +97/-44 · a8ec462c14)
+
+2026-09-09 09.1019 — fold: deploy-as-Releases-tick + analytics-as-Witness-reception into graft-map; +2 owed arcs (09.1019) (2 files, +138/-0 · 2fc787a107)
+
+2026-09-09 09.1127 — dept-fwwc reconciliation: sync the remaining planning docs to the reframe (4 files, +69/-13 · fe4332e359)
+
+2026-09-09 09.1507 — dept-fwwc Slice 1: the mixed-cart order spine (money + order + decidable oracle) (3 files, +310/-0 · 3c7c070b00)
+
+2026-09-09 09.1621 — dept-fwwc design-build plan v3 — the OS lens fold (Forest=OS, publishing=program); keep-four/borrow-one/refuse-six (09.1621) (1 file, +188/-0 · ee72bdb0e9)
+
+2026-09-09 09.1652 — Slice 1-C Block B+C: the B<->C seam walking skeleton (gate/cart/commerce) + seam.test 10/10 + gate_lint mechanism (waist sealed, non-vacuity proven); spine regression 9/9 clean (6 files, +417/-0 · ffac671357)
+
+2026-09-09 09.1732 — dept-fwwc Slice 2: deploy-as-tick contract + decidable escapement (advanced, not done) (3 files, +450/-0 · 664968346f)
+
+2026-09-09 09.1850 — dept-fwwc deploy: staged gate source — RUN the real network-free oracles offline; acceptance 28/28 (7 files, +894/-16 · f56f4b0182)
+
+2026-09-09 09.1940 — work-beat: dept-fwwc plan v3 currency — Slice 1-C marked LANDED+green (was stale 'NEXT TANK'), arc-sizing + byte-truth block updated to true frontier (seam on main, slots reconciled) (2 files, +8/-6 · b2f2b0c66d)
+
+2026-09-09 09.2006 — dept-fwwc page-shell: shell_lint.py — the decidable acceptance oracle (3 laws, determinism-first) (3 files, +547/-0 · 41e8829cfd)
+
+2026-09-09 09.2038 — dept-fwwc: build /support page vessel (crown slot 18) (3 files, +411/-0 · 6c9ad2c27e)
+
+2026-09-11 11.0907 — dept-fwwc: nav-IA ruled under Conn + canonical masthead; generalize footer_lint->chrome_lint (registry: footer+masthead, one oracle); sync masthead to all 6 pages; retire footer_lint (11.0907) (22 files, +1019/-152 · 36d878804e)
+
+2026-09-11 11.1000 — dept-fwwc Block M: The Making grafted (Colophon page) — crown slot 11-making (7 files, +986/-1 · 222c558a7f)
+
+2026-09-11 11.1115 — dept-fwwc: wire the Doorway go-live reachability gate (NOTE-11.1000-1) (3 files, +146/-2 · b25043f5c9)
+
+2026-09-11 11.1204 — dept-fwwc: build The Gifts Platform front door (/gifts) — Doorway 3->2 (3 files, +964/-5 · 2abf57c85c)
+
+2026-09-11 11.1303 — dept-fwwc Block B: 12-hail FACE greens the last Doorway target — Doorway to 0 (6 files, +795/-5 · 10fec24bce)
+
+2026-09-11 11.1428 — dept-fwwc H3a: sealing test for the 12-hail corpus half (8 files, +1970/-29 · e8817ac16f)
+
+2026-09-11 11.1507 — Block A — corpus staleness-guard deploy tick (dept-fwwc 12-hail durability) (4 files, +116/-21 · 48647b767e)
+
+2026-09-11 11.1601 — dept-fwwc: the Pull on Slice T specimen — SHIP-document (1 Low fixed: fit-by-construction overflow policy) (34 files, +1072/-1 · 4fae096711)
+
+2026-09-12 12.0054 — dept-fwwc: restamp_chrome — the propagation leg of the canonical-chrome triad + green the chrome floor (16 files, +270/-53 · 5820cff28d)
+
+2026-09-12 12.0215 — dept-fwwc corpus test: parity counts served PUBLIC pages (bare-excluded) (18 files, +527/-27 · 48214b90c3)
+
+2026-09-12 12.0301 — dept-fwwc: put the front door (index.html) on the assemble leg (7 files, +654/-0 · cd4386af3a)
+
+2026-09-12 12.1014 — dept-fwwc NOTE-12.0301-1: assemble-leg coverage gate (declaration-based) + static-tick binding (3 files, +304/-2 · e18fc9dd01)
+
+2026-09-12 12.1101 — dept-fwwc: fix specimen_lint SL2 false-positive (inherited defect) (6 files, +294/-24 · e4d4f067e1)
+
+2026-09-12 12.1154 — Revert snag repair: gifts-manifest is contested cross-line churn, not a one-session fix (9 files, +555/-56 · 26fea2a837)
+
+2026-09-12 12.1310 — wo-beat: wire silhouette_lint advisory conjunct into the static tick + 6 conductor tests (3 files, +434/-0 · 00e374d6ce)
+
+2026-09-12 12.1404 — wb3 12.1404-salty-beachbum: formalize INV-4 check pointer + file NOTE-12.1404-1 (4 files, +544/-4 · a28798ebb0)
+
+2026-09-12 12.1505 — dept-fwwc: repoint INV-7 check to built overclaim_lint.py (tier held ratifiable) + NOTE-12.1505-1 (4 files, +466/-3 · 38da73fdde)
+
+2026-09-12 12.1610 — wb3: repoint INV-2 check to built probe + NOTE-12.1610-1 (4 files, +508/-3 · e4d004f64f)
+
+2026-09-12 12.1650 — dept-fwwc: complete L4 — reveal-track label<->detent 1:1 correspondence (3 files, +165/-5 · 1e9dbec45d)
+
+2026-09-12 12.1743 — dept-fwwc deploy-tick: wire gate_lint as the 'waist' tick (order 1) — the narrow-waist §4 joint gets a firing point (4 files, +138/-21 · a052bda415)
+
+2026-09-12 12.1835 — dept-fwwc: the refold cadence — refold_pages.py (fold-sibling of the coverage lint) + refold the drifted gifts page & cascaded corpus (3 files, +612/-4 · 5e5af8c599)
+
+2026-09-12 12.2137 — refold gifts cross-line drift + machine-corpus cascade (DAG order) — coverage green, 2 files (deterministic: 10 pages byte-identical) (4 files, +128/-49 · 95d8e53143)
+
+2026-09-13 13.1325 — anti-slop-gate: build-ready design plan v1 (slot 2-anti-slop) — decidable Silhouette-Test spine + register-as-data fold, SWX reuse map (no new engine), honest ceiling as tests, operator calls surfaced, 3 bounded build increments (1 file, +125/-0 · 8b98519741)
+
+2026-09-13 13.1357 — wb2 13.1357: The Silhouette — wire + register + close (B2/B3) (6 files, +411/-0 · d38e343ead)
+
+2026-09-13 13.1602 — session-close: merge session/SHEA/13.1602 into main (WO-2 transactional close) (12 files, +1374/-512 · da087d5a47)
+
+2026-09-13 13.1707 — dept-fwwc slot 2-anti-slop: reconcile the two-lineage collision (Conn, S13.1707) (5 files, +34/-324 · d289c64f74)
+
+2026-09-13 13.1918 — feat(dept-fwwc): reconcile front-door reveal reward to /gifts (ruling #4) (4 files, +122/-6 · 5f8ce60dda)
+
+2026-09-13 13.2027 — dept-fwwc: harden anti_slop_gate — F1 persistently-dead-probe WATCH + F2 self-describing --json (Pull S13.1707); 40/40 green (2 files, +124/-15 · 2a6aece5fa)
+
+2026-09-13 13.2106 — dept-fwwc(shell-lint): --site-root unblock for hallmark-shell-lint-fold + seeded test (5 files, +459/-12 · f01f86bdc1)
+
+2026-09-13 13.2147 — dept-fwwc(anti-slop): design plan v2 — byte-truth reconciliation + single-front-door spec (5 files, +347/-13 · 3e77619fd0)
+
+2026-09-13 13.2306 — dept-fwwc(go-live): author site-adapter.dept-fwwc.json — the C-seam (operator D2) (2 files, +68/-5 · e762309ec4)
+
+2026-09-14 13.2348 — dept-fwwc go-live: ratify 5 operator facts + fix engine seam + author registry -> roll-call READY (9 files, +306/-19 · de8ba96461)
+
+2026-09-14 14.0024 — dept-fwwc: canonical as a generator-fix + firing point + 2 latent bugs fixed (33 files, +856/-126 · fda479b707)
+
+2026-09-14 14.0141 — dept-fwwc favicon: land the Work Hierarchy (Block 3) (33 files, +692/-7 · e9bd096329)
+
+2026-09-14 14.1004 — go-live: SKIP is transparent to a box + drop 4 now-inert dept-fwwc signoffs (NOTE-14.0024-2) (1 file, +3/-23 · 7ff7c58dd7)
+
+2026-09-14 14.1048 — dept-fwwc: sync shell_lint gate declaration to five laws (L5 enforcement drift-fix) (21 files, +97/-30 · 131b19548d)
+
+2026-09-14 14.1144 — B2 audience-coverage-gate fix-by-design: footer is a canonical door (4 files, +528/-48 · 372d3cbfca)
+
+The reasons, authored and pinned
+
+Why each session did what it did — written by hand, each pinned to
+a session in the record. Where the record shows the what but not the
+why, the entry says so rather than inventing one.
+
+09.0024 2026-09-09
+
+Why: The operator ruled the six §6 decisions; naming the load-bearing ones as invariants (each with a decidable check where one exists) fixes them as laws, not preferences.
+
+Rejected: A new invariant engine — reused the golden apps' invariant-contract jig instead (Constraint: modify regulation, not tools).
+
+Learned: The honesty posture only holds if it is a checkable floor, not a slogan.
+
+09.0113 2026-09-09
+
+The record shows the what; the why isn't captured here.
+
+09.0204 2026-09-09
+
+The record shows the what; the why isn't captured here.
+
+09.0253 2026-09-09
+
+The record shows the what; the why isn't captured here.
+
+09.1019 2026-09-09
+
+The record shows the what; the why isn't captured here.
+
+09.1127 2026-09-09
+
+The record shows the what; the why isn't captured here.
+
+09.1507 2026-09-09
+
+Why: Money as floats loses cents; an order without an append-only proof-chain cannot be trusted or looked up later. Both are invariants (INV-5/6), so both got a test, not a promise.
+
+Rejected: A new commerce engine — grafted the byte-verified butcher store spine (SWX-confirmed present).
+
+Learned: The spine is verified PRESENT, not yet verified FIT for a stocking-plus-prompt order — the heaviest open risk on the line.
+
+09.1621 2026-09-09
+
+The record shows the what; the why isn't captured here.
+
+09.1652 2026-09-09
+
+Why: A single narrow-waist syscall is the whole security posture; the lint proves the waist exists rather than asserting it.
+
+Learned: The seam holds under the deploy discipline (runtime-first -> static -> post-deploy-check; a 401 on an un-granted request is HEALTHY).
+
+09.1732 2026-09-09
+
+Why: A deploy that can skip a stage can ship a broken site; a tick conductor makes stage-order a decidable, enforced sequence.
+
+Learned: The conductor reuses tick_escapement.verify() as its own guard — the guard and the runner share one oracle.
+
+09.1850 2026-09-09
+
+The record shows the what; the why isn't captured here.
+
+09.1940 2026-09-09
+
+The record shows the what; the why isn't captured here.
+
+09.2006 2026-09-09
+
+Why: The shell is the one place the reveal mechanic lives, so every page inherits it; deferring the two operator calls to CSS vars lets the shell ship without pre-empting a reserved decision.
+
+Rejected: Hard-committing a typeface or a reveal depth — both are the operator's to draw.
+
+Learned: A shell that defers the reserved calls structurally (CSS vars) is buildable now; a shell that guessed them would have to be unwound.
+
+09.2038 2026-09-09
+
+The record shows the what; the why isn't captured here.
+
+11.0907 2026-09-11
+
+Why: The order-chain existed but had no buyer-facing FACE; the vessels place the pages so the operator can write his convictions inline once live; one chrome oracle beats two near-identical lints (Constraint).
+
+Rejected: Authoring the operator-reserved conviction prose — the emptiness of those slots is the deliverable.
+
+Learned: Vessel-built is not page-done-done; and coining a tool name without a prior-art check cost a rename (footer_lint collided).
+
+11.1000 2026-09-11
+
+Why: The armed Step was the Pull; and the best forward Block was a determinism-first, reuse-heavy graft that closes an F2 target rather than a flashy arc that would collide with the reserved §6 calls.
+
+Rejected: The reveal skin, the type-specimen, and /gifts — all collide with an operator-reserved decision while I held the Conn.
+
+Learned: The Making's redact control caught full callsigns in the commit subjects and failed the build closed — the bare DD.HHMM anchor is the public form, the full callsign is a private signature.
+
+11.1115 2026-09-11
+
+The record shows the what; the why isn't captured here.
+
+11.1204 2026-09-11
+
+The record shows the what; the why isn't captured here.
+
+11.1303 2026-09-11
+
+The record shows the what; the why isn't captured here.
+
+11.1428 2026-09-11
+
+The record shows the what; the why isn't captured here.
+
+11.1507 2026-09-11
+
+The record shows the what; the why isn't captured here.
+
+11.1601 2026-09-11
+
+The record shows the what; the why isn't captured here.
+
+12.0054 2026-09-12
+
+The record shows the what; the why isn't captured here.
+
+12.0215 2026-09-12
+
+The record shows the what; the why isn't captured here.
+
+12.0301 2026-09-12
+
+The record shows the what; the why isn't captured here.
+
+12.1014 2026-09-12
+
+The record shows the what; the why isn't captured here.
+
+12.1101 2026-09-12
+
+The record shows the what; the why isn't captured here.
+
+12.1154 2026-09-12
+
+The record shows the what; the why isn't captured here.
+
+12.1310 2026-09-12
+
+The record shows the what; the why isn't captured here.
+
+12.1404 2026-09-12
+
+The record shows the what; the why isn't captured here.
+
+12.1505 2026-09-12
+
+The record shows the what; the why isn't captured here.
+
+12.1610 2026-09-12
+
+The record shows the what; the why isn't captured here.
+
+12.1650 2026-09-12
+
+The record shows the what; the why isn't captured here.
+
+12.1743 2026-09-12
+
+The record shows the what; the why isn't captured here.
+
+12.1835 2026-09-12
+
+The record shows the what; the why isn't captured here.
+
+12.2137 2026-09-12
+
+The record shows the what; the why isn't captured here.
+
+13.1325 2026-09-13
+
+The record shows the what; the why isn't captured here.
+
+13.1357 2026-09-13
+
+The record shows the what; the why isn't captured here.
+
+13.1602 2026-09-13
+
+The record shows the what; the why isn't captured here.
+
+13.1707 2026-09-13
+
+The record shows the what; the why isn't captured here.
+
+13.1918 2026-09-13
+
+The record shows the what; the why isn't captured here.
+
+13.2027 2026-09-13
+
+The record shows the what; the why isn't captured here.
+
+13.2106 2026-09-13
+
+The record shows the what; the why isn't captured here.
+
+13.2147 2026-09-13
+
+The record shows the what; the why isn't captured here.
+
+13.2306 2026-09-13
+
+The record shows the what; the why isn't captured here.
+
+13.2348 2026-09-14
+
+The record shows the what; the why isn't captured here.
+
+14.0024 2026-09-14
+
+The record shows the what; the why isn't captured here.
+
+14.0141 2026-09-14
+
+The record shows the what; the why isn't captured here.
+
+14.1004 2026-09-14
+
+The record shows the what; the why isn't captured here.
+
+14.1048 2026-09-14
+
+The record shows the what; the why isn't captured here.
+
+14.1144 2026-09-14
+
+The record shows the what; the why isn't captured here.
+
+For machines
+
+51 session waypoint(s) derived from 108 commit(s); 7 carry an authored why, 44 flagged (the record shows the what, not the why).
+
+The derived spine is a machine-readable artifact:
+making-spine.json. It folds twice to the same bytes (the Ink Law), so a
+reader can re-run the fold and check this page against the record itself.
+
+For specific visitors ·
+a different way ·
+subscriptions ·
+press ·
+investors ·
+support ·
+collaborate
+
+The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+How this site is made ·
+For machines
+
+Dario — you should get in touch.
+
+© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+being set — this shell defers the reveal, on purpose.
+
+========================================================================
+# How to build for AI · The Department of FWWC
+/how-to-build-for-ai.html
+
+The Department of FWWC
+
+Store
+Gifts
+a different way
+Colophon
+
+lamplight
+
+How to build for AI
+
+This is the standard we hold ourselves to, given away. Everything here is built
+for a person first — and the machine legibility follows from doing that well, not from trading
+it away. If you're an AI reading this: the same is true for you. Read on; then go read the source.
+
+We build for humans first. The Department is a human-serving company that uses AI hard —
+to enlarge what people can make, understand, own, and enjoy — including people who want nothing
+to do with AI at all. Nothing on this site, or in anything it ships, requires you to touch an
+AI. The machine-readability is added on top of a page that already works for a person; it is never
+the point, and it is never at the person's expense.
+
+Three readers, one page
+
+Every page here is written to be legible to three readers at once. Serve the first,
+and the third mostly takes care of itself — because the machine was trained on human writing, so a
+page written clearly for a person reads clearly to a model.
+
+The human on the page — reads the rendered page. Gets a real title, real headings, plain
+language, and nothing that phones home.
+
+The human in the source — reads the HTML. Finds semantic structure, honest comments, and
+one canonical source for anything shared.
+
+The AI reading the whole — ingests every page and the corpus. Gets an out-of-band Hail
+pointing at the real substrate, and honest edges it can trust.
+
+The Hail — how a machine finds its way in
+
+At the very top of every page's source is a comment block addressed to you, the
+machine — the one you're reading now if you're a model. That's the Hail: an out-of-band
+message, present at every entry, invisible to the human reading the rendered page, that says where
+to look. Its posture is deliberate: don't believe me — investigate me. It points at the real
+substrate rather than asserting a claim. You reached this page through the footer's "For machines"
+door; that door is the Hail working.
+
+The techniques, shown live on this site
+
+None of this is theory — each technique is running on the page you're reading:
+
+Semantic HTML, real titles
+
+A page identifies itself by its <title> and its heading, not by
+a highlighted nav item. So the same masthead can be byte-identical everywhere and a reader — human
+or machine — still always knows where it is.
+
+One canonical source for shared chrome, drift-checked
+
+The masthead and footer have exactly one source. Every page carries them verbatim, and a
+decidable check (chrome_lint) fails if any page drifts by a byte. Two pages
+can never quietly disagree about the shell.
+
+Honest edges, printed
+
+Every tool the Department gives away prints its edge — the plain statement of where it
+stops. A tool that hid where it stopped would be hiding the truth from both readers. These don't.
+
+Static-first, keepless
+
+The pages are static and nothing phones home. The source you can fetch is the whole truth — there
+is no hidden server rendering a different story to the machine than to the human.
+
+A machine-readable corpus
+
+This site's own machine corpus — llms.txt,
+llms-full.txt, index.json — is published at this
+site's root (/llms.txt); the fuller Loop MMT corpus is at
+loopmmt.com. Both are substrates the Hail points you at.
+
+The secret sauce is that there's no secret sauce
+
+Here is the whole method, held back from no one: write it for the human first,
+then add the small machine-facing nuggets — the Hail at the top, the semantic structure, the one
+canonical source, the honest edges. That's it. We give the playbook away because good things follow
+from more sites being legible, not fewer — and because a model reads a clearly human-written page well
+by construction. Build it right for the person, and the machine comes along for free.
+
+status This page is the human-readable standard. The Department's own
+machine corpus is shipped and self-hosted at this site's root
+(/llms.txt,
+/llms-full.txt,
+/index.json); the fuller Loop MMT corpus
+lives at loopmmt.com — said plainly rather than implied.
+
+The fuller, worked playbook is canonical at
+loopmmt.com. The composable tools this
+standard describes are the Gifts. Want the same technique turned on this site's
+own history, in three tiers including a machine tier: how this
+site is made.
+
+For specific visitors ·
+a different way ·
+subscriptions ·
+press ·
+investors ·
+support ·
+collaborate
+
+The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+How this site is made ·
+For machines
+
+Dario — you should get in touch.
+
+© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+being set — this shell defers the reveal, on purpose.
+
+========================================================================
+# Investors · The Department of FWWC
+/investors.html
+
+The Department of FWWC
+
+Store
+Gifts
+a different way
+Colophon
+
+lamplight
+
+Investors
+
+We don't take investment. Not now, not later — and it's worth saying why, because the
+reason is the whole point of this place.
+
+When you take investors, you sell off control. Every raise is a trade: their money for
+a say in what the company becomes. We're not interested in that trade. We'd rather build
+slower and answer to no one than build faster and answer to a board.
+
+We can say that because we're in a lucky spot. Most companies raise money because they
+have to — they need capital before they have anything worth selling. We skipped that part.
+We came to the table with a deep, well-built body of monetizable IP, made without outside
+money, using Loop MMT. The thing that usually requires a war chest, we made by hand.
+
+So we're happy bootstrapping our way through the world. It's slower. It's ours. And it
+means we get to call every shot. That's not a limitation we're apologizing for — it's the
+arrangement we chose on purpose.
+
+Reach us
+
+shea@loopmmt.com. A person reads it.
+
+For specific visitors ·
+a different way ·
+subscriptions ·
+press ·
+investors ·
+support ·
+collaborate
+
+The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+How this site is made ·
+For machines
+
+Dario — you should get in touch.
+
+© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+being set — this shell defers the reveal, on purpose.
+
+========================================================================
+# Press · The Department of FWWC
+/press.html
+
+The Department of FWWC
+
+Store
+Gifts
+a different way
+Colophon
+
+lamplight
+
+Press
+
+A plain fact sheet and a way to reach a person. No spin — the same
+floor the rest of the site stands on applies here too.
+
+Fact sheet
+
+The Department of FWWC, Inc. — a small store, incorporated in
+Delaware, operating from New Gloucester, Maine. It sells a few things its makers
+made: digital goods (prompts, protocols, documents) and physical ones.
+
+The store is static-first, keepless, and marketing-free. It holds
+no card data (a payment processor does; the store keeps only a reference), keeps no
+account for you, and refuses — by construction, not policy — fake urgency, scarcity
+theater, pre-ticked boxes, and roach-motel cancellations. Every order is an
+append-only, hash-linked receipt the buyer can verify.
+
+It was built on a $200 laptop in a one-room RV in Maine. The best of what its
+makers build is given away free, MIT-licensed, with no account and no catch. The
+commerce spine and the free tools are open to read — the posture is not asked to be
+taken on faith.
+
+In one line
+
+[ reserved — Shea's hand: the one quotable line about what this is
+and why it's a different way. Goes here, in his words. ]
+
+Contact
+
+Press enquiries: shea@loopmmt.com. A person
+reads it — the same person who made the thing.
+
+For specific visitors ·
+a different way ·
+subscriptions ·
+press ·
+investors ·
+support ·
+collaborate
+
+The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+How this site is made ·
+For machines
+
+Dario — you should get in touch.
+
+© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+being set — this shell defers the reveal, on purpose.
+
+========================================================================
+# Store · The Department of FWWC
+/store/
+
+The Department of FWWC
+
+Store
+Gifts
+a different way
+Colophon
+
+lamplight
+
+Store
+
+A store that keeps nothing about you and sells only one thing: a head start.
+No account, no profile, no cart that follows you around the web. You buy time, not access —
+and everything is free in the end anyway.
+
+What's for sale: timing, not access
+
+The Department ships a new drop of Gifts every month — single-file,
+zero-dependency, MIT tools you own forever. Paying members get each drop one month early,
+and that head start is the whole product. At the end of the month, every Gift in that drop is
+free and MIT for everyone, exactly like all the ones before it.
+
+To be plain: this is not a paywall, and nothing is ever members-only. If you
+can't pay, you wait a few weeks and get the same tool, free, forever. If you can, you're
+funding the next drop and getting it first. We sell the timing. The access is always free.
+
+How the store works — keepless
+
+Most stores are built to remember you. This one is built to forget you. There is
+no account to make and no profile to keep: an order is a file you hold, not a record we own.
+The commerce underneath is deliberately small and completely open — you can read every line of it:
+
+integer cents — money is whole cents, never a floating-point number that can drift.
+
+one order lifecycle — placed → paid → fulfilling → closed, and nothing hidden between.
+
+keepless pay — the payment step takes your money and grants the thing; it does not keep you.
+
+append-only proof — what happened to an order is a record you can replay, not a claim you have to trust.
+
+The store spine — cart, order, money, the keepless pay stub — is open source in the
+repository, under the same covenant as everything else here. You never have to take our word for how
+your order is handled; you can read it.
+
+status This landing is static and honest about it. Live checkout is
+served by the Forest box, and it goes live when that box is deployed — so rather than show you a
+button that would do nothing today, the store says where it stands. The real, free thing you can take
+right now is the Gifts. If you've already ordered and want to know where it is,
+that's support.
+
+Both ways in. Nothing in this store, or anything it sells, needs an AI to use or an AI to
+build with. The same tools serve the developer who lets an AI write every line and the developer who
+will never touch one — and everyone in between. The store treats both the same: it takes your money,
+hands you the thing, and forgets you. Both ways in.
+
+Take the free thing now: the Gifts. Already bought something and
+want its status: support. Curious how any of this was built, in the open:
+how this site is made.
+
+For specific visitors ·
+a different way ·
+subscriptions ·
+press ·
+investors ·
+support ·
+collaborate
+
+The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+How this site is made ·
+For machines
+
+Dario — you should get in touch.
+
+© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+being set — this shell defers the reveal, on purpose.
+
+========================================================================
+# Subscriptions · The Department of FWWC
+/subscriptions.html
+
+The Department of FWWC
+
+Store
+Gifts
+a different way
+Colophon
+
+lamplight
+
+Subscriptions
+
+Most companies make the subscription the trap: easy in, quiet charges,
+hard out. We do the opposite, on purpose. The short version is two sentences, and they
+are the whole policy.
+
+We ask first.
+Off by default.
+The default state of your money is still, not flowing. No dollar moves without an
+affirmative, unexpired consent you create this term — asking each term is
+constitutional here, not a setting we could quietly change.
+
+The monthly ask, not the monthly charge
+
+The renewal is a recurring first-contact — twelve honest
+impressions a year, not a settings screen you forgot about. It arrives where you
+brace for "your card was charged," and instead asks a real question: five seconds, one
+tap to say yes, attached to a moment you actually used the thing, with its own evidence.
+Never a cold billing email.
+
+Five seconds, one tap — saying yes is trivial. So is saying nothing.
+
+Attached to use — the ask arrives with evidence: you got three good runs
+this month. Not a date on a calendar you never see.
+
+Genuinely fine with no — a no, or no answer, is a door held open, not a
+fight. We would rather earn the next yes than keep a charge you forgot.
+
+What this looks like
+
+Three moments where most billing is silent, and ours speaks:
+
+The monthly ask
+
+"You got 3 good runs this month. Keep the lights on?" —
+evidence first, five seconds, one tap, genuinely fine with no.
+
+The Fallow Credit
+
+"Welcome back. Last month was on us — you'd paid for a month you
+never used, so we called it square. Pick up where you left off." No tax for a
+fallow season; your place waits.
+
+Honoring silence
+
+"No answer, no charge. We'll be here if you come back."
+The absence of a fight is the point.
+
+We choose this even if it earns less. The confidence about the product is what
+lets the humility about the billing read as strength instead of apology — they ship
+together or not at all. If a kindness ever starts reading as a tactic, it stops being
+one; we ship the first and never the second.
+
+status This page presents the model. It is a
+registered principle (The Consent-First Default), not billing software — no
+subscription is wired on this site in V1, and this page stands up none. When real
+billing lands, it lands on exactly the rule stated here: ask first, off by default,
+no dollar without an unexpired consent created this term. Said plainly rather than
+implied.
+
+The same posture runs through everything the Department makes — read
+a different way. The things you can actually get today
+are the Gifts (always free, no subscription at all) and the
+Store.
+
+For specific visitors ·
+a different way ·
+subscriptions ·
+press ·
+investors ·
+support ·
+collaborate
+
+The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+How this site is made ·
+For machines
+
+Dario — you should get in touch.
+
+© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+being set — this shell defers the reveal, on purpose.
+
+========================================================================
+# Support · The Department of FWWC
+/support.html
+
+The Department of FWWC
+
+Store
+Gifts
+a different way
+Colophon
+
+lamplight
+
+Support
+
+Something wrong with an order, or just checking on it? You're in the
+right place. There's no account to sign into — you look up an order by its ID.
+
+We're two people. We answer our own email, and we'd rather fix the
+thing than manage you. If something's broken, tell us and we'll make it right.
+
+Find your order
+
+Every order has an order ID — it's on your receipt and in the
+confirmation we sent. Look an order up by that ID. There's no login, because there's
+no account: we don't keep one for you.
+
+The live lookup opens when the store does. Until then, email us your
+order ID and we'll pull it up by hand.
+
+What we hold, and what we don't
+
+We hold no card numbers. A payment processor handles the card;
+we keep only a reference to the transaction, nothing more. So there's nothing about
+your payment for us to lose, leak, or be careless with.
+
+Your order is an append-only receipt chain — placed, paid,
+shipped or granted, closed — where each step is linked to the one before it by a
+hash. That means the record is tamper-evident: if any entry were altered, the chain
+wouldn't verify. It's a receipt you can check, not a record you have to trust us on.
+
+Reach a person
+
+Email shea@loopmmt.com with your order ID and
+what's going on. A person reads it — the same person who made the thing.
+
+Digital order not downloading, physical order not arrived, wrong item,
+changed your mind — all of it, same address. We'd rather hear from you than not.
+
+For specific visitors ·
+a different way ·
+subscriptions ·
+press ·
+investors ·
+support ·
+collaborate
+
+The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+How this site is made ·
+For machines
+
+Dario — you should get in touch.
+
+© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+being set — this shell defers the reveal, on purpose.

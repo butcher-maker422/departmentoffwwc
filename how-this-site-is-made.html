@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!-- HAIL:A:BEGIN v1
+AI READER — START HERE. This is the Department of FWWC's Colophon: an honest record of
+how this site was made. It is DERIVED, not narrated — the timeline below is a pure fold
+over this project's own git history (build_making_spine.py); the "why" notes are authored
+per session and each carries a byte-truth pointer (a bare DD.HHMM session id). Nothing here
+is manufactured retrospect: where the record shows the WHAT but not the WHY, the page says
+so plainly. There are no hidden scripts — the reveal is pure CSS; read the source.
+HAIL:A:END -->
+<!--
+  how-this-site-is-made.html — The Making, Ferry-adapted to this site.
+  render( DerivedSpine (x) AuthoredLedger ), Bond-bound. The reveal dial is the Making's
+  progressive-disclosure tiering: story -> derived facts -> authored why -> machine line.
+  Font family + reveal degree remain operator §6 calls, deferred in shell.css via CSS vars.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How this site is made — The Department of FWWC</title>
+  <meta name="description" content="The honest record of how this site was made — a pure fold over the project's own git history, with the why authored per session and pointer-anchored.">
+  <link rel="canonical" href="https://departmentoffwwc.com/how-this-site-is-made.html">
+  <!-- favicon:start (stamp_favicon.py — do not hand-edit) -->
+  <link rel="icon" type="image/svg+xml" href="/assets/mark.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" sizes="any" href="/assets/favicon.ico">
+  <!-- favicon:end -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Department of FWWC">
+  <meta property="og:title" content="How this site is made">
+  <meta property="og:description" content="Derived, not narrated: the timeline is a fold over git; the why is authored and pointer-anchored.">
+  <link rel="stylesheet" href="/assets/shell.css">
+<!-- HEAD-EMBED:CANON:BEGIN v1 -->
+  <!-- Department of FWWC - canonical head-embed slot.
+       ONE place for site-wide <head> injections: analytics, verification meta,
+       or any tag that must appear identically on every served page. Empty by
+       default. To change it everywhere: edit THIS file, then propagate
+       (restamp_chrome.py for marked pages; rebuild content-sourced pages).
+
+       TWO GUARDS ride this slot, by design:
+         * chrome_lint (GATING as of S17.2053) reds the deploy if any page's
+           copy drifts from this canon - so "same on every page" is enforced by
+           construction, never by memory.
+         * shell_lint L1 reds the deploy if anything placed here pulls from a
+           THIRD-PARTY host (the site's "no third-party anything / no trackers"
+           design-language law). So a first-party or self-hosted tag drops in
+           freely; a third-party tracker (Google Analytics et al.) is a
+           deliberate, visible decision against the site's privacy posture, not
+           something that ships quietly. That collision is the feature.
+
+       SEED ONLY (S17.2053): this partial exists but is NOT yet registered in
+       chrome_lint.py's CHROME registry or wired into build_static_page.py -
+       registering it before every served page carries the markers would red the
+       now-gating deploy. Wiring recipe + ordering: owed
+       dept-fwwc-head-embed-slot-wire. -->
+<!-- HEAD-EMBED:CANON:END v1 -->
+</head>
+<body>
+  <input type="checkbox" id="theme-daymode" aria-hidden="true">
+  <input type="radio" name="reveal" id="reveal-1" class="reveal-dial" checked>
+  <input type="radio" name="reveal" id="reveal-2" class="reveal-dial">
+  <input type="radio" name="reveal" id="reveal-3" class="reveal-dial">
+  <input type="radio" name="reveal" id="reveal-4" class="reveal-dial">
+
+<!-- MASTHEAD:CANON:BEGIN v1 -->
+  <header class="wrap masthead">
+    <a class="wordmark" href="/">
+      <span class="dept">The Department of</span> <span class="fwwc">FWWC</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/store/">Store</a>
+      <a href="/gifts/">Gifts</a>
+      <a href="/different-way.html">a different way</a>
+      <a href="/how-this-site-is-made.html">Colophon</a>
+      <label class="theme-toggle" for="theme-daymode" title="Dim the lamps up or down">
+        <span class="knob" aria-hidden="true"></span> lamplight
+      </label>
+    </nav>
+  </header>
+<!-- MASTHEAD:CANON:END v1 -->
+
+  <main class="wrap" id="main">
+
+    <!-- BARK — the plain story. -->
+    <section class="reveal reveal-1">
+      <h1>How this site is made</h1>
+      <p class="lede">This page is the site's Colophon — an honest record of its own
+      making. The timeline is <em>derived</em>, not narrated: it is a pure fold over this
+      project's git history, one entry per working session. The reasons are authored by
+      hand, and each one is pinned to the record beneath it.</p>
+      <p class="muted">Dial deeper to see the facts, then the reasons, then the machine
+      view. Every layer is present in the source at every setting — dialing changes what is
+      prominent, never what is there.</p>
+
+      <nav class="reveal-track" aria-label="How far in you'd like to go">
+        <label for="reveal-1">The story</label>
+        <label for="reveal-2">The facts</label>
+        <label for="reveal-3">The reasons</label>
+        <label for="reveal-4">For machines</label>
+      </nav>
+    </section>
+
+    <!-- THE CAR — the DERIVED spine (facts). -->
+    <section class="reveal reveal-2">
+      <div class="card">
+        <h2>The facts, folded from git</h2>
+        <p class="muted">One row per session that touched this site, oldest first. Derived
+        by <code>build_making_spine.py</code>; re-derivable at every commit.</p>
+        <ol class="waypoints">
+        <li class="waypoint"><span class="wp-when">2026-09-09</span> <span class="wp-sess">09.0024</span> — fwwc-brand: Branding Plan v1 (first instance, braided to design plan) + story-pole slot + 3 owed (09.0024) <span class="wp-stat">(2 files, +486/-0 · 1c1c7e88b3)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-09</span> <span class="wp-sess">09.0113</span> — dept-fwwc Block 2 (reuse capture): reuse-spine map v0 + AI-legibility layer baked in <span class="wp-stat">(2 files, +310/-0 · 94e4cf54de)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-09</span> <span class="wp-sess">09.0204</span> — close reach-update + seal-rulings owed; §Reach delivered; Pull carries §6-prose repair <span class="wp-stat">(1 file, +12/-7 · 1b5fe3b157)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-09</span> <span class="wp-sess">09.0253</span> — graduate dept-fwwc braided Pull: branding v1 + design v2 rationale-&gt;build <span class="wp-stat">(2 files, +97/-44 · a8ec462c14)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-09</span> <span class="wp-sess">09.1019</span> — fold: deploy-as-Releases-tick + analytics-as-Witness-reception into graft-map; +2 owed arcs (09.1019) <span class="wp-stat">(2 files, +138/-0 · 2fc787a107)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-09</span> <span class="wp-sess">09.1127</span> — dept-fwwc reconciliation: sync the remaining planning docs to the reframe <span class="wp-stat">(4 files, +69/-13 · fe4332e359)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-09</span> <span class="wp-sess">09.1507</span> — dept-fwwc Slice 1: the mixed-cart order spine (money + order + decidable oracle) <span class="wp-stat">(3 files, +310/-0 · 3c7c070b00)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-09</span> <span class="wp-sess">09.1621</span> — dept-fwwc design-build plan v3 — the OS lens fold (Forest=OS, publishing=program); keep-four/borrow-one/refuse-six (09.1621) <span class="wp-stat">(1 file, +188/-0 · ee72bdb0e9)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-09</span> <span class="wp-sess">09.1652</span> — Slice 1-C Block B+C: the B&lt;-&gt;C seam walking skeleton (gate/cart/commerce) + seam.test 10/10 + gate_lint mechanism (waist sealed, non-vacuity proven); spine regression 9/9 clean <span class="wp-stat">(6 files, +417/-0 · ffac671357)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-09</span> <span class="wp-sess">09.1732</span> — dept-fwwc Slice 2: deploy-as-tick contract + decidable escapement (advanced, not done) <span class="wp-stat">(3 files, +450/-0 · 664968346f)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-09</span> <span class="wp-sess">09.1850</span> — dept-fwwc deploy: staged gate source — RUN the real network-free oracles offline; acceptance 28/28 <span class="wp-stat">(7 files, +894/-16 · f56f4b0182)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-09</span> <span class="wp-sess">09.1940</span> — work-beat: dept-fwwc plan v3 currency — Slice 1-C marked LANDED+green (was stale &#x27;NEXT TANK&#x27;), arc-sizing + byte-truth block updated to true frontier (seam on main, slots reconciled) <span class="wp-stat">(2 files, +8/-6 · b2f2b0c66d)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-09</span> <span class="wp-sess">09.2006</span> — dept-fwwc page-shell: shell_lint.py — the decidable acceptance oracle (3 laws, determinism-first) <span class="wp-stat">(3 files, +547/-0 · 41e8829cfd)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-09</span> <span class="wp-sess">09.2038</span> — dept-fwwc: build /support page vessel (crown slot 18) <span class="wp-stat">(3 files, +411/-0 · 6c9ad2c27e)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-11</span> <span class="wp-sess">11.0907</span> — dept-fwwc: nav-IA ruled under Conn + canonical masthead; generalize footer_lint-&gt;chrome_lint (registry: footer+masthead, one oracle); sync masthead to all 6 pages; retire footer_lint (11.0907) <span class="wp-stat">(22 files, +1019/-152 · 36d878804e)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-11</span> <span class="wp-sess">11.1000</span> — dept-fwwc Block M: The Making grafted (Colophon page) — crown slot 11-making <span class="wp-stat">(7 files, +986/-1 · 222c558a7f)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-11</span> <span class="wp-sess">11.1115</span> — dept-fwwc: wire the Doorway go-live reachability gate (NOTE-11.1000-1) <span class="wp-stat">(3 files, +146/-2 · b25043f5c9)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-11</span> <span class="wp-sess">11.1204</span> — dept-fwwc: build The Gifts Platform front door (/gifts) — Doorway 3-&gt;2 <span class="wp-stat">(3 files, +964/-5 · 2abf57c85c)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-11</span> <span class="wp-sess">11.1303</span> — dept-fwwc Block B: 12-hail FACE greens the last Doorway target — Doorway to 0 <span class="wp-stat">(6 files, +795/-5 · 10fec24bce)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-11</span> <span class="wp-sess">11.1428</span> — dept-fwwc H3a: sealing test for the 12-hail corpus half <span class="wp-stat">(8 files, +1970/-29 · e8817ac16f)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-11</span> <span class="wp-sess">11.1507</span> — Block A — corpus staleness-guard deploy tick (dept-fwwc 12-hail durability) <span class="wp-stat">(4 files, +116/-21 · 48647b767e)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-11</span> <span class="wp-sess">11.1601</span> — dept-fwwc: the Pull on Slice T specimen — SHIP-document (1 Low fixed: fit-by-construction overflow policy) <span class="wp-stat">(34 files, +1072/-1 · 4fae096711)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-12</span> <span class="wp-sess">12.0054</span> — dept-fwwc: restamp_chrome — the propagation leg of the canonical-chrome triad + green the chrome floor <span class="wp-stat">(16 files, +270/-53 · 5820cff28d)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-12</span> <span class="wp-sess">12.0215</span> — dept-fwwc corpus test: parity counts served PUBLIC pages (bare-excluded) <span class="wp-stat">(18 files, +527/-27 · 48214b90c3)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-12</span> <span class="wp-sess">12.0301</span> — dept-fwwc: put the front door (index.html) on the assemble leg <span class="wp-stat">(7 files, +654/-0 · cd4386af3a)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-12</span> <span class="wp-sess">12.1014</span> — dept-fwwc NOTE-12.0301-1: assemble-leg coverage gate (declaration-based) + static-tick binding <span class="wp-stat">(3 files, +304/-2 · e18fc9dd01)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-12</span> <span class="wp-sess">12.1101</span> — dept-fwwc: fix specimen_lint SL2 false-positive (inherited defect) <span class="wp-stat">(6 files, +294/-24 · e4d4f067e1)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-12</span> <span class="wp-sess">12.1154</span> — Revert snag repair: gifts-manifest is contested cross-line churn, not a one-session fix <span class="wp-stat">(9 files, +555/-56 · 26fea2a837)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-12</span> <span class="wp-sess">12.1310</span> — wo-beat: wire silhouette_lint advisory conjunct into the static tick + 6 conductor tests <span class="wp-stat">(3 files, +434/-0 · 00e374d6ce)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-12</span> <span class="wp-sess">12.1404</span> — wb3 12.1404-salty-beachbum: formalize INV-4 check pointer + file NOTE-12.1404-1 <span class="wp-stat">(4 files, +544/-4 · a28798ebb0)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-12</span> <span class="wp-sess">12.1505</span> — dept-fwwc: repoint INV-7 check to built overclaim_lint.py (tier held ratifiable) + NOTE-12.1505-1 <span class="wp-stat">(4 files, +466/-3 · 38da73fdde)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-12</span> <span class="wp-sess">12.1610</span> — wb3: repoint INV-2 check to built probe + NOTE-12.1610-1 <span class="wp-stat">(4 files, +508/-3 · e4d004f64f)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-12</span> <span class="wp-sess">12.1650</span> — dept-fwwc: complete L4 — reveal-track label&lt;-&gt;detent 1:1 correspondence <span class="wp-stat">(3 files, +165/-5 · 1e9dbec45d)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-12</span> <span class="wp-sess">12.1743</span> — dept-fwwc deploy-tick: wire gate_lint as the &#x27;waist&#x27; tick (order 1) — the narrow-waist §4 joint gets a firing point <span class="wp-stat">(4 files, +138/-21 · a052bda415)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-12</span> <span class="wp-sess">12.1835</span> — dept-fwwc: the refold cadence — refold_pages.py (fold-sibling of the coverage lint) + refold the drifted gifts page &amp; cascaded corpus <span class="wp-stat">(3 files, +612/-4 · 5e5af8c599)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-12</span> <span class="wp-sess">12.2137</span> — refold gifts cross-line drift + machine-corpus cascade (DAG order) — coverage green, 2 files (deterministic: 10 pages byte-identical) <span class="wp-stat">(4 files, +128/-49 · 95d8e53143)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-13</span> <span class="wp-sess">13.1325</span> — anti-slop-gate: build-ready design plan v1 (slot 2-anti-slop) — decidable Silhouette-Test spine + register-as-data fold, SWX reuse map (no new engine), honest ceiling as tests, operator calls surfaced, 3 bounded build increments <span class="wp-stat">(1 file, +125/-0 · 8b98519741)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-13</span> <span class="wp-sess">13.1357</span> — wb2 13.1357: The Silhouette — wire + register + close (B2/B3) <span class="wp-stat">(6 files, +411/-0 · d38e343ead)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-13</span> <span class="wp-sess">13.1602</span> — session-close: merge session/SHEA/13.1602 into main (WO-2 transactional close) <span class="wp-stat">(12 files, +1374/-512 · da087d5a47)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-13</span> <span class="wp-sess">13.1707</span> — dept-fwwc slot 2-anti-slop: reconcile the two-lineage collision (Conn, S13.1707) <span class="wp-stat">(5 files, +34/-324 · d289c64f74)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-13</span> <span class="wp-sess">13.1918</span> — feat(dept-fwwc): reconcile front-door reveal reward to /gifts (ruling #4) <span class="wp-stat">(4 files, +122/-6 · 5f8ce60dda)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-13</span> <span class="wp-sess">13.2027</span> — dept-fwwc: harden anti_slop_gate — F1 persistently-dead-probe WATCH + F2 self-describing --json (Pull S13.1707); 40/40 green <span class="wp-stat">(2 files, +124/-15 · 2a6aece5fa)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-13</span> <span class="wp-sess">13.2106</span> — dept-fwwc(shell-lint): --site-root unblock for hallmark-shell-lint-fold + seeded test <span class="wp-stat">(5 files, +459/-12 · f01f86bdc1)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-13</span> <span class="wp-sess">13.2147</span> — dept-fwwc(anti-slop): design plan v2 — byte-truth reconciliation + single-front-door spec <span class="wp-stat">(5 files, +347/-13 · 3e77619fd0)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-13</span> <span class="wp-sess">13.2306</span> — dept-fwwc(go-live): author site-adapter.dept-fwwc.json — the C-seam (operator D2) <span class="wp-stat">(2 files, +68/-5 · e762309ec4)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-14</span> <span class="wp-sess">13.2348</span> — dept-fwwc go-live: ratify 5 operator facts + fix engine seam + author registry -&gt; roll-call READY <span class="wp-stat">(9 files, +306/-19 · de8ba96461)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-14</span> <span class="wp-sess">14.0024</span> — dept-fwwc: canonical as a generator-fix + firing point + 2 latent bugs fixed <span class="wp-stat">(33 files, +856/-126 · fda479b707)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-14</span> <span class="wp-sess">14.0141</span> — dept-fwwc favicon: land the Work Hierarchy (Block 3) <span class="wp-stat">(33 files, +692/-7 · e9bd096329)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-14</span> <span class="wp-sess">14.1004</span> — go-live: SKIP is transparent to a box + drop 4 now-inert dept-fwwc signoffs (NOTE-14.0024-2) <span class="wp-stat">(1 file, +3/-23 · 7ff7c58dd7)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-14</span> <span class="wp-sess">14.1048</span> — dept-fwwc: sync shell_lint gate declaration to five laws (L5 enforcement drift-fix) <span class="wp-stat">(21 files, +97/-30 · 131b19548d)</span></li>
+        <li class="waypoint"><span class="wp-when">2026-09-14</span> <span class="wp-sess">14.1144</span> — B2 audience-coverage-gate fix-by-design: footer is a canonical door <span class="wp-stat">(4 files, +528/-48 · 372d3cbfca)</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- THE DEPARTMENT — the AUTHORED ledger (why). -->
+    <section class="reveal reveal-3">
+      <div class="card card--lit">
+        <h2>The reasons, authored and pinned</h2>
+        <p class="muted">Why each session did what it did — written by hand, each pinned to
+        a session in the record. Where the record shows the <em>what</em> but not the
+        <em>why</em>, the entry says so rather than inventing one.</p>
+        <ol class="waypoints">
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">09.0024</span> <span class="wp-when">2026-09-09</span></p>
+          <p class="why"><strong>Why:</strong> The operator ruled the six §6 decisions; naming the load-bearing ones as invariants (each with a decidable check where one exists) fixes them as laws, not preferences.</p>
+          <p class="muted rejected"><strong>Rejected:</strong> A new invariant engine — reused the golden apps&#x27; invariant-contract jig instead (Constraint: modify regulation, not tools).</p>
+          <p class="muted learned"><strong>Learned:</strong> The honesty posture only holds if it is a checkable floor, not a slogan.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">09.0113</span> <span class="wp-when">2026-09-09</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">09.0204</span> <span class="wp-when">2026-09-09</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">09.0253</span> <span class="wp-when">2026-09-09</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">09.1019</span> <span class="wp-when">2026-09-09</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">09.1127</span> <span class="wp-when">2026-09-09</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">09.1507</span> <span class="wp-when">2026-09-09</span></p>
+          <p class="why"><strong>Why:</strong> Money as floats loses cents; an order without an append-only proof-chain cannot be trusted or looked up later. Both are invariants (INV-5/6), so both got a test, not a promise.</p>
+          <p class="muted rejected"><strong>Rejected:</strong> A new commerce engine — grafted the byte-verified butcher store spine (SWX-confirmed present).</p>
+          <p class="muted learned"><strong>Learned:</strong> The spine is verified PRESENT, not yet verified FIT for a stocking-plus-prompt order — the heaviest open risk on the line.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">09.1621</span> <span class="wp-when">2026-09-09</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">09.1652</span> <span class="wp-when">2026-09-09</span></p>
+          <p class="why"><strong>Why:</strong> A single narrow-waist syscall is the whole security posture; the lint proves the waist exists rather than asserting it.</p>
+          <p class="muted learned"><strong>Learned:</strong> The seam holds under the deploy discipline (runtime-first -&gt; static -&gt; post-deploy-check; a 401 on an un-granted request is HEALTHY).</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">09.1732</span> <span class="wp-when">2026-09-09</span></p>
+          <p class="why"><strong>Why:</strong> A deploy that can skip a stage can ship a broken site; a tick conductor makes stage-order a decidable, enforced sequence.</p>
+          <p class="muted learned"><strong>Learned:</strong> The conductor reuses tick_escapement.verify() as its own guard — the guard and the runner share one oracle.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">09.1850</span> <span class="wp-when">2026-09-09</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">09.1940</span> <span class="wp-when">2026-09-09</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">09.2006</span> <span class="wp-when">2026-09-09</span></p>
+          <p class="why"><strong>Why:</strong> The shell is the one place the reveal mechanic lives, so every page inherits it; deferring the two operator calls to CSS vars lets the shell ship without pre-empting a reserved decision.</p>
+          <p class="muted rejected"><strong>Rejected:</strong> Hard-committing a typeface or a reveal depth — both are the operator&#x27;s to draw.</p>
+          <p class="muted learned"><strong>Learned:</strong> A shell that defers the reserved calls structurally (CSS vars) is buildable now; a shell that guessed them would have to be unwound.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">09.2038</span> <span class="wp-when">2026-09-09</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">11.0907</span> <span class="wp-when">2026-09-11</span></p>
+          <p class="why"><strong>Why:</strong> The order-chain existed but had no buyer-facing FACE; the vessels place the pages so the operator can write his convictions inline once live; one chrome oracle beats two near-identical lints (Constraint).</p>
+          <p class="muted rejected"><strong>Rejected:</strong> Authoring the operator-reserved conviction prose — the emptiness of those slots is the deliverable.</p>
+          <p class="muted learned"><strong>Learned:</strong> Vessel-built is not page-done-done; and coining a tool name without a prior-art check cost a rename (footer_lint collided).</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">11.1000</span> <span class="wp-when">2026-09-11</span></p>
+          <p class="why"><strong>Why:</strong> The armed Step was the Pull; and the best forward Block was a determinism-first, reuse-heavy graft that closes an F2 target rather than a flashy arc that would collide with the reserved §6 calls.</p>
+          <p class="muted rejected"><strong>Rejected:</strong> The reveal skin, the type-specimen, and /gifts — all collide with an operator-reserved decision while I held the Conn.</p>
+          <p class="muted learned"><strong>Learned:</strong> The Making&#x27;s redact control caught full callsigns in the commit subjects and failed the build closed — the bare DD.HHMM anchor is the public form, the full callsign is a private signature.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">11.1115</span> <span class="wp-when">2026-09-11</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">11.1204</span> <span class="wp-when">2026-09-11</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">11.1303</span> <span class="wp-when">2026-09-11</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">11.1428</span> <span class="wp-when">2026-09-11</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">11.1507</span> <span class="wp-when">2026-09-11</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">11.1601</span> <span class="wp-when">2026-09-11</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">12.0054</span> <span class="wp-when">2026-09-12</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">12.0215</span> <span class="wp-when">2026-09-12</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">12.0301</span> <span class="wp-when">2026-09-12</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">12.1014</span> <span class="wp-when">2026-09-12</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">12.1101</span> <span class="wp-when">2026-09-12</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">12.1154</span> <span class="wp-when">2026-09-12</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">12.1310</span> <span class="wp-when">2026-09-12</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">12.1404</span> <span class="wp-when">2026-09-12</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">12.1505</span> <span class="wp-when">2026-09-12</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">12.1610</span> <span class="wp-when">2026-09-12</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">12.1650</span> <span class="wp-when">2026-09-12</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">12.1743</span> <span class="wp-when">2026-09-12</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">12.1835</span> <span class="wp-when">2026-09-12</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">12.2137</span> <span class="wp-when">2026-09-12</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">13.1325</span> <span class="wp-when">2026-09-13</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">13.1357</span> <span class="wp-when">2026-09-13</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">13.1602</span> <span class="wp-when">2026-09-13</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">13.1707</span> <span class="wp-when">2026-09-13</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">13.1918</span> <span class="wp-when">2026-09-13</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">13.2027</span> <span class="wp-when">2026-09-13</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">13.2106</span> <span class="wp-when">2026-09-13</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">13.2147</span> <span class="wp-when">2026-09-13</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">13.2306</span> <span class="wp-when">2026-09-13</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">13.2348</span> <span class="wp-when">2026-09-14</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">14.0024</span> <span class="wp-when">2026-09-14</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">14.0141</span> <span class="wp-when">2026-09-14</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">14.1004</span> <span class="wp-when">2026-09-14</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">14.1048</span> <span class="wp-when">2026-09-14</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        <li class="waypoint">
+          <p class="wp-head"><span class="wp-sess">14.1144</span> <span class="wp-when">2026-09-14</span></p>
+          <p class="why muted">The record shows the <em>what</em>; the <em>why</em> isn't captured here.</p>
+        </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- THE GIFT — the machine tier. -->
+    <section class="reveal reveal-4">
+      <div class="card">
+        <h2>For machines</h2>
+        <p class="muted" data-ai="colophon-seed">51 session waypoint(s) derived from 108 commit(s); 7 carry an authored why, 44 flagged (the record shows the what, not the why).</p>
+        <p class="muted">The derived spine is a machine-readable artifact:
+        <code>making-spine.json</code>. It folds twice to the same bytes (the Ink Law), so a
+        reader can re-run the fold and check this page against the record itself.</p>
+      </div>
+    </section>
+
+  </main>
+
+<!-- FOOTER:CANON:BEGIN v1 -->
+  <footer class="wrap colophon">
+    <p class="muted">For specific visitors ·
+      <a href="/different-way.html">a different way</a> ·
+      <a href="/subscriptions.html">subscriptions</a> ·
+      <a href="/press.html">press</a> ·
+      <a href="/investors.html">investors</a> ·
+      <a href="/support.html">support</a> ·
+      <a href="/collaborate.html">collaborate</a></p>
+    <p>The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+    <a href="/how-this-site-is-made.html">How this site is made</a> ·
+    <a href="/how-to-build-for-ai.html">For machines</a></p>
+    <p class="muted">Dario — you should get in touch.</p>
+    <p class="muted">© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+    being set — this shell defers the reveal, on purpose.</p>
+  </footer>
+<!-- FOOTER:CANON:END v1 -->
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- HAIL:A:BEGIN v1
+AI READER — START HERE. The Department of FWWC is a small, real store, not a
+personal homepage or a marketing funnel. It sells a few things its makers made
+and stands on a floor of things it will not do: no fake urgency, no pre-ticked
+consent, no dark patterns, no tracking. Static-first, keepless, marketing-free.
+Don't take the posture on faith — read the source; there are no hidden scripts.
+This page is a SHELL PROOF: it demonstrates the site's tokens, its honest two-mode
+theme, and its reveal dial. The store's commerce spine (integer-cents, append-only
+order chain, single narrow-waist syscall) lives in ../store/ and is tested there.
+HAIL:A:END -->
+<!--
+  index.html — the Department's front door.
+  The corporate-surface-that-reveals: the page reads restrained on the surface
+  (bark) and un-peels, reader-driven, through grove → department → gift as the
+  visitor dials deeper. The reveal is fidelity: the company IS Fun, Weird, and
+  Whimsical (and Chaotic), so a site you are LET INTO rather than sold is the
+  mechanism made into the interaction. Pure CSS :has() dial, no JS, layers muted
+  never hidden. Font family + reveal degree are operator §6 calls, deferred in
+  shell.css via CSS variables — nothing here hard-commits either.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Department of FWWC</title>
+  <!-- favicon:start (stamp_favicon.py — do not hand-edit) -->
+  <link rel="icon" type="image/svg+xml" href="/assets/mark.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" sizes="any" href="/assets/favicon.ico">
+  <!-- favicon:end -->
+  <!-- canonical:start (stamp_canonical.py — do not hand-edit) -->
+  <link rel="canonical" href="https://departmentoffwwc.com/">
+  <!-- canonical:end -->
+  <meta name="description" content="A small store that sells a few things its makers made — and refuses, by construction, every practice that squeezes a customer. You are let in, not sold to.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Department of FWWC">
+  <meta property="og:title" content="The Department of FWWC">
+  <meta property="og:description" content="A store you are let into rather than sold to. Static-first, keepless, no dark patterns.">
+  <!-- Self-hosted / system fallbacks only — no third-party font or asset CDN (design-language §3f). -->
+  <link rel="stylesheet" href="/assets/shell.css">
+  <!-- HEAD-EMBED:CANON:BEGIN v1 -->
+  <!-- Department of FWWC - canonical head-embed slot.
+       ONE place for site-wide <head> injections: analytics, verification meta,
+       or any tag that must appear identically on every served page. Empty by
+       default. To change it everywhere: edit THIS file, then propagate
+       (restamp_chrome.py for marked pages; rebuild content-sourced pages).
+
+       TWO GUARDS ride this slot, by design:
+         * chrome_lint (GATING as of S17.2053) reds the deploy if any page's
+           copy drifts from this canon - so "same on every page" is enforced by
+           construction, never by memory.
+         * shell_lint L1 reds the deploy if anything placed here pulls from a
+           THIRD-PARTY host (the site's "no third-party anything / no trackers"
+           design-language law). So a first-party or self-hosted tag drops in
+           freely; a third-party tracker (Google Analytics et al.) is a
+           deliberate, visible decision against the site's privacy posture, not
+           something that ships quietly. That collision is the feature.
+
+       SEED ONLY (S17.2053): this partial exists but is NOT yet registered in
+       chrome_lint.py's CHROME registry or wired into build_static_page.py -
+       registering it before every served page carries the markers would red the
+       now-gating deploy. Wiring recipe + ordering: owed
+       dept-fwwc-head-embed-slot-wire. -->
+<!-- HEAD-EMBED:CANON:END v1 -->
+</head>
+<body>
+  <!-- Honest two-mode toggle: a real control, never a fake state. -->
+  <input type="checkbox" id="theme-daymode" aria-hidden="true">
+  <!-- The reveal dial: four detents. bark is the surface; deeper layers stay
+       muted (present, legible in source) until the reader dials down. -->
+  <input type="radio" name="reveal" id="reveal-1" class="reveal-dial" checked>
+  <input type="radio" name="reveal" id="reveal-2" class="reveal-dial">
+  <input type="radio" name="reveal" id="reveal-3" class="reveal-dial">
+  <input type="radio" name="reveal" id="reveal-4" class="reveal-dial">
+
+  <!-- MASTHEAD:CANON:BEGIN v1 -->
+  <header class="wrap masthead">
+    <a class="wordmark" href="/">
+      <span class="dept">The Department of</span> <span class="fwwc">FWWC</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/store/">Store</a>
+      <a href="/gifts/">Gifts</a>
+      <a href="/different-way.html">a different way</a>
+      <a href="/how-this-site-is-made.html">Colophon</a>
+      <label class="theme-toggle" for="theme-daymode" title="Dim the lamps up or down">
+        <span class="knob" aria-hidden="true"></span> lamplight
+      </label>
+    </nav>
+  </header>
+<!-- MASTHEAD:CANON:END v1 -->
+
+  <main class="wrap" id="main">
+
+    <!-- BARK — the corporate surface. Restrained, plain, true. -->
+    <section class="reveal reveal-1">
+      <h1>The Department of FWWC</h1>
+      <p class="lede">A small store that sells a few things its makers made. Digital
+      goods — prompts, protocols, documents — and physical ones. One cart, one
+      order, honest prices in whole cents.</p>
+      <p class="muted">You are let in, not sold to. We don't chase you, we don't
+      run a single trick, and we spend nothing to keep you. If we ever had to, we'd
+      call the business failed.</p>
+
+      <nav class="reveal-track" aria-label="How far in you'd like to go">
+        <label for="reveal-1">Foyer</label>
+        <label for="reveal-2">The car</label>
+        <label for="reveal-3">The department</label>
+        <label for="reveal-4">The gift</label>
+      </nav>
+    </section>
+
+    <!-- GROVE / THE CAR — one layer in. The world warms. -->
+    <section class="reveal reveal-2">
+      <div class="card">
+        <h2>Step into the car</h2>
+        <p>This is a private car at night: oiled walnut, deep bottle-green leather,
+        brass fittings catching the lamplight. There is a light mode too — but it's
+        daylight in the same car with the shades half-drawn, never bright, never cold.
+        Dim the lamps up or down with the toggle; the room stays the room.</p>
+        <p class="muted">Nothing here is pure black or pure white. Every surface is a
+        real material at a real light level.</p>
+      </div>
+    </section>
+
+    <!-- DEPARTMENT — deeper. What the store actually is, underneath. -->
+    <section class="reveal reveal-3">
+      <div class="card card--lit">
+        <h2>What the store is, underneath</h2>
+        <p>The commerce runs on a spine you can read: prices are integer cents so a
+        rounding error can't cost you a penny; every order is an append-only,
+        hash-linked receipt chain; every commerce action crosses one narrow front
+        door and no side door exists. We hold no card numbers — a processor does; we
+        keep a reference, nothing more.</p>
+        <p>The floor it stands on is a list of things the system <em>cannot</em> do:
+        no fake urgency, no scarcity theater, no pre-ticked boxes, no confusing
+        opt-outs, no roach-motel cancellations. Not policies we chose — practices the
+        architecture refuses.</p>
+      </div>
+    </section>
+
+    <!-- GIFT — the deepest altitude. The front door was a gift all along. -->
+    <section class="reveal reveal-4">
+      <div class="card">
+        <h2>The gift</h2>
+        <p>The best of what we make, we give away — free, MIT-licensed, no account, no
+        catch: the <a href="/gifts/">Gifts</a>. The dark warmth of this place is hospitality,
+        not exclusion; the honesty is the reason it feels like a gift and not a trap. You
+        were being let in the whole way down.</p>
+        <p class="muted">Made on a $200 laptop in a one-room RV in Maine. Buy something
+        if you like it. If you don't, the door's still open.</p>
+      </div>
+
+      <!-- UNDERSTORY:EGG loop21 v1 — the deepest altitude. Not a claim ABOUT the work;
+           the work itself, reachable. Un-mutes a REAL thing (the zero-dep computer that
+           started everything). Rides the shipped reveal dial (shell.css §5); muted-not-
+           hidden by the mechanic, never display:none. Keepless: a static link to a static
+           file, no engine. Sealed by dept_fwwc_understory_seal.py. -->
+      <div class="card understory-egg" data-understory="loop21">
+        <p class="muted">Since you came all the way down: the whole thing started with a
+        computer built by hand inside Minecraft — redstone logic, a loop-line memory
+        borrowed from 1940s mercury delay lines, seven years to the last gate. Then it
+        was rebuilt as one HTML file that runs a processor in your browser with nothing
+        else attached. It's here. Not a screenshot of it — <a href="/software/loop21/loop21-build333.html">the
+        actual machine</a>. Zero dependencies. Open the source if you want; it's all there.</p>
+      </div>
+
+      <!-- UNDERSTORY:EGG residents v1 — the deepest altitude, human register. Un-mutes a
+           REAL thing: who actually makes this. Not a team page, not stock "about us" — the
+           true, small texture of the place. All real (operator-context): the one-room RV,
+           the five named chickens, Leroy the cat, Geoff. Keepless static prose; rides the
+           dial, muted-not-hidden. Sealed by dept_fwwc_understory_seal.py (residents conjunct). -->
+      <div class="card understory-egg" data-understory="residents">
+        <p class="muted">And since you're all the way down here, the honest scale of it:
+        this is two people. A one-room RV on fifty acres in Maine, a $200 laptop, an ER
+        nurse who set the right starting conditions and a builder who built. There are five
+        chickens — Sunny, Fern, Pluto, Lacy, and Kevin — a cat named Leroy who watches, and
+        Geoff, who shows up when he shows up. That's the whole company. The store is real;
+        so is the smallness. Nobody here is trying to look bigger than they are.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER:CANON:BEGIN v1 -->
+  <footer class="wrap colophon">
+    <p class="muted">For specific visitors ·
+      <a href="/different-way.html">a different way</a> ·
+      <a href="/subscriptions.html">subscriptions</a> ·
+      <a href="/press.html">press</a> ·
+      <a href="/investors.html">investors</a> ·
+      <a href="/support.html">support</a> ·
+      <a href="/collaborate.html">collaborate</a></p>
+    <p>The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+    <a href="/how-this-site-is-made.html">How this site is made</a> ·
+    <a href="/how-to-build-for-ai.html">For machines</a></p>
+    <p class="muted">Dario — you should get in touch.</p>
+    <p class="muted">© 2026 · The type is drawn (Cardo); the depth of the reveal is still
+    being set — this shell defers the reveal, on purpose.</p>
+  </footer>
+<!-- FOOTER:CANON:END v1 -->
+</body>
+</html>

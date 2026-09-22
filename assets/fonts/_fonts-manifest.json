@@ -1,0 +1,218 @@
+[
+  {
+    "slug": "cardo",
+    "family": "Cardo",
+    "role": "display-didone",
+    "variant": "400i",
+    "file": "cardo-400i.woff2",
+    "bytes": 18968
+  },
+  {
+    "slug": "cardo",
+    "family": "Cardo",
+    "role": "display-didone",
+    "variant": "400",
+    "file": "cardo-400.woff2",
+    "bytes": 15500
+  },
+  {
+    "slug": "cardo",
+    "family": "Cardo",
+    "role": "display-didone",
+    "variant": "700",
+    "file": "cardo-700.woff2",
+    "bytes": 19192
+  },
+  {
+    "slug": "cormorant",
+    "family": "Cormorant",
+    "role": "display-didone",
+    "variant": "400i",
+    "file": "cormorant-400i.woff2",
+    "bytes": 23948
+  },
+  {
+    "slug": "cormorant",
+    "family": "Cormorant",
+    "role": "display-didone",
+    "variant": "400",
+    "file": "cormorant-400.woff2",
+    "bytes": 35340
+  },
+  {
+    "slug": "cormorant",
+    "family": "Cormorant",
+    "role": "display-didone",
+    "variant": "600",
+    "file": "cormorant-600.woff2",
+    "bytes": 35340
+  },
+  {
+    "slug": "zilla-slab",
+    "family": "Zilla Slab",
+    "role": "display-slab",
+    "variant": "400i",
+    "file": "zilla-slab-400i.woff2",
+    "bytes": 27516
+  },
+  {
+    "slug": "zilla-slab",
+    "family": "Zilla Slab",
+    "role": "display-slab",
+    "variant": "400",
+    "file": "zilla-slab-400.woff2",
+    "bytes": 26468
+  },
+  {
+    "slug": "zilla-slab",
+    "family": "Zilla Slab",
+    "role": "display-slab",
+    "variant": "500",
+    "file": "zilla-slab-500.woff2",
+    "bytes": 26468
+  },
+  {
+    "slug": "zilla-slab",
+    "family": "Zilla Slab",
+    "role": "display-slab",
+    "variant": "700",
+    "file": "zilla-slab-700.woff2",
+    "bytes": 26100
+  },
+  {
+    "slug": "newsreader",
+    "family": "Newsreader",
+    "role": "body",
+    "variant": "400i",
+    "file": "newsreader-400i.woff2",
+    "bytes": 24340
+  },
+  {
+    "slug": "newsreader",
+    "family": "Newsreader",
+    "role": "body",
+    "variant": "400",
+    "file": "newsreader-400.woff2",
+    "bytes": 58084
+  },
+  {
+    "slug": "newsreader",
+    "family": "Newsreader",
+    "role": "body",
+    "variant": "600",
+    "file": "newsreader-600.woff2",
+    "bytes": 58084
+  },
+  {
+    "slug": "source-serif-4",
+    "family": "Source Serif 4",
+    "role": "body",
+    "variant": "400i",
+    "file": "source-serif-4-400i.woff2",
+    "bytes": 20092
+  },
+  {
+    "slug": "source-serif-4",
+    "family": "Source Serif 4",
+    "role": "body",
+    "variant": "400",
+    "file": "source-serif-4-400.woff2",
+    "bytes": 50824
+  },
+  {
+    "slug": "source-serif-4",
+    "family": "Source Serif 4",
+    "role": "body",
+    "variant": "600",
+    "file": "source-serif-4-600.woff2",
+    "bytes": 50824
+  },
+  {
+    "slug": "literata",
+    "family": "Literata",
+    "role": "body",
+    "variant": "400i",
+    "file": "literata-400i.woff2",
+    "bytes": 21148
+  },
+  {
+    "slug": "literata",
+    "family": "Literata",
+    "role": "body",
+    "variant": "400",
+    "file": "literata-400.woff2",
+    "bytes": 38996
+  },
+  {
+    "slug": "literata",
+    "family": "Literata",
+    "role": "body",
+    "variant": "600",
+    "file": "literata-600.woff2",
+    "bytes": 38996
+  },
+  {
+    "slug": "ibm-plex-mono",
+    "family": "IBM Plex Mono",
+    "role": "mono",
+    "variant": "400",
+    "file": "ibm-plex-mono-400.woff2",
+    "bytes": 14708
+  },
+  {
+    "slug": "ibm-plex-mono",
+    "family": "IBM Plex Mono",
+    "role": "mono",
+    "variant": "500",
+    "file": "ibm-plex-mono-500.woff2",
+    "bytes": 14888
+  },
+  {
+    "slug": "ibm-plex-mono",
+    "family": "IBM Plex Mono",
+    "role": "mono",
+    "variant": "600",
+    "file": "ibm-plex-mono-600.woff2",
+    "bytes": 15620
+  },
+  {
+    "slug": "jetbrains-mono",
+    "family": "JetBrains Mono",
+    "role": "mono",
+    "variant": "400",
+    "file": "jetbrains-mono-400.woff2",
+    "bytes": 31432
+  },
+  {
+    "slug": "jetbrains-mono",
+    "family": "JetBrains Mono",
+    "role": "mono",
+    "variant": "700",
+    "file": "jetbrains-mono-700.woff2",
+    "bytes": 31432
+  },
+  {
+    "slug": "courier-prime",
+    "family": "Courier Prime",
+    "role": "mono",
+    "variant": "400i",
+    "file": "courier-prime-400i.woff2",
+    "bytes": 21556
+  },
+  {
+    "slug": "courier-prime",
+    "family": "Courier Prime",
+    "role": "mono",
+    "variant": "400",
+    "file": "courier-prime-400.woff2",
+    "bytes": 18640
+  },
+  {
+    "slug": "courier-prime",
+    "family": "Courier Prime",
+    "role": "mono",
+    "variant": "700",
+    "file": "courier-prime-700.woff2",
+    "bytes": 19348
+  }
+]
