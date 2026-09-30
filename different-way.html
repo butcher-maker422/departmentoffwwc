@@ -68,7 +68,6 @@ HAIL:A:END -->
 </head>
 <body>
   <!-- Honest two-mode toggle: a real control, never a fake state. -->
-  <input type="checkbox" id="theme-daymode" aria-hidden="true">
   <!-- This page's OWN reveal dial (its own instance; NOT the index's front-door dial).
        Four altitudes: surface statement -> descent tiers -> near-future world -> the deepest
        altitude where the two meanings show themselves, unlabeled. Layers stay muted (present,
@@ -83,15 +82,22 @@ HAIL:A:END -->
     <a class="wordmark" href="/">
       <span class="dept">The Department of</span> <span class="fwwc">FWWC</span>
     </a>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="/store/">Store</a>
-      <a href="/gifts/">Gifts</a>
-      <a href="/different-way.html">a different way</a>
-      <a href="/how-this-site-is-made.html">Colophon</a>
-      <label class="theme-toggle" for="theme-daymode" title="Dim the lamps up or down">
-        <span class="knob" aria-hidden="true"></span> lamplight
-      </label>
-    </nav>
+    <div class="masthead-right">
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/store/">Store</a>
+        <a href="/gifts/">Gifts</a>
+        <a href="/different-way.html">a different way</a>
+        <a href="/how-this-site-is-made.html">Colophon</a>
+      </nav>
+      <div class="theme-switch" role="radiogroup" aria-label="Theme — the lamps up or down">
+        <input type="radio" name="theme" id="theme-dark" checked>
+        <label for="theme-dark" title="Lamplit — the dark room (the default)">Lamplit</label>
+        <input type="radio" name="theme" id="theme-light">
+        <label for="theme-light" title="Daylit — the same room, shades open">Daylit</label>
+        <input type="radio" name="theme" id="theme-auto">
+        <label for="theme-auto" title="Auto — follow your device">Auto</label>
+      </div>
+    </div>
   </header>
 <!-- MASTHEAD:CANON:END v1 -->
 

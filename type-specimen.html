@@ -32,7 +32,6 @@ HAIL:A:END -->
   <!-- Honest two-mode toggle (rides shell.css): flips the UNSCOPED alternate rows
        and the page chrome. The two candidate SYSTEMS below show both lamps at once
        regardless, so the fork is always comparable without touching this. -->
-  <input type="checkbox" id="theme-daymode" aria-hidden="true">
 
   <header class="wrap masthead">
     <a class="wordmark" href="/">
@@ -40,9 +39,14 @@ HAIL:A:END -->
     </a>
     <nav class="site-nav" aria-label="Primary">
       <span style="font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted)">Type Specimen</span>
-      <label class="theme-toggle" for="theme-daymode" title="Dim the lamps up or down">
-        <span class="knob" aria-hidden="true"></span> lamplight
-      </label>
+      <span class="theme-switch" role="radiogroup" aria-label="Theme — the lamps up or down">
+        <input type="radio" name="theme" id="theme-dark" checked>
+        <label for="theme-dark" title="Lamplit — the dark room (the default)">Lamplit</label>
+        <input type="radio" name="theme" id="theme-light">
+        <label for="theme-light" title="Daylit — the same room, shades open">Daylit</label>
+        <input type="radio" name="theme" id="theme-auto">
+        <label for="theme-auto" title="Auto — follow your device">Auto</label>
+      </span>
     </nav>
   </header>
 
@@ -85,7 +89,7 @@ HAIL:A:END -->
         </div>
       </div>
       <div class="tile lvl-day disp-cardo body-newsreader mono-plex">
-        <span class="lamp-label">Dim-day · shades half-drawn</span>
+        <span class="lamp-label">Day · sea-mist</span>
         <span class="mini-word"><span class="dept">The Department of</span> <span class="fwwc">FWWC</span></span>
         <p class="mini-lede">A small store that sells a few things its makers made. Digital goods —
         prompts, protocols, documents — and physical ones. One cart, one order, honest prices in whole cents.</p>
@@ -132,7 +136,7 @@ HAIL:A:END -->
         </div>
       </div>
       <div class="tile lvl-day disp-zilla body-newsreader mono-plex">
-        <span class="lamp-label">Dim-day · shades half-drawn</span>
+        <span class="lamp-label">Day · sea-mist</span>
         <span class="mini-word"><span class="dept">The Department of</span> <span class="fwwc">FWWC</span></span>
         <p class="mini-lede">A small store that sells a few things its makers made. Digital goods —
         prompts, protocols, documents — and physical ones. One cart, one order, honest prices in whole cents.</p>

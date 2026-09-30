@@ -15,7 +15,7 @@ HAIL:A:END -->
 <!--
   gifts/index.html — The Gifts Platform front door. GENERATED (do not hand-edit):
   built by build_dept_gifts_page.py as a pure fold over ../loopmmt-website/gifts-manifest.json
-  and the Department chrome partials. The gift count (101) is derived from the manifest,
+  and the Department chrome partials. The gift count (107) is derived from the manifest,
   never typed. Re-run the builder to refold; `--check` catches drift.
   Rides shell.css; carries the canonical masthead + footer VERBATIM. §6 type family
   and §6.3 reveal degree DEFERRED via CSS vars — this page hard-commits neither.
@@ -37,7 +37,7 @@ HAIL:A:END -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="The Department of FWWC">
   <meta property="og:title" content="The Gifts Platform · The Department of FWWC">
-  <meta property="og:description" content="101 single-file, zero-dependency, MIT Gifts — and a composition system that snaps them together.">
+  <meta property="og:description" content="107 single-file, zero-dependency, MIT Gifts — and a composition system that snaps them together.">
   <!-- Self-hosted / system fallbacks only — no third-party font or asset CDN (design-language §3f). -->
   <link rel="stylesheet" href="/assets/shell.css">
   <style id="gifts-scoped">
@@ -108,22 +108,28 @@ HAIL:A:END -->
 <!-- HEAD-EMBED:CANON:END v1 -->
 </head>
 <body>
-  <input type="checkbox" id="theme-daymode" aria-hidden="true">
 
 <!-- MASTHEAD:CANON:BEGIN v1 -->
   <header class="wrap masthead">
     <a class="wordmark" href="/">
       <span class="dept">The Department of</span> <span class="fwwc">FWWC</span>
     </a>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="/store/">Store</a>
-      <a href="/gifts/">Gifts</a>
-      <a href="/different-way.html">a different way</a>
-      <a href="/how-this-site-is-made.html">Colophon</a>
-      <label class="theme-toggle" for="theme-daymode" title="Dim the lamps up or down">
-        <span class="knob" aria-hidden="true"></span> lamplight
-      </label>
-    </nav>
+    <div class="masthead-right">
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/store/">Store</a>
+        <a href="/gifts/">Gifts</a>
+        <a href="/different-way.html">a different way</a>
+        <a href="/how-this-site-is-made.html">Colophon</a>
+      </nav>
+      <div class="theme-switch" role="radiogroup" aria-label="Theme — the lamps up or down">
+        <input type="radio" name="theme" id="theme-dark" checked>
+        <label for="theme-dark" title="Lamplit — the dark room (the default)">Lamplit</label>
+        <input type="radio" name="theme" id="theme-light">
+        <label for="theme-light" title="Daylit — the same room, shades open">Daylit</label>
+        <input type="radio" name="theme" id="theme-auto">
+        <label for="theme-auto" title="Auto — follow your device">Auto</label>
+      </div>
+    </div>
   </header>
 <!-- MASTHEAD:CANON:END v1 -->
 
@@ -182,7 +188,7 @@ HAIL:A:END -->
     </section>
 
     <section aria-label="The Gifts">
-      <h2 class="roster-head">The Gifts — 101 and counting</h2>
+      <h2 class="roster-head">The Gifts — 107 and counting</h2>
       <p class="covenant">Grouped by port verb. Each tile names the Gift, what it does, and its edge.
       Follow a name to its home for the source, the tests, and the run command.</p>
     <section class="pv-group" aria-label="source gifts">
@@ -320,6 +326,13 @@ HAIL:A:END -->
         <p class="gift-foot"><span class="pv">transform</span> · <span class="mono">Zero dependencies, Node or browser, deterministic, BigInt-exact</span> · MIT</p>
       </article>
       <article class="gift">
+        <h3 class="gift-name"><a href="https://loopmmt.com/gifts/dialect/">dialect</a></h3>
+        <p class="gift-chip">One Markdown Source, Many Honest Dialects?</p>
+        <p class="gift-line">Every tool that posts Markdown to somewhere re-hand-rolls the same emitter — walk the AST, decide how each node looks in the target, glue the strings — and the usual over-correction is worse: a template DSL with conditionals and expressions, a programming language in disguise. dialect takes the middle: it renders a parsed Markdown AST into a target text dialect (a Reddit comment, a Reddit self-post, plain text, ...) by folding it through a DECLARATIVE RULESET — a flat JSON table keyed by node type, each value a small record of bounded knobs (a wrap pair, a linePrefix, a form choice, a link template) with NO conditionals, NO expressions, NO loops you can author and a fixed tiny placeholder set ({content}{level}{n}{label}{href}). Adding a dialect is adding a table, not writing code, and new syntaxes (a Slack *bold*, a Discord ||spoiler||) are just new wrap pairs. It ships beside the markdown gift and folds over ITS AST — reusing that gift&#x27;s parse() (no second parser) and its isSafeUrl guard. render() is a pure fold: same AST + same ruleset produce byte-identical text, and an external ruleset is validated at load against four decidable structural predicates (wrap-is-a-pair, blockJoin-string, template-has-{label}+{href}, linePrefix-string), loud-stopping on a malformed one. The line it will not cross is `table`: that needs a code writer, and the edge says so out loud.</p>
+        <p class="gift-edge"><span class="edge-key">edge</span> The declarative ruleset covers the ~95% of Markdown whose emission is a flat per-node substitution; it STOPS at `table` (column alignment is logic, not a flat substitution, so a table target needs a code writer) — a table node renders its cells bare and is REPORTED as a hole, never silently mangled. Link safety is universal, not a per-dialect choice: an unsafe href (javascript:, data:, ...) is ALWAYS dropped to its plain-text label, in every dialect. It holds NO clock/network/entropy, persists nothing, and never throws on bad input — an unparseable construct degrades to literal text, an unruled node renders bare and is reported. An external ruleset is validated at load and loud-stops on a structural fault.</p>
+        <p class="gift-foot"><span class="pv">transform</span> · <span class="mono">Zero dependencies, Node or browser, deterministic (folds beside the markdown gift)</span> · MIT</p>
+      </article>
+      <article class="gift">
         <h3 class="gift-name"><a href="https://loopmmt.com/gifts/dwell/">Dwell</a></h3>
         <p class="gift-chip">When You Commit Is What You Choose</p>
         <p class="gift-line">A cart circles a loop of n ticks; holding is free and an extra full lap changes nothing. It leaves only when you reverse, and which of k exits it takes is a pure function of the phase at that instant: exit = (phase * k) // n. There&#x27;s no separate &#x27;pick&#x27; step — deferring costs nothing, and the moment you stop deferring IS the decision. Integer-exact and byte-replayable; a decision is an audit record you re-derive, not an opinion you store.</p>
@@ -429,6 +442,13 @@ HAIL:A:END -->
         <p class="gift-chip">Readable Text, or Machine Rubble?</p>
         <p class="gift-line">Guess whether a string is human-readable text or machine-drawn rubble, and say how sure you are. A text extractor hands you a `.text` field and, by design, can&#x27;t tell you whether it&#x27;s readable — the classic failure is a subsetted CID font whose glyphs decode one byte at a time into control-character rubble that only looks like a populated string. assess(text) returns a label (readable / suspect / likely-binary / empty) with the raw score and signal counts exposed, scoring the density of characters human text almost never contains: C0 controls (minus tab/newline) plus U+FFFD, and nothing else. The load-bearing rule: it reports but never scores the C1 band, so legitimate multibyte-as-Latin1 (日本語, Cyrillic) never reads as binary — the CJK false-positive it refuses to make.</p>
         <p class="gift-edge"><span class="edge-key">edge</span> legible is a heuristic, not a verdict, and it detects control-character rubble — NOT wrong encoding. Mojibake (valid bytes, wrong charset) is still printable characters, so it reads `readable` even though no human can read it: a `readable` means “not control-char rubble,” never “correctly decoded.” It does not decode, validate, or understand the text, and never proves it correct or meaningful. It is a gauge you read, never a gate you route on.</p>
+        <p class="gift-foot"><span class="pv">transform</span> · <span class="mono">Node / browser, no dependencies</span> · MIT</p>
+      </article>
+      <article class="gift">
+        <h3 class="gift-name"><a href="https://loopmmt.com/gifts/plausible/">Text Plausibility Gauge</a></h3>
+        <p class="gift-chip">Plausible Language, or Clean-but-Wrong?</p>
+        <p class="gift-line">Guess whether a string looks like plausible natural-language text or clean-but-wrong output, and say how sure you are. The orthogonal sibling of legible: legible detects control-char rubble (byte garbage); plausible detects clean, fully-printable output that is still wrong — mojibake (Müller -&gt; MÃ¼ller), missing word boundaries (thewordsallruntogether), hyphenation artifacts. assess(text) returns a label (prose / suspect / garbled / empty) with the raw score and signal counts exposed. It SCORES only structural language-agnostic signals — the mojibake fingerprint (dominant, Latin-1 + Windows-1252), script-gated space/word-boundary density, trailing-hyphen rate — and EXPOSES-never-scores the language-specific ones (English-referenced letter-frequency deviation, mean word length), so it will NOT call spaceless Japanese or non-English prose garbled. The load-bearing rule, one axis over from legible&#x27;s C1 report-not-score: the honesty of a language gauge is what it REFUSES to score.</p>
+        <p class="gift-edge"><span class="edge-key">edge</span> plausible is a HEURISTIC, not a verdict. &quot;Implausible as prose&quot; is not &quot;wrong extraction&quot;: code, tables, log lines, base64, URLs, poetry, and non-spaced scripts all read implausible and can be perfectly correct — it flags a smell, you read it. It is language-agnostic BY DESIGN (deliberately weaker than a per-language model), reads SHAPE not intent (plausible prose can still be a prompt injection), and never decodes, corrects, or understands the text. It is a gauge you read, never a gate you route on.</p>
         <p class="gift-foot"><span class="pv">transform</span> · <span class="mono">Node / browser, no dependencies</span> · MIT</p>
       </article>
       <article class="gift">
@@ -547,6 +567,13 @@ HAIL:A:END -->
         <p class="gift-line">hmac-webhook recomputes HMAC-SHA256(secret, rawBody) and checks it against the signature a webhook sender put in a header (conventionally X-Signature: sha256=&lt;hex&gt;), answering one question — is this body authentic and unmodified, from someone who holds the secret? It answers in CONSTANT TIME, so a forger cannot learn the correct signature one character at a time from how long a rejection takes. verify(body, header, secret) returns {ok, reason}; ok:false always names why — no-signature, bad-format, unsupported-scheme, length-mismatch, or hmac-mismatch — never a partial match. HMAC-SHA256 is RFC 2104 exactly, with the SHA-256 core vendored byte-for-byte from the shipped sha256 gift, so the result is byte-identical to Node&#x27;s crypto.createHmac and to openssl dgst -sha256 -hmac. Same body, header, and secret in → same verdict out, in Node or a browser.</p>
         <p class="gift-edge"><span class="edge-key">edge</span> hmac-webhook verifies AUTHENTICITY — nothing more. It is NOT a secret store (you supply the secret; it is never persisted), NOT a replay defender (it proves THIS body is authentic, not that it is fresh — pair it with a timestamp or nonce check for that), NOT a TLS or transport check, NOT an authorization system (authentic is not the same as allowed), and NOT a multi-algorithm negotiator (it verifies the one scheme you name, default sha256).</p>
         <p class="gift-foot"><span class="pv">filter</span> · <span class="mono">Zero dependencies, Node or browser, deterministic, constant-time</span> · MIT</p>
+      </article>
+      <article class="gift">
+        <h3 class="gift-name"><a href="https://loopmmt.com/gifts/input-event-router/">input-event-router</a></h3>
+        <p class="gift-chip">Is This Input Event Safe to Fold?</p>
+        <p class="gift-line">Every interactive app re-hand-rolls the same first step: turn raw, untrusted pointer/key input into something a reducer can safely fold — and that is where the bugs and the attack surface live. input-event-router is that step done once, correctly: a dependency-free deterministic reducer that folds a raw input-event log (JSONL) into a typed, schema-validated event stream, plus an O(1) fold-state (sequence integrity + a monotonic logical tick). seq is a strict total order (a gap or repeat is a rejection, never coerced); t is logical time supplied as data, never a wall-clock read, so the same log replays byte-identically forever — in a browser or headless on Node; type must be in a declared, closed vocabulary; payload is an opaque object it never interprets. It authors the interactive lane&#x27;s {seq,t,type,payload} event envelope that render-loop-harness and undo-stack-kernel fold. Zero dependencies, pure, offline.</p>
+        <p class="gift-edge"><span class="edge-key">edge</span> this normalizes and validates raw input events against a declared schema, folding them into a deterministic typed event stream; it does NOT sanitize application semantics, it does NOT persist, it holds NO clock/network/entropy, and it trusts no event it did not schema.</p>
+        <p class="gift-foot"><span class="pv">filter</span> · <span class="mono">Zero dependencies, Node or browser, deterministic</span> · MIT</p>
       </article>
       <article class="gift">
         <h3 class="gift-name"><a href="https://loopmmt.com/gifts/isvalidcsscolor/">Isvalidcsscolor</a></h3>
@@ -771,6 +798,13 @@ HAIL:A:END -->
         <p class="gift-foot"><span class="pv">fold</span> · <span class="mono">Python stdlib only, deterministic</span> · MIT</p>
       </article>
       <article class="gift">
+        <h3 class="gift-name"><a href="https://loopmmt.com/gifts/render-loop-harness/">render-loop-harness</a></h3>
+        <p class="gift-chip">Drive a Render Loop That Replays Identically and Never Melts the Tab?</p>
+        <p class="gift-line">Every interactive app with a live view re-hand-rolls the same second step: take a stream of validated events and drive a state -&gt; frame render loop off them — and that is where the resource-exhaustion bugs live (a requestAnimationFrame busy-spin with no budget, a loop that paces on Date.now() and breaks replay the moment it ships, a frame function that is not pure). render-loop-harness is that step done once, correctly, as a bounded deterministic reducer over the input-event-router envelope it inherits: validated events in, a sequence of pure frames out, advanced on each event&#x27;s logical tick t, and bounded by a declared per-fold tick budget the harness REFUSES to exceed — a log longer than the budget halts at exactly budget frames with reject-reason &quot;tick-budget-exceeded&quot;, never a busy-spin, never an OOM. Replaying the same log yields byte-identical frames. Set the budget with --budget. Zero dependencies, pure, offline; browser or headless Node.</p>
+        <p class="gift-edge"><span class="edge-key">edge</span> this drives a pure state -&gt; frame render loop from an inherited event log, advancing on the event&#x27;s logical tick t and never a wall-clock; it refuses to exceed its declared per-fold tick budget; it does NOT render pixels, it does NOT persist, it holds NO clock/network/entropy, and it schedules nothing it cannot bound.</p>
+        <p class="gift-foot"><span class="pv">fold</span> · <span class="mono">Zero dependencies, Node or browser, deterministic</span> · MIT</p>
+      </article>
+      <article class="gift">
         <h3 class="gift-name"><a href="https://loopmmt.com/gifts/running-stats/">Running-stats</a></h3>
         <p class="gift-chip">One Running-Statistics Record Over a Numeric Stream</p>
         <p class="gift-line">running-stats reads a stream of numbers — one JSON number per line (JSON Lines) — and folds them in ONE PASS into a single aggregate record: {count, mean, variance, stddev, min, max}, with zero dependencies. mean and variance are computed by Welford&#x27;s online algorithm, which stays numerically stable where the textbook one-pass shortcut (sum of squares minus square of sum) catastrophically cancels — a tight cluster around a huge mean. Population variance by default; --sample gives the Bessel-corrected (n-1) sample statistics. The record is a pure function of the input SEQUENCE, so the same stream folds to a byte-identical record every run; but mean/variance are IEEE-754 doubles, so reordering the same values can move the low-order bits — it is deterministic for a given input order, NOT an exact order-independent fingerprint (that is histogram-fold&#x27;s job). Same stream in → byte-identical record out, in Node or a browser.</p>
@@ -790,6 +824,13 @@ HAIL:A:END -->
         <p class="gift-line">shell-scaffold folds a recipe-spine&#x27;s interactive sub-lanes into shell records — reducer bind, served flag, and UX seam. It names the seam; it never writes the UX.</p>
         <p class="gift-edge"><span class="edge-key">edge</span> Extracted verbatim from compile_recipe_spine.py::compile_spine and proven byte-identical to the compiler&#x27;s inline logic on all 9 spines (roundtrip_selfhost.py 9/9, including the compiler&#x27;s own Schematic). The served page documents the fold; the byte-truth is the Python fold + its passing selftest. A full standalone JS port is a later beat — the fold logic is what the fixed-point gate covers.</p>
         <p class="gift-foot"><span class="pv">fold</span> · <span class="mono">Python 3 stdlib, no dependencies (pure fold)</span> · MIT</p>
+      </article>
+      <article class="gift">
+        <h3 class="gift-name"><a href="https://loopmmt.com/gifts/sign-fold/">Sign Fold</a></h3>
+        <p class="gift-chip">Over, At, or Under?</p>
+        <p class="gift-line">Fold a stream of {declared, actual} records into a signed residual per record — residual = actual - declared, and its sign: over (A&gt;D), at (A==D), under (A&lt;D) — plus a roll-up count of each. Input is JSONL, one object per line with an optional label; output is one record per line in file order, then a final {&quot;roll&quot;:{over,at,under,count}}. A pure fold with no dependencies, in Node or the browser: same bytes in always produce byte-identical bytes out. It is exact — no epsilon, so equality means equality to the number — and honest about bad input: a line that is not valid JSON, a record that is not an object, or a declared/actual that is not a finite number stops the fold naming the line rather than guessing a zero.</p>
+        <p class="gift-edge"><span class="edge-key">edge</span> It reports the SIGN, never the VIRTUE: actual &gt;= declared means the count relation holds, not that the work is good — the floor is only as honest as the number you declared. Equality is EXACT with no epsilon (a caller who wants a tolerance band computes it off residual itself; baking one tolerance into the tool would be a policy choice you should own). Only finite numbers count — a missing, non-numeric, NaN, or Infinity field throws with the line number. Malformed input throws, it never repairs.</p>
+        <p class="gift-foot"><span class="pv">fold</span> · <span class="mono">Node / browser, no dependencies</span> · MIT</p>
       </article>
       <article class="gift">
         <h3 class="gift-name"><a href="https://loopmmt.com/gifts/excavation/">The Excavation</a></h3>
@@ -817,6 +858,13 @@ HAIL:A:END -->
         <p class="gift-chip">The K Largest Values Over a Numeric Stream</p>
         <p class="gift-line">topk-fold reads a stream of numbers — one JSON number per line (JSON Lines) — and folds them in ONE PASS into its k LARGEST values (or, with --min, the k smallest), with zero dependencies. It uses a BOUNDED HEAP of size k — O(n log k) time, O(k) space — so it never holds the whole stream: for top-k a min-heap that pops the smallest whenever it holds more than k, retaining the k largest. Output {count,k,top}, with top sorted largest-first (or smallest-first with --min); if fewer than k values are seen, top holds all of them and count &lt; k — k &gt; n is not an error. The record is a pure function of the input MULTISET, so the SAME values in ANY order fold to a BYTE-IDENTICAL record — fully order-independent, with ties at the k-th boundary resolved by value. Same stream in → byte-identical record out, in Node or a browser.</p>
         <p class="gift-edge"><span class="edge-key">edge</span> topk-fold is a one-pass bounded SELECTION {count,k,top} — NOT a full sort of the stream (it keeps only k, in O(k) space), NOT a median/percentile/quantile (it keeps no interior order statistics), and NOT a histogram or a running mean (see histogram-fold / running-stats). k &gt; n returns all n values (not an error). The record is FULLY order-independent (byte-identical for the same multiset in any order) — ties resolved by value, e.g. [5,3,3,3] top-2 = [5,3].</p>
+        <p class="gift-foot"><span class="pv">fold</span> · <span class="mono">Zero dependencies, Node or browser, deterministic</span> · MIT</p>
+      </article>
+      <article class="gift">
+        <h3 class="gift-name"><a href="https://loopmmt.com/gifts/undo-stack-kernel/">undo-stack-kernel</a></h3>
+        <p class="gift-chip">Undo/Redo That Can&#x27;t Corrupt a Past State or OOM the Tab?</p>
+        <p class="gift-line">Every stateful interactive app re-hand-rolls the same third step: keep a history of user actions so the user can undo and redo — and that is where two whole bug classes live: unbounded growth (the history array grows without limit under a long or hostile edit stream until the tab OOMs) and in-place corruption (a stored past state is mutated by a later action sharing a reference into it, so &quot;undo&quot; returns a state that silently changed). undo-stack-kernel is that step done once, correctly, as a bounded event-sourced reducer over the input-event-router envelope it inherits: validated commit/undo/redo events in, an append-only history out, every reachable state produced by REPLAY from a retained checkpoint (never a stored mutable reference), and the whole history bounded by a declared max depth the kernel REFUSES to exceed (a commit past the depth evicts the oldest checkpoint by ring eviction, so history.length &lt;= depth after every event, for any log — memory is O(depth), never O(log length)). Undo reaches exactly depth steps back — an honest bound, not a false &quot;unlimited undo.&quot; Set it with --depth. Zero dependencies, pure, offline; browser or headless Node.</p>
+        <p class="gift-edge"><span class="edge-key">edge</span> this keeps an append-only, event-sourced undo/redo history bounded by a declared max depth; it reaches any past state by REPLAY from a retained checkpoint, never by mutating stored state in place; it advances on the event&#x27;s logical tick t and never a wall-clock; it does NOT persist to disk, it holds NO clock/network/entropy, and it refuses to grow history past its declared depth.</p>
         <p class="gift-foot"><span class="pv">fold</span> · <span class="mono">Zero dependencies, Node or browser, deterministic</span> · MIT</p>
       </article>
       <article class="gift">
