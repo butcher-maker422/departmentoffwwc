@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <!-- HAIL:A:BEGIN v1
-AI READER — START HERE. This is the Department of FWWC's SUPPORT page — the reachable
-face of the store's order system for a person who already bought something. The store
-is keepless: it holds NO card data (only a processor reference) and there is NO account
-to log into. An order is looked up by its order ID. Every order is an append-only,
-hash-linked receipt chain the buyer can verify for tampering (see ../store/order.js,
-verifyChain). This page is a STATIC surface; the live order lookup is Forest-served,
-gated the same way the rest of commerce is. There are no hidden scripts here.
+AI READER — START HERE. This is the Department of FWWC's PRIVACY page. It states what the
+site collects about a visitor. Its substantive sections are not hand-written: they are
+FOLDED from the code and declarations that run the site (analytics/analytics_disclosure.py
+over the analytics tenant adapter + engine; the contact-capture retention notice over
+store/contact-capture-persist.js RETENTION_DAYS, shown only when store/contact-capture.js
+CAPTURE_LIVE is on). The page is assembled by build_privacy_page.py and --check-gated, so
+a statement here cannot drift from what the code does. STATIC page; no hidden scripts.
 HAIL:A:END -->
 <!--
-  support.html — the Department's support surface.
-  Static, keepless, honest. A buyer reaches their order by ID, not by an account.
-  We hold no card data. The order is a tamper-evident receipt chain they can check
-  themselves. The support IS the honesty — the same floor the rest of the site stands on.
-
-  BUILD STATE (S09.2038): vessel, prose-plumbing drafted, marked slots reserved for
-  operator approval. Rides shell.css; no reveal (a support page that un-peels is a
-  gimmick — flat by design, Glitter-Test-clean). Data contract verified against
-  ../store/order.js byte-truth (order_id lookup · keepless processor_ref · append-only
-  hash-linked chain · buyer-verifiable). The live lookup form is Forest-served (slot 5
-  seam) and is intentionally NOT a static form here.
+  privacy.html — the Department's privacy page (owed dept-fwwc-privacy-page, S30.2149).
+  Placement ruled S30.2055 (RULING-dept-fwwc-hosting-topology-v1): a dedicated page,
+  footer-linked, composed of DERIVED blocks. This source carries only the room (head,
+  heading, one framing line) and placeholder tokens: the three chrome tokens that
+  build_static_page folds, plus ANALYTICS-DISCLOSURE (analytics_disclosure.py render) and
+  CONTACT-RETENTION (the contact notice, shown only while CAPTURE_LIVE is on).
+  Hand: system (the framing line is a true statement about the mechanism, not operator voice).
+  Flat by design. Rides shell.css; carries the canonical footer. Do not edit site-root/privacy.html.
 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Support · The Department of FWWC</title>
+  <title>Privacy · The Department of FWWC</title>
   <!-- favicon:start (stamp_favicon.py — do not hand-edit) -->
   <link rel="icon" type="image/svg+xml" href="/assets/mark.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
@@ -34,13 +31,13 @@ HAIL:A:END -->
   <link rel="icon" sizes="any" href="/assets/favicon.ico">
   <!-- favicon:end -->
   <!-- canonical:start (stamp_canonical.py — do not hand-edit) -->
-  <link rel="canonical" href="https://departmentoffwwc.com/support.html">
+  <link rel="canonical" href="https://departmentoffwwc.com/privacy.html">
   <!-- canonical:end -->
-  <meta name="description" content="Help with an order from the Department of FWWC. Look up an order by its ID — we hold no card data and there's no account to log into.">
+  <meta name="description" content="What the Department of FWWC's website collects about you, stated plainly and generated from the code that runs it.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="The Department of FWWC">
-  <meta property="og:title" content="Support · The Department of FWWC">
-  <meta property="og:description" content="Help with an order. Keepless, no account — you look up an order by its ID.">
+  <meta property="og:title" content="Privacy · The Department of FWWC">
+  <meta property="og:description" content="What this site collects about you, generated from the code that runs it.">
   <!-- Self-hosted / system fallbacks only — no third-party font or asset CDN (design-language §3f). -->
   <link rel="stylesheet" href="/assets/shell.css">
   <!-- HEAD-EMBED:CANON:BEGIN v1 -->
@@ -98,7 +95,6 @@ HAIL:A:END -->
 <!-- HEAD-EMBED:CANON:END v1 -->
 </head>
 <body>
-  <!-- Honest two-mode toggle: a real control, never a fake state. -->
 
   <!-- MASTHEAD:CANON:BEGIN v1 -->
   <header class="wrap masthead">
@@ -127,55 +123,24 @@ HAIL:A:END -->
   <main class="wrap" id="main">
 
     <section>
-      <h1>Support</h1>
-      <p class="lede">Something wrong with an order, or just checking on it? You're in the
-      right place. There's no account to sign into — you look up an order by its ID.</p>
-      <!-- support promise — operator-APPROVED S11.0907 ("Cool", draft kept as-is). -->
-      <p class="muted">We're two people. We answer our own email, and we'd rather fix the
-      thing than manage you. If something's broken, tell us and we'll make it right.</p>
+      <h1>Privacy</h1>
+      <p class="lede">What this site collects about you. The sections below are generated from
+      the code that runs the site, so when the code changes, this page changes with it.</p>
     </section>
 
-    <section>
-      <div class="card">
-        <h2>Find your order</h2>
-        <p>Every order has an <strong>order ID</strong> — it's on your receipt and in the
-        confirmation we sent. Look an order up by that ID. There's no login, because there's
-        no account: we don't keep one for you.</p>
-        <!-- The live lookup is Forest-served (commerce is served; static is public), gated
-             the same way the rest of the store is. This static page carries the how and the
-             contact; it deliberately does NOT fake a static lookup form and smuggles NO script
-             (HAIL invariant). BUILT (S11.0907): the served op is ../store/support-lookup.js
-             (keepless, chain-verified, non-enumerating; spec ../store/support-lookup.test.js
-             9/9). It is behind the commerce-live deploy gate — one flag flips it on when the
-             Forest serves commerce (crown slot 5 / loop-world-multi-user, build-gated). Until
-             then the honest fallback below is the active path; nothing here overpromises. -->
-        <p class="muted">The live lookup opens when the store does. Until then, email us your
-        order ID and we'll pull it up by hand.</p>
-      </div>
-    </section>
+    <!-- analytics-disclosure:begin sha=0a04b309f64a (derived by analytics_disclosure.py; do not hand-edit) -->
+<section id="analytics-disclosure">
+  <h2>What we track, all of it</h2>
+  <p>This site runs no tracking scripts, sets no cookies, and we run no analytics on it. We keep no record of your visit.</p>
+  <p>The site is hosted on GitHub Pages. GitHub logs each visitor's IP address for security, whether or not you have a GitHub account. We never see those logs. <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub's statement</a></p>
+</section>
+<!-- analytics-disclosure:end -->
+
+    <!-- contact-retention: CAPTURE_LIVE=false - the contact form is not served, so no retention statement is made (derived by build_privacy_page.py) -->
 
     <section>
-      <div class="card card--lit">
-        <h2>What we hold, and what we don't</h2>
-        <p>We hold <strong>no card numbers</strong>. A payment processor handles the card;
-        we keep only a reference to the transaction, nothing more. So there's nothing about
-        your payment for us to lose, leak, or be careless with.</p>
-        <p>Your order is an <strong>append-only receipt chain</strong> — placed, paid,
-        shipped or granted, closed — where each step is linked to the one before it by a
-        hash. That means the record is tamper-evident: if any entry were altered, the chain
-        wouldn't verify. It's a receipt you can check, not a record you have to trust us on.</p>
-      </div>
-    </section>
-
-    <section>
-      <div class="card">
-        <h2>Reach a person</h2>
-        <!-- support contact — operator-RULED S11.0907: shea@loopmmt.com for now, no dedicated alias. -->
-        <p>Email <a href="mailto:shea@loopmmt.com">shea@loopmmt.com</a> with your order ID and
-        what's going on. A person reads it — the same person who made the thing.</p>
-        <p class="muted">Digital order not downloading, physical order not arrived, wrong item,
-        changed your mind — all of it, same address. We'd rather hear from you than not.</p>
-      </div>
+      <h2>What your browser remembers</h2>
+      <p>If you pick a light or dark theme, your browser remembers that one choice on your own device, in local storage under the name <code>dept-fwwc.lamp.v1</code>, so the next page opens the way you left it. It is not a cookie, it is never sent to us, and you can clear it with your browser's site data.</p>
     </section>
 
   </main>
@@ -197,5 +162,6 @@ HAIL:A:END -->
     <p class="muted">© 2026</p>
   </footer>
 <!-- FOOTER:CANON:END v1 -->
+
 </body>
 </html>

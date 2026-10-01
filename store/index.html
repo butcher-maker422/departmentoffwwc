@@ -87,6 +87,35 @@ are open at loopmmt.com and in the repo. HAIL:A:END -->
        registering it before every served page carries the markers would red the
        now-gating deploy. Wiring recipe + ordering: owed
        dept-fwwc-head-embed-slot-wire. -->
+  <!-- THE LAMP MEMORY (NOTE-22.1735-1, operator ruling S01.0013): the theme you pick holds
+       across pages. Pattern reused from Loop Forest's first-paint skin script (SWX). One
+       readable, first-party script, no dependency. It stores ONE value on YOUR device -
+       dept-fwwc.lamp.v1 = dark | light | auto - and never sends it anywhere. Total by
+       construction: blocked or broken storage, or a junk value, leaves the page exactly as
+       authored (per-page toggle; Auto still follows your device). With scripts off the CSS
+       toggle still works per page. /privacy states this sentence from the KEY below. -->
+  <script>
+  (function () {
+    var KEY = "dept-fwwc.lamp.v1", OK = { dark: 1, light: 1, auto: 1 }, root = document.documentElement;
+    function read() { try { var v = window.localStorage.getItem(KEY); return OK[v] === 1 ? v : null; } catch (e) { return null; } }
+    function write(v) { try { window.localStorage.setItem(KEY, v); } catch (e) { /* storage refused: per-page only */ } }
+    var saved = read();
+    if (saved) root.setAttribute("data-lamp", saved);   // before first paint: no flash
+    document.addEventListener("DOMContentLoaded", function () {
+      var el = saved && document.getElementById("theme-" + saved);
+      if (el) el.checked = true;                          // the switch shows what you chose
+      var radios = document.querySelectorAll('input[name="theme"]');
+      for (var i = 0; i < radios.length; i++) {
+        radios[i].addEventListener("change", function () {
+          var m = this.id.replace("theme-", "");
+          if (OK[m] !== 1) return;
+          root.setAttribute("data-lamp", m);
+          write(m);
+        });
+      }
+    });
+  })();
+  </script>
 <!-- HEAD-EMBED:CANON:END v1 -->
 </head>
 <body>
@@ -183,10 +212,10 @@ are open at loopmmt.com and in the repo. HAIL:A:END -->
       <a href="/collaborate.html">collaborate</a></p>
     <p>The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
     <a href="/how-this-site-is-made.html">How this site is made</a> ·
-    <a href="/how-to-build-for-ai.html">For machines</a></p>
+    <a href="/how-to-build-for-ai.html">For machines</a> ·
+    <a href="/privacy.html">Privacy</a></p>
     <p class="muted">Dario — you should get in touch.</p>
-    <p class="muted">© 2026 · The type is drawn (Cardo); the depth of the reveal is still
-    being set — this shell defers the reveal, on purpose.</p>
+    <p class="muted">© 2026</p>
   </footer>
 <!-- FOOTER:CANON:END v1 -->
 </body>

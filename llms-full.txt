@@ -93,12 +93,12 @@ collaborate
 
 The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
 How this site is made ·
-For machines
+For machines ·
+Privacy
 
 Dario — you should get in touch.
 
-© 2026 · The type is drawn (Cardo); the depth of the reveal is still
-being set — this shell defers the reveal, on purpose.
+© 2026
 
 ========================================================================
 # Collaborate · The Department of FWWC
@@ -136,12 +136,12 @@ collaborate
 
 The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
 How this site is made ·
-For machines
+For machines ·
+Privacy
 
 Dario — you should get in touch.
 
-© 2026 · The type is drawn (Cardo); the depth of the reveal is still
-being set — this shell defers the reveal, on purpose.
+© 2026
 
 ========================================================================
 # A Different Way to AI. · The Department of FWWC
@@ -196,12 +196,12 @@ collaborate
 
 The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
 How this site is made ·
-For machines
+For machines ·
+Privacy
 
 Dario — you should get in touch.
 
-© 2026 · The type is drawn (Cardo); the depth of the reveal is still
-being set — this shell defers the reveal, on purpose.
+© 2026
 
 ========================================================================
 # The Gifts Platform · The Department of FWWC
@@ -1371,12 +1371,12 @@ collaborate
 
 The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
 How this site is made ·
-For machines
+For machines ·
+Privacy
 
 Dario — you should get in touch.
 
-© 2026 · The type is drawn (Cardo); the depth of the reveal is still
-being set — this shell defers the reveal, on purpose.
+© 2026
 
 ========================================================================
 # How this site is made — The Department of FWWC
@@ -1770,12 +1770,12 @@ collaborate
 
 The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
 How this site is made ·
-For machines
+For machines ·
+Privacy
 
 Dario — you should get in touch.
 
-© 2026 · The type is drawn (Cardo); the depth of the reveal is still
-being set — this shell defers the reveal, on purpose.
+© 2026
 
 ========================================================================
 # How to build for AI · The Department of FWWC
@@ -1894,12 +1894,12 @@ collaborate
 
 The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
 How this site is made ·
-For machines
+For machines ·
+Privacy
 
 Dario — you should get in touch.
 
-© 2026 · The type is drawn (Cardo); the depth of the reveal is still
-being set — this shell defers the reveal, on purpose.
+© 2026
 
 ========================================================================
 # Investors · The Department of FWWC
@@ -1950,12 +1950,12 @@ collaborate
 
 The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
 How this site is made ·
-For machines
+For machines ·
+Privacy
 
 Dario — you should get in touch.
 
-© 2026 · The type is drawn (Cardo); the depth of the reveal is still
-being set — this shell defers the reveal, on purpose.
+© 2026
 
 ========================================================================
 # Press · The Department of FWWC
@@ -2016,12 +2016,61 @@ collaborate
 
 The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
 How this site is made ·
-For machines
+For machines ·
+Privacy
 
 Dario — you should get in touch.
 
-© 2026 · The type is drawn (Cardo); the depth of the reveal is still
-being set — this shell defers the reveal, on purpose.
+© 2026
+
+========================================================================
+# Privacy · The Department of FWWC
+/privacy.html
+
+The Department of FWWC
+
+Store
+Gifts
+a different way
+Colophon
+
+Lamplit
+
+Daylit
+
+Auto
+
+Privacy
+
+What this site collects about you. The sections below are generated from
+the code that runs the site, so when the code changes, this page changes with it.
+
+What we track, all of it
+
+This site runs no tracking scripts, sets no cookies, and we run no analytics on it. We keep no record of your visit.
+
+The site is hosted on GitHub Pages. GitHub logs each visitor's IP address for security, whether or not you have a GitHub account. We never see those logs. GitHub's statement
+
+What your browser remembers
+
+If you pick a light or dark theme, your browser remembers that one choice on your own device, in local storage under the name dept-fwwc.lamp.v1, so the next page opens the way you left it. It is not a cookie, it is never sent to us, and you can clear it with your browser's site data.
+
+For specific visitors ·
+a different way ·
+subscriptions ·
+press ·
+investors ·
+support ·
+collaborate
+
+The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
+How this site is made ·
+For machines ·
+Privacy
+
+Dario — you should get in touch.
+
+© 2026
 
 ========================================================================
 # Store · The Department of FWWC
@@ -2100,12 +2149,12 @@ collaborate
 
 The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
 How this site is made ·
-For machines
+For machines ·
+Privacy
 
 Dario — you should get in touch.
 
-© 2026 · The type is drawn (Cardo); the depth of the reveal is still
-being set — this shell defers the reveal, on purpose.
+© 2026
 
 ========================================================================
 # Subscriptions · The Department of FWWC
@@ -2199,12 +2248,12 @@ collaborate
 
 The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
 How this site is made ·
-For machines
+For machines ·
+Privacy
 
 Dario — you should get in touch.
 
-© 2026 · The type is drawn (Cardo); the depth of the reveal is still
-being set — this shell defers the reveal, on purpose.
+© 2026
 
 ========================================================================
 # Support · The Department of FWWC
@@ -2269,9 +2318,9 @@ collaborate
 
 The Department of FWWC, Inc. · Static-first, keepless, marketing-free ·
 How this site is made ·
-For machines
+For machines ·
+Privacy
 
 Dario — you should get in touch.
 
-© 2026 · The type is drawn (Cardo); the depth of the reveal is still
-being set — this shell defers the reveal, on purpose.
+© 2026

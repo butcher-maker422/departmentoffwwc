@@ -4,7 +4,7 @@
   "description": "A small store that sells a few things its makers made — and refuses, by construction, every practice that squeezes a customer. You are let in, not sold to.",
   "license": "CC-BY-NC-4.0",
   "counts": {
-    "pages": 11
+    "pages": 12
   },
   "pages": [
     {
@@ -54,6 +54,12 @@
       "url": "/press.html",
       "title": "Press · The Department of FWWC",
       "description": "Press facts and contact for the Department of FWWC — a small, static-first, keepless store its makers built."
+    },
+    {
+      "file": "privacy.html",
+      "url": "/privacy.html",
+      "title": "Privacy · The Department of FWWC",
+      "description": "What the Department of FWWC's website collects about you, stated plainly and generated from the code that runs it."
     },
     {
       "file": "store/index.html",
